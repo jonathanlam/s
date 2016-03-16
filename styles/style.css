@@ -3924,7 +3924,7 @@ border-radius:5px;
 }
 
 .folder-path-separator-icon {
-    background-image: url('assets-images/iconset.png');
+    background-image: url('../images/iconset.png');
     background-position: -1598px 8px !important;
     background-repeat: no-repeat;
     height: 16px;
@@ -3932,7 +3932,7 @@ border-radius:5px;
     width: 20px;
 }
 .folder-reverse-separator-icon {
-    background-image: url('assets-images/iconset.png');
+    background-image: url('../images/iconset.png');
     background-position: -1616px 8px !important;
     background-repeat: no-repeat;
     height: 16px;
@@ -3946,7 +3946,7 @@ border-radius:5px;
 #sites-searchbox-search-button
 {
 
-    background-image: url('assets-images/iconset.png');
+    background-image: url('../images/iconset.png');
     background-position: -1345px 2px !important;
     background-repeat: no-repeat;
     height: 26px;
