@@ -8,7 +8,9 @@ a.innerHTML="Loading Resources. Please wait..."
 link="https://script.google.com/macros/s/AKfycbwsgd6ioZJ_X9usR5f80vH-GjOkqk8NTNMJONDsEM42KAycKD0/exec#sites-chrome-everything-caja-guest-0___"
 setTimeout(function(){window.location=link}, 3000);
 }
-function lf(titlex,idx, tags){
+function lf(titlex,idx){
+
+var tags=unescape(location.pathname.substring(location.pathname.lastIndexOf('/')+1));
     var tix=document.title;
 document.write("<html><head>");
 document.write("<title>"+tix+" - "+titlex.replace("<i>", "").replace("</i>", "") +"<\/title>");
@@ -25,12 +27,12 @@ document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_back.
 document.write("<a href=\""+tags+"\">Exit File Viewer<\/a>&nbsp;&nbsp;<span style=\"display:none;\" id=\"smallscreen\"><br></span><small><b>"+tix.split(" - ")[1]+" </b> - "+titlex+"</small>");
 document.write("<span style=\"display:none;\" id=\"smallscreen\"><br></span><span style=\"float:right\">");
 document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_pdf2.png\">&nbsp;&nbsp;");
-document.write("<a href=\""+idx+"\" target=\"_blank\">Open File<\/a>&nbsp;&nbsp;<wbr>");
+document.write("<a href=\"https://drive.google.com/uc?export=download&id="+idx+"\" target=\"_blank\">Download File<\/a>&nbsp;&nbsp;<wbr>");
 document.write("<span id=\"reduciblex\"><img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_back.png\">&nbsp;&nbsp;");
 document.write("<a href=\"index.html\">Up One Folder<\/a>&nbsp;&nbsp;<wbr>");
 document.write("<img id=\"reduciblex\" src=\"https:\/\/thsconline.github.io\/s\/images\/icon_home.png\">&nbsp;&nbsp;");
 document.write("<a href=\"https:\/\/thsconline.github.io\/s\/\">Home<\/a>&nbsp;&nbsp;</span></span></span><br>");
-document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:100%; height:93%\" id=\"mediaplayer\" src=\""+idx+"\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
+document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:100%; height:93%\" id=\"mediaplayer\" src=\"https://docs.google.com/viewer?srcid="+idx+"&pid=explorer&efh=false&a=v&chrome=false&embedded=true\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("</div></body></html>");
 
 }
