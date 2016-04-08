@@ -29,9 +29,9 @@ document.write("<small><span class=\"nmob\"><b>"+tix.split(" - ")[1]+" </b> - <\
 document.write("<span style=\"float:right\">");
 document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_back.png\">&nbsp;&nbsp;");
 document.write("<a href=\""+tags+"\">Exit File Viewer<\/a>&nbsp;&nbsp;")
-document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_pdf2.png\">&nbsp;&nbsp;");
+document.write("<span class=\"uvs\"><img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_pdf2.png\">&nbsp;&nbsp;");
 document.write("<a class=\"uvs\" href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download<span class=\"nmob\"> File<\/span><\/a>&nbsp;&nbsp;<wbr>");
-document.write("<img class=\"uvs\" src=\"https:\/\/thsconline.github.io\/s\/images\/icon_home.png\"><span class=\"uvs\">&nbsp;&nbsp;</span>");
+document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_home.png\">&nbsp;&nbsp;");
 document.write("<a class=\"uvs\" href=\"https:\/\/thsconline.github.io\/s\/\">Home<\/a>&nbsp;&nbsp;</span></span></span><br>");
 document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:100%; height:92%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("</div></body></html>"); 
