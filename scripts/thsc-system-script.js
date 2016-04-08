@@ -9,13 +9,13 @@ link="https://script.google.com/macros/s/AKfycbwsgd6ioZJ_X9usR5f80vH-GjOkqk8NTNM
 setTimeout(function(){window.location=link}, 3000);
 }
 function lf(titlex,idx, tags){
-    var tix=document.title
+    var tix=document.title;
 document.write("<html><head>");
 document.write("<title>"+tix+" - Now Playing: "+titlex.replace("<i>", "").replace("</i>", "") +"<\/title>");
 document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
 document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\">");
-document.write("<link href=\"https:\/\/9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com\/host\/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c\/_web-assets\/style.css\" rel=\"stylesheet\" type=\"text\/css\">");
-document.write("<link href=\"https:\/\/9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com\/host\/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c\/_web-assets\/secondary.css\" rel=\"stylesheet\" type=\"text\/css\">");
+document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"text\/css\">");
+document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/secondary.css\" rel=\"stylesheet\" type=\"text\/css\">");
 document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script>");
 document.write("<\/head>");
 document.write("<body>");
@@ -29,8 +29,8 @@ document.write("<a href=\""+idx+"\" target=\"_blank\">Open File<\/a>&nbsp;&nbsp;
 document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_back.png\">&nbsp;&nbsp;");
 document.write("<a href=\"index.html\">Up One Folder<\/a>&nbsp;&nbsp;<wbr>");
 document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_home.png\">&nbsp;&nbsp;");
-document.write("<a href=\"https:\/\/9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com\/host\/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c\/\">Home<\/a>&nbsp;&nbsp;</span></span><br>");
-document.write("<iframe style=\"width:100%; height:95%\" id=\"mediaplayer\" src=\""+idx+"\" frameborder=\"0\" allowfullscreen><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
+document.write("<a href=\"https:\/\/thsconline.github.io\/s\/\">Home<\/a>&nbsp;&nbsp;</span></span><br>");
+document.write("<iframe style=\"width:100%; height:95%\" id=\"mediaplayer\" src=\""+idx+"\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("&nbsp;</div></body></html>");
 
 }
