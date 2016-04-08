@@ -8,7 +8,7 @@ a.innerHTML="Loading Resources. Please wait..."
 link="https://script.google.com/macros/s/AKfycbwsgd6ioZJ_X9usR5f80vH-GjOkqk8NTNMJONDsEM42KAycKD0/exec#sites-chrome-everything-caja-guest-0___"
 setTimeout(function(){window.location=link}, 3000);
 }
-function playmedia(provider,idx,titlex,externalx, tags){
+function lf(titlex,idx, tags){
     var tix=document.title
 document.write("<html><head>");
 document.write("<title>"+tix+" - Now Playing: "+titlex.replace("<i>", "").replace("</i>", "") +"<\/title>");
@@ -21,16 +21,16 @@ document.write("<\/head>");
 document.write("<body>");
 document.write("<div id=\"sites-chrome-everything\">");
 document.write("<span style=\"background-color:rgb(248, 248, 248);width:100%;display:inline-block;\" class=\"goog-tree-item-label\">");
-document.write("<img src=\"https:\/\/9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com\/host\/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c\/_web-assets\/assets-images\/icon_back.png\">&nbsp;&nbsp;");
-document.write("<a href=\""+tags+"\">Exit Video Player<\/a>&nbsp;&nbsp;<wbr><small>Now Playing: "+titlex+"</small>");
+document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_back.png\">&nbsp;&nbsp;");
+document.write("<a href=\""+tags+"\">Exit File Viewer<\/a>&nbsp;&nbsp;<wbr><small><b>File: </b>"+titlex+"</small>");
 document.write("<span style=\"float:right\">");
-document.write("<img src=\"https:\/\/9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com\/host\/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c\/_web-assets\/assets-images\/icon_link.png\">&nbsp;&nbsp;");
-document.write("<a href=\""+externalx+"\" target=\"_blank\">Open in "+provider+"<\/a>&nbsp;&nbsp;<wbr>");
-document.write("<img src=\"https:\/\/9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com\/host\/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c\/_web-assets\/assets-images\/icon_back.png\">&nbsp;&nbsp;");
+document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_pdf2.png\">&nbsp;&nbsp;");
+document.write("<a href=\""+idx+"\" target=\"_blank\">Open File<\/a>&nbsp;&nbsp;<wbr>");
+document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_back.png\">&nbsp;&nbsp;");
 document.write("<a href=\"index.html\">Up One Folder<\/a>&nbsp;&nbsp;<wbr>");
-document.write("<img src=\"https:\/\/9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com\/host\/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c\/_web-assets\/assets-images\/icon_home.png\">&nbsp;&nbsp;");
+document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_home.png\">&nbsp;&nbsp;");
 document.write("<a href=\"https:\/\/9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com\/host\/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c\/\">Home<\/a>&nbsp;&nbsp;</span></span><br>");
-document.write("<iframe style=\"width:100%; height:95%\" id=\"mediaplayer\" src=\""+idx+"\" frameborder=\"0\" allowfullscreen><noscript>&nbsp;Enable Javascript to Load Video<\/noscript><\/iframe>");
+document.write("<iframe style=\"width:100%; height:95%\" id=\"mediaplayer\" src=\""+idx+"\" frameborder=\"0\" allowfullscreen><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("&nbsp;</div></body></html>");
 
 }
@@ -167,7 +167,7 @@ searchbar+="<option value=\"#ui-blank\" class=\"inactive\" selected><\/option>"
 
     document.getElementById("contentall").getElementsByTagName("table")[0].getElementsByTagName("tbody")[0].id="results"
     oput="<tr class=\"source\" id=\""+unescape(queryz)+"\"><td>"
-oput+="<span class=\"title\"><img src=\"https:\/\/9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com\/host\/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c\/_web-assets\/assets-images\/icon_folder.png\">&nbsp;&nbsp;<b>Search: "+unescape(queryz)+"</b></span>"
+oput+="<span class=\"title\"><img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_folder.png\">&nbsp;&nbsp;<b>Search: "+unescape(queryz)+"</b></span>"
 oput+="<span class=\"indent\">"
 }
   for (i = 0; i<linklength;i++)
