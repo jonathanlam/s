@@ -30,7 +30,7 @@ document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_back.
 document.write("<a href=\"index.html\">Up One Folder<\/a>&nbsp;&nbsp;<wbr>");
 document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_home.png\">&nbsp;&nbsp;");
 document.write("<a href=\"https:\/\/thsconline.github.io\/s\/\">Home<\/a>&nbsp;&nbsp;</span></span><br>");
-document.write("<iframe style=\"width:100%; height:95%\" id=\"mediaplayer\" src=\""+idx+"\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
+document.write("<iframe style=\"width:100%; height:93%\" id=\"mediaplayer\" src=\""+idx+"\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("&nbsp;</div></body></html>");
 
 }
