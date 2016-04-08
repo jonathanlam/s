@@ -27,7 +27,7 @@ document.write("<div id=\"sites-chrome-everything\">");
 document.write("<span style=\"background-color:rgb(248, 248, 248);width:100%;display:inline-block;\" class=\"goog-tree-item-label\">");
 document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_back.png\">&nbsp;&nbsp;");
 document.write("<a href=\""+tags+"\">Exit File Viewer<\/a>&nbsp;&nbsp;<span style=\"display:none;\" class=\"nmob\"><br></span><small><b>"+tix.split(" - ")[1]+" </b> - "+titlex+"</small>");
-document.write("<span style=\"float:right\"><span style=\"display:none;\" class=\"smallscreen\"><br></span>");
+document.write("<span style=\"float:right\"><span style=\"display:none;\" class=\"nmob\"><br></span>");
 document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_pdf2.png\">&nbsp;&nbsp;");
 document.write("<a href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download File<\/a>&nbsp;&nbsp;<wbr>");
 document.write("<span class=\"reduciblex\"><img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_back.png\">&nbsp;&nbsp;");
