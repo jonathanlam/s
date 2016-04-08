@@ -22,7 +22,7 @@ document.write("<body>");
 document.write("<div id=\"sites-chrome-everything\">");
 document.write("<span style=\"background-color:rgb(248, 248, 248);width:100%;display:inline-block;\" class=\"goog-tree-item-label\">");
 document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_back.png\">&nbsp;&nbsp;");
-document.write("<a href=\""+tags+"\">Exit File Viewer<\/a>&nbsp;&nbsp;<wbr><small><b>"+tix.split(" - ")+" </b>"+titlex+"</small>");
+document.write("<a href=\""+tags+"\">Exit File Viewer<\/a>&nbsp;&nbsp;<wbr><small><b>"+tix.split(" - ")[1]+" </b>"+titlex+"</small>");
 document.write("<span style=\"float:right\">");
 document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_pdf2.png\">&nbsp;&nbsp;");
 document.write("<a href=\""+idx+"\" target=\"_blank\">Open File<\/a>&nbsp;&nbsp;<wbr>");
