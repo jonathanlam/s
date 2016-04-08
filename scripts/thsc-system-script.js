@@ -29,7 +29,7 @@ document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_back.
 document.write("<a href=\""+tags+"\">Exit File Viewer<\/a>&nbsp;&nbsp;<small><span class=\"nmob\"><b>"+tix.split(" - ")[1]+" </b> - <\/span>"+titlex+"</small>");
 document.write("<span style=\"float:right\">");
 document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_pdf2.png\">&nbsp;&nbsp;");
-document.write("<a class=\"uvs\" href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download File<\/a>&nbsp;&nbsp;<wbr>");
+document.write("<a class=\"uvs\" href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download<span class=\"nmob\"> File<\/span><\/a>&nbsp;&nbsp;<wbr>");
 document.write("<span class=\"reduciblex\"><img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_back.png\">&nbsp;&nbsp;");
 document.write("<a href=\"index.html\">Up One Folder<\/a>&nbsp;&nbsp;<wbr>");
 document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_home.png\">&nbsp;&nbsp;");
