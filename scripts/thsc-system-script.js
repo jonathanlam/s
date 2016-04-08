@@ -8,8 +8,10 @@ a.innerHTML="Loading Resources. Please wait..."
 link="https://script.google.com/macros/s/AKfycbwsgd6ioZJ_X9usR5f80vH-GjOkqk8NTNMJONDsEM42KAycKD0/exec#sites-chrome-everything-caja-guest-0___"
 setTimeout(function(){window.location=link}, 3000);
 }
-function lf(titlex,idx){
+function pdf(input){
 
+var titlex=input.innerHTML;
+var idx=input.id;
 var tags=unescape(location.pathname.substring(location.pathname.lastIndexOf('/')+1));
     var tix=document.title;
 document.write("<html><head>");
@@ -34,7 +36,6 @@ document.write("<img id=\"reduciblex\" src=\"https:\/\/thsconline.github.io\/s\/
 document.write("<a href=\"https:\/\/thsconline.github.io\/s\/\">Home<\/a>&nbsp;&nbsp;</span></span></span><br>");
 document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:100%; height:93%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("</div></body></html>");
-
 }
 function openLink(a)
 {
