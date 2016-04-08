@@ -4184,7 +4184,7 @@ display:inline-block;
 }
        @media screen and (max-width:440px){
       #sites-chrome-adminfooter-container, .nmob {display:none !important;}
-.mob{display:inherit !important;}
+.mob{display:inline-block !important;}
       #contentall {overflow:ellipsis};
       #sites-chrome-everything{min-width:440px !important;}
       body #sites-page-title-header {font-size:18px !important;}
