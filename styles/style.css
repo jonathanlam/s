@@ -4191,6 +4191,8 @@ display:inline-block;
 }
        @media screen and (max-width:360px){
 .uvs {display:none !important;}
+.mob {display:inline !important;}
+
 
 }
    @media screen and (min-width:1080px){
