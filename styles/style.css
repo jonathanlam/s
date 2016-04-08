@@ -4189,7 +4189,7 @@ display:inline-block;
       #sites-chrome-everything{min-width:440px !important;}
       body #sites-page-title-header {font-size:18px !important;}
 }
-       @media screen and (max-width:360px){
+       @media screen and (max-width:390px){
 .uvs {display:none !important;}
 
 }
