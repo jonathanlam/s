@@ -17,7 +17,7 @@ var tags=unescape(location.pathname.substring(location.pathname.lastIndexOf('/')
 document.write("<html><head>");
 document.write("<title>"+tix+" - "+titlex.replace("<i>", "").replace("</i>", "") +"<\/title>");
 document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
-document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\"><link rel=\"shortcut icon\" type=\"image\/x-icon\" href=\"https:\/\/thsconline.github.io\/s\/images\/icon_pdf2.png\">");
+document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\"><link rel=\"shortcut icon\" type=\"image\/x-icon\" href=\"https:\/\/thsconline.github.io\/s\/images\/icon_def.png\">");
 document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"text\/css\">");
 document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/secondary.css\" rel=\"stylesheet\" type=\"text\/css\">");
 document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script>");
@@ -29,7 +29,7 @@ document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_back.
 document.write("<a href=\""+tags+"\">Exit File Viewer<\/a>&nbsp;&nbsp;<small><span class=\"nmob\"><b>"+tix.split(" - ")[1]+" </b> - <\/span>"+titlex+"</small>");
 document.write("<span style=\"float:right\">");
 document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_pdf2.png\">&nbsp;&nbsp;");
-document.write("<a href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download File<\/a>&nbsp;&nbsp;<wbr>");
+document.write("<a class=\"uvs\" href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download File<\/a>&nbsp;&nbsp;<wbr>");
 document.write("<span class=\"reduciblex\"><img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_back.png\">&nbsp;&nbsp;");
 document.write("<a href=\"index.html\">Up One Folder<\/a>&nbsp;&nbsp;<wbr>");
 document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_home.png\">&nbsp;&nbsp;");
