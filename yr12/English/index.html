@@ -1,154 +1,171 @@
-<html><head>
-<title>THSC Online</title>
+<html>
+<head>
+<title>THSC Online - HSC English Resources</title>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-<style>
-body {
-    -webkit-text-size-adjust: none;
-}
-a.button
-{
-    color:white !important;
-}
-ol, ul {
-	list-style: none;
-}
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-*, *::before, *::after {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-body {
-	line-height: 1;
-}
-body, input, textarea, select {
-	font-family: "Source Sans Pro", sans-serif;
-	font-weight: 300;
-	line-height: 1.75em;
-	font-size: 15pt;
-}
-body {
-	position: relative;
-	background-size: 600% 620%;
-    background:-moz-linear-gradient(top, #EEEEFF 5%, #CCCCFF  100%) !important;
-	background:-webkit-linear-gradient(top, #EEEEFF 5%, #CCCCFF  100%) !important;
-	background:-o-linear-gradient(top, #EEEEFF 5%, #CCCCFF  100%) !important;
-	background:-ms-linear-gradient(top, #EEEEFF 5%, #CCCCFF  100%) !important;
-	background:linear-gradient(to bottom, #EEEEFF 5%, #CCCCFF 100%) !important;
-    background-size: 440px 440px,				100% 620%,					auto;
-	background-repeat: repeat,						no-repeat,					no-repeat;
-}
-.homepage #header-wrapper {
-	padding: 10em 0 0 0;
-	background-size: 440px 440px,				100% 100%,					auto;
-}
-section, article {
-	margin-bottom: 3em;
-}
-.container {
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%
-}
-section:last-child, article:last-child {
-	margin-bottom: 0px;
-}
-#hero {
-	position: relative;
-	color: #fff;
-	text-align: center;
-	z-index: 1;
-}
-header {
-	margin-bottom: 1.5em;
-}
-p, ul, ol, dl, table, .features {
-	margin-bottom: 1.5em;
-}
-#hero p {
-	font-size: 1.5em;
-	line-height: 1.5em;
-}
-section > :last-child, article > :last-child {
-	margin-bottom: 0px;
-}
-ul.actions {
-	padding-top: 1em;
-}
-ul.actions li {
-	display: inline-block;
-	margin-left: 1em;
-}
-ul.actions li:first-child {
-	margin-left: 0px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-weight: 300;
-	}
-h2 {
-	font-size: 2em;
-	line-height: 1.25em;
-}
-#hero h2 {
-	color: #fff;
-	font-size: 3em;
-}
-#logo {
-	position: absolute;
-	z-index: 1;
-	top: 0px;
-	text-align:center;
-	width: 15em;
-}
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-	color: inherit;
-	text-decoration: none;
-}
-
-</style>
 <link href="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/_web-assets/style.css" rel="stylesheet" type="text/css">
-<!--[if lt IE 9]><style>div a:hover, div a:active {background:none !important; background-color:none !important; color:#FF5500 !important}
-div a.inactive:hover, div a.inactive:active {background:none !important; background-color:none !important; color:#555555 !important} 
-    body{background-color:#DDDDFF !important;}
-</style><![endif]--><!--[if IE 9]><style>body{background-color:#DDDDFF !important;}</style><![endif]-->
-
+<!--[if lt IE 9]><style>div a:hover, div a:active {background:none !important; background-color:none !important; color:#0000FF !important}
+div a.inactive:hover, div a.inactive:active {background:none !important; background-color:none !important; color:#555555 !important}  
+</style><![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+<script src="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/_web-assets/thsc-system-script.js" type="text/javascript"></script>
+<script src="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/_web-assets/thsc-search.js" type="text/javascript"></script>
 </head>
-<body class="homepage" style="height:100%;style:inline-block;"><div id="skel-layers-wrapper" style="transition:transform 0.5s, opacity 0.5s; left: 0px; top: -100px; right: 0px; position: relative; backface-visibility: hidden;">
+<body onLoad="configure()">
+<div id="sites-chrome-everything">
+<div id="sites-chrome-page-wrapper" style="direction: ltr;">
+<div id="sites-chrome-page-wrapper-inside">
+<div id="sites-chrome-header-wrapper" xmlns="http://www.w3.org/1999/xhtml">
+<table class="sites-layout-hbox" id="sites-chrome-header" cellspacing="0">
+<tbody><tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" role="banner" style="height: 100px;"><div class="sites-header-cell-buffer-wrapper">
+<h2>thsconline</h2></div></td>
+<td class="sites-layout-searchbox"></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td id="sites-chrome-header-horizontal-nav-container" role="navigation" colspan="2">
+<div class="sites-header-nav"><!--[if lt IE 9]><div style="display:none;"> <![endif]--> <ul class="sites-header-nav-container-boxes">
+<li class="unselected lev"><a class="sites-navigation-link unselected lev" href="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/">THSC Home</a></li>
+<li class="unselected"><a class="sites-navigation-link unselected" href="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/Year%2010/">Year 10</a></li>
+<li class="unselected"><a class="sites-navigation-link unselected" href="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/Year%2011%20-%20Preliminary/">Year 11 - Preliminary</a></li>
+<li class="current lev"><a class="sites-navigation-link current lev" href="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/Year%2012%20-%20HSC/">Year 12 - HSC</a></li>
+<li class="unselected reducible"><a class="sites-navigation-link unselected" href="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/uploader.html">Upload File</a></li>
+<li class="unselected reducible"><a class="sites-navigation-link unselected" href="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/feedback.html">Feedback</a></li>
+<li class="unselected"><a class="sites-navigation-link unselected" href="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/links.html">Links</a></li>
+</ul><!--[if lt IE 9]></div>
+<style>.sites-header-nav {border:none !important;} </style>
+<div style="padding-left:15px;" class="folder-path-container goog-container" id="navie">
+<span style="float:left;" class="folder-path-folder folder-path-element lev"><a class="nofill" href="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/">THSC Home</a></span>
+<span style="float:left;" class="separate lev"></span>
+<span style="float:left;" class="folder-path-folder folder-path-element"><a class="nofill" href="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/Year%2010/">Year 10</a></span>
+<span style="float:left;" class="separate"></span>
+<span style="float:left;" class="folder-path-folder folder-path-element"><a class="nofill" href="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/Year%2011%20-%20Preliminary/">Year 11 - Preliminary</a></span>
+<span style="float:left;" class="separate"></span>
+<span style="float:left;" class="folder-path-folder folder-current-element lev"><a class="nofill" href="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/Year%2012%20-%20HSC/">Year 12 - HSC</a></span>
+<span style="float:left;" class="separate"></span>
+<span style="float:left;" class="folder-path-folder folder-path-element reducible"><a class="nofill" href="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/uploader.html">Upload File</a></span>
+<span style="float:left;" class="separate reducible"></span>
+<span style="float:left;" class="folder-path-folder folder-path-element reducible"><a class="nofill" href="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/feedback.html">Feedback</a></span>
+<span style="float:left;" class="separate reducible"></span>
+<span style="float:left;" class="folder-path-folder folder-path-element"><a class="nofill" href="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/links.html">Links</a></span>
+</div><br><br>
+<![endif]-->
+<div style="padding-left:15px;" class="folder-path-container goog-container">
+<span style="float:left;" class="folder-path-folder folder-path-element"><a class="nofill" href="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/">thsconline</a></span>
+<span style="float:left;" class="folder-path-separator-icon"></span>
+<span style="float:left;" class="folder-path-folder folder-path-element">
+<a class="nofill" href="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/Year 12 - HSC/">Year 12 - HSC</a></span>
+<span style="float:left;" class="folder-path-separator-icon"></span>
+<span style="float:left;" class="folder-path-folder folder-current-element">
+<a class="nofill" href="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/Year 12 - HSC/English/">English</a></span>
+<span style="float:right;" class="reduciblex folder-path-folder folder-path-element">
+<a class="nofill" href="../">[<i>Up One Folder</i>]</a></span>
+<span style="float:right;" class="reduciblex folder-reverse-separator-icon"></span> 
+</div>
+</div>
+</td>
+</tr>
+</tbody></table> 
+</div>
+<div id="heading">
+<h3 align="left" id="sites-page-title-header" xmlns="http://www.w3.org/1999/xhtml">
+<span id="sites-page-title" dir="ltr">HSC English Resources</span>
+</h3></div>
+<div id="sites-chrome-main-wrapper">
+<div class="sites-canvas-main" id="sites-canvas-main">
+<div id="sites-canvas-main-content" style="background-color:rgb(248, 248, 248);width:100%">
+<table class="sites-layout-name-one-column sites-layout-hbox" cellspacing="0" xmlns="http://www.w3.org/1999/xhtml"><tbody><tr>
+<td class="sites-layout-tile sites-tile-name-content-1" id="CONTENT LEFT">
+<div dir="ltr" id="contentall">
+<div id="web-list">
+<div class="table" style="display:inline-block;"><div class="tr"><div class="td">
+<div class="smallscreen" style="display:none;">
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/_web-assets/assets-images/icon_home.png">&nbsp;&nbsp;
+<a href="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/">Home Page</a></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label"><img src="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/_web-assets/assets-images/icon_back.png">&nbsp;&nbsp;
+<a href="../">Back to Year 12 - HSC</a></span><br>
+  <span style="width:100%;display:inline-block;" class="goog-tree-item-label">&nbsp;</span><br>
+</div>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label">
+<img src="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/_web-assets/assets-images/icon_zip.png">&nbsp;&nbsp;
+<a href="https://29f5c8dc04ac430dd91cfa96f3eb045c7d17b78e.googledrive.com/host/0B5it9pUWofR0SVNuRWVaejdZZ0E/English/English 2001-07 HSC.zip">English 2001-07 HSC</a><br>
+<span style="padding-left:29px;color:#777777;text-decoration:none;">paper, markers notes</span></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label">
+<img src="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/_web-assets/assets-images/icon_zip.png">&nbsp;&nbsp;
+<a href="https://29f5c8dc04ac430dd91cfa96f3eb045c7d17b78e.googledrive.com/host/0B5it9pUWofR0SVNuRWVaejdZZ0E/English/English 2008 HSC.zip">English 2008 HSC</a><br>
+<span style="padding-left:29px;color:#777777;text-decoration:none;">paper, markers notes</span></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label">
+<img src="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/_web-assets/assets-images/icon_zip.png">&nbsp;&nbsp;
+<a href="https://29f5c8dc04ac430dd91cfa96f3eb045c7d17b78e.googledrive.com/host/0B5it9pUWofR0SVNuRWVaejdZZ0E/English/English 2009 HSC.zip">English 2009 HSC</a><br>
+<span style="padding-left:29px;color:#777777;text-decoration:none;">paper, markers notes</span></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label">
+<img src="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/_web-assets/assets-images/icon_zip.png">&nbsp;&nbsp;
+<a href="https://29f5c8dc04ac430dd91cfa96f3eb045c7d17b78e.googledrive.com/host/0B5it9pUWofR0SVNuRWVaejdZZ0E/English/English 2010 HSC.zip">English 2010 HSC</a><br>
+<span style="padding-left:29px;color:#777777;text-decoration:none;">paper, markers notes</span></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label">
+<img src="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/_web-assets/assets-images/icon_zip.png">&nbsp;&nbsp;
+<a href="https://29f5c8dc04ac430dd91cfa96f3eb045c7d17b78e.googledrive.com/host/0B5it9pUWofR0SVNuRWVaejdZZ0E/English/English 2011 HSC.zip">English 2011 HSC</a><br>
+<span style="padding-left:29px;color:#777777;text-decoration:none;">paper, markers notes</span></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label">
+<img src="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/_web-assets/assets-images/icon_zip.png">&nbsp;&nbsp;
+<a href="https://29f5c8dc04ac430dd91cfa96f3eb045c7d17b78e.googledrive.com/host/0B5it9pUWofR0SVNuRWVaejdZZ0E/English/English 2012 HSC.zip">English 2012 HSC</a><br>
+<span style="padding-left:29px;color:#777777;text-decoration:none;">paper, markers notes</span></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label">
+<img src="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/_web-assets/assets-images/icon_zip.png">&nbsp;&nbsp;
+<a href="https://29f5c8dc04ac430dd91cfa96f3eb045c7d17b78e.googledrive.com/host/0B5it9pUWofR0SVNuRWVaejdZZ0E/English/English 2013 HSC.zip">English 2013 HSC</a><br>
+<span style="padding-left:29px;color:#777777;text-decoration:none;">paper, markers notes</span></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label">
+<img src="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/_web-assets/assets-images/icon_zip.png">&nbsp;&nbsp;
+<a href="https://29f5c8dc04ac430dd91cfa96f3eb045c7d17b78e.googledrive.com/host/0B5it9pUWofR0SVNuRWVaejdZZ0E/English/English 2014 HSC.zip">English 2014 HSC</a><br>
+<span style="padding-left:29px;color:#777777;text-decoration:none;">paper, markers notes</span></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label">&nbsp;</span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label">
+<img src="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/_web-assets/assets-images/icon_folder.png">&nbsp;&nbsp;
+<a href="trialpapers_paper1_aos_belonging.html">English Trial Paper 1 (AOS Belonging)</a><br>
+<span style="padding-left:29px;color:#777777;text-decoration:none;">46 papers online + 3 papers from older AOS</span></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label">
+<img src="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/_web-assets/assets-images/icon_folder.png">&nbsp;&nbsp;
+<a href="trialpapers_paper1_aos_discovery.html">English Trial Paper 1 (AOS Discovery)</a><br>
+<span style="padding-left:29px;color:#777777;text-decoration:none;">5 papers online + 22 additional practice resources</span></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label">
+<img src="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/_web-assets/assets-images/icon_folder.png">&nbsp;&nbsp;
+<a href="trialpapers_paper2_advanced.html">English Trial Paper 2 Advanced</a><br>
+<span style="padding-left:29px;color:#777777;text-decoration:none;">37 papers online + 1 additional practice resource</span></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label">
+<img src="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/_web-assets/assets-images/icon_folder.png">&nbsp;&nbsp;
+<a href="trialpapers_paper2_standard.html">English Trial Paper 2 Standard</a><br>
+<span style="padding-left:29px;color:#777777;text-decoration:none;">1 paper online</span></span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label">&nbsp;</span><br>
+<span style="width:100%;display:inline-block;" class="goog-tree-item-label">
+<img src="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/_web-assets/assets-images/icon_link.png">&nbsp;&nbsp;
+<a href="../../access-point.html?serve=0B7qqLL1dQjASQmt3dWt5bFZKYXc">English Additional Resources Access Point</a><br>
+<span style="padding-left:29px;color:#777777;text-decoration:none;">To request access this resource: Upload File or complete <a href="https://docs.google.com/forms/d/1amA5SNt9yw_Kxs2EboiSpTGFFhUj1l2KKB0X2Jydsa8/viewform" target="_blank">this form</a></span></span><br>
+</div></div></div>  
+</div>
+</div>
+</td>
+</tr></tbody></table>
+</div> &nbsp;
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div id="sites-attachments-container">
+</div>
+</div>
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
 
-					<div id="header-wrapper">
-
-									<section class="container" id="hero">
-									<!--[if lt IE 9]></section><div class="container" id="hero"><![endif]-->
-						<header>
-							<h2>thsconline
-							<br>
-							</h2>
-						</header>
-						<p style="color:#FF5500"><b>Important Notice: </b>
-Whoops... This section has not been migrated.
-</p>
-						<ul class="actions">
-						<!--[if lt IE 8]><li>&nbsp;</li><![endif]-->
-						<li><img src="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/_web-assets/assets-images/icon_link.png">&nbsp;&nbsp;<a href="https://0bfa7b9e5d12951351aaf066c88c9d066a1b5f60.googledrive.com/host/0ByEFYhkkDQBKTkprSnEzMDNwQ1k/English/">Continue to Backup</a></li> 
-					
-                       
-	
-</ul>
-													<!--[if lt IE 9]></div><section><![endif]-->	</section>
-
-			</div>
-
-		
-</div></body>
-</html>
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div class="sites-adminfooter" role="navigation" xmlns="http://www.w3.org/1999/xhtml">
+<a href="https://9eeba4054ee764a743f35bb25b5f907e66151207.googledrive.com/host/0ByEFYhkkDQBKUmxzb0Q4MEswQ3c/sitemap.html">View Sitemap</a><br>
+<p><span class="sites-system-link">Hosted on <b class="powered-by">Google Drive</b> HTML Template created from <b class="powered-by">Google Sites</b></span></p></div>
+</div>
+</div>
+</body></html>
