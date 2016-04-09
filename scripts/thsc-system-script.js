@@ -36,6 +36,34 @@ document.write("<a class=\"uvs\" href=\"https:\/\/thsconline.github.io\/s\/\">Ho
 document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:100%; height:92%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("</div></body></html>"); 
 }
+function zip(input){
+
+var titlex=input.innerHTML;
+var idx=input.id;
+var tags=unescape(location.pathname.substring(location.pathname.lastIndexOf('/')+1));
+    var tix=document.title;
+document.write("<html><head>");
+document.write("<title>"+tix+" - "+titlex.replace("<i>", "").replace("</i>", "") +"<\/title>");
+document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
+document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\"><link rel=\"shortcut icon\" type=\"image\/x-icon\" href=\"https:\/\/thsconline.github.io\/s\/images\/icon_def.png\">");
+document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"text\/css\">");
+document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/secondary.css\" rel=\"stylesheet\" type=\"text\/css\">");
+document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script>");
+document.write("<\/head>");
+document.write("<body>");
+document.write("<div id=\"sites-chrome-everything\">");
+document.write("<span style=\"background-color:rgb(248, 248, 248);width:100%;display:inline-block;\" class=\"goog-tree-item-label\">");
+document.write("<small><span class=\"nmob\"><b>"+tix.split(" - ")[1]+" </b> - <\/span>"+titlex+"</small>");
+document.write("<span style=\"float:right\">");
+document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_back.png\">&nbsp;&nbsp;");
+document.write("<a href=\""+tags+"\">Exit File Viewer<\/a>&nbsp;&nbsp;")
+document.write("<span class=\"uvs\"><img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_zip.png\">&nbsp;&nbsp;");
+document.write("<a class=\"uvs\" href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download<span class=\"nmob\"> File<\/span><\/a>&nbsp;&nbsp;<wbr>");
+document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_home.png\">&nbsp;&nbsp;");
+document.write("<a class=\"uvs\" href=\"https:\/\/thsconline.github.io\/s\/\">Home<\/a>&nbsp;&nbsp;</span></span></span><br>");
+document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:100%; height:92%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
+document.write("</div></body></html>"); 
+}
 function openLink(a)
 {
 link="https://script.google.com/macros/s/AKfycbz-COYLMfNV3VGUv4V8zxY_vboQ8UaajJkMynva2lFX-yCla48/exec?"+a+"#sites-chrome-everything-caja-guest-0___"
