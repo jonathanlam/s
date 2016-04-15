@@ -231,24 +231,6 @@ thislink.onClick="return false;"
 
 thislink.className="inactive"
 }
-else
-{
-idx=thislink.id;
-parente=thislink.parentElement;
-console.log(parente.className);
- if (idx==parente.lastElementChild.id){console.log(valuex + " last of group")}
-else
-{
-mw=thislink.nextElementSibling;
-mw.style.display="none";
-mw.innerHTML="";
-}
- var txt = "";
-//thislink.innerHTML="";
-//thislink.style.display="none";
-
-//console.log(valuex+" removed");
-}
 
 
 }
@@ -271,8 +253,15 @@ searchbar+="</select><div class=\"goog-inline-block\" id=\"sites-searchbox-butto
 
   if (queryx=="?search")
 {
-ax=document.getElementById("results").innerHTML;
-    document.getElementById("results").innerHTML=ax+oput+"<\/span><\/td><\/tr>"
+if (queryz=="w.%20sol")
+{
+
+}
+else
+{
+document.getElementById("results").innerHTML;
+    document.getElementById("results").innerHTML=oput+"<\/span><\/td><\/tr>"
+}
 }
 
 object=document.getElementsByClassName("sites-layout-searchbox")[0]
