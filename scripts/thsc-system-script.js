@@ -239,7 +239,7 @@ console.log(parente.className);
 if (idx==parente.lastElementChild.id){console.log(valuex + "last of group")}
 else
 {
-mbreak=obj.nextElementSibling;
+mbreak=thislink.nextElementSibling;
 //parente.removeChild(mbreak)
 }
 document.removeChild(thislink);
@@ -291,7 +291,7 @@ object.innerHTML=searchbar;
       $(selector).chosen(config[selector]);
     }
 }
-catch (err){}
+catch (err){console.log(err)}
 try
 {
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
