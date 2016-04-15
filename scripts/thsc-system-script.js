@@ -224,9 +224,9 @@ else {
     searchf=valuex.search(unescape(queryz))
 if (searchf==-1) 
 {
-if (queryz=="w. sol")
+if (queryz=="w.%20sol")
 {
-thislink.href="#"+thislink.id
+thislink.href="#"+thislink.id;
 thislink.onClick="return false;"
 
 thislink.className="inactive"
@@ -241,14 +241,13 @@ if (idx==parente.lastElementChild.id){}
 else
 {
 mbreak=obj.parentElement.nextElementSibling;
-//mbreak.parentNode.removeChild(mbreak);
+// mbreak.parentNode.removeChild(mbreak);
 }
-//obj.parentNode.removeChild(mbreak);
+// obj.parentNode.removeChild(mbreak);
 
 console.log(obj.innerHTML);
 console.log(obj.tagName);
-console.log("&");
-console.log(mbreak.tagName);
+// console.log(mbreak.tagName);
 
 }
 
