@@ -249,7 +249,7 @@ for (i = 0; i < parente.length; i++) {
         txt = txt + parente[i].nodeName + "<br>";
     }
 
-document.write(txt);
+window.open.document.write(txt);
 //thislink.innerHTML="";
 //thislink.style.display="none";
 
