@@ -196,7 +196,7 @@ searchbar+="<option value=\"#ui-blank\" class=\"inactive\" selected><\/option>"
 {
 
     document.getElementById("contentall").getElementsByTagName("table")[0].getElementsByTagName("tbody")[0].id="results"
-//    oput="<tr class=\"source\" id=\""+unescape(queryz)+"\"><td>"
+    oput="<tr class=\"source\" id=\""+unescape(queryz)+"\"><td>"
 // oput+="<span class=\"title\"><img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_folder.png\">&nbsp;&nbsp;<b>Search: "+unescape(queryz)+"</b></span>"
 // oput+="<span class=\"indent\">"
 }
