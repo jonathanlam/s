@@ -273,7 +273,8 @@ searchbar+="</select><div class=\"goog-inline-block\" id=\"sites-searchbox-butto
 
   if (queryx=="?search")
 {
-    document.getElementById("results").innerHTML=oput+"<\/span><\/td><\/tr>"
+x=document.getElementById("results").innerHTML
+    document.getElementById("results").innerHTML=x+oput+"<\/span><\/td><\/tr>"
 }
 
 object=document.getElementsByClassName("sites-layout-searchbox")[0]
