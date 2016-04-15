@@ -224,8 +224,10 @@ else {
     searchf=valuex.search(unescape(queryz))
 if (searchf==-1) 
 {
-thislink.href="return false;"
-thislink.class="inactive"
+thislink.href="#"+thislink.id
+thislink.onClick="return false;"
+
+thislink.className="inactive"
 }
 else
 {
