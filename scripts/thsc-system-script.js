@@ -233,7 +233,7 @@ thislink.className="inactive"
 }
 else
 {
-idx=thisLink.id
+idx=thislink.id
 obj=document.getElementById(idx);
 parente=obj.parentElement
 if (idx==parente.lastElementChild.id){}
