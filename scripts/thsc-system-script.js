@@ -303,7 +303,7 @@ alert(slides[i].id)
 if (slides[i].id!=idx)
 {
  slides[i].style.display="none";
-alert("X")
+
 }
 }
 
@@ -311,6 +311,6 @@ x=document.getElementById(idx).style.display;
 if(x=='none' || typeof x == "undefined"){y='inline'} 
 else {y='none'} 
 document.getElementById(idx).style.display=y;
-alert(x)
+alert(y)
 
 }
