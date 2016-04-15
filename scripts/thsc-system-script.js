@@ -236,7 +236,7 @@ else
 idx=thisLink.id
 obj=document.getElementById(idx);
 parente=obj.parentElement
-if (obj==parente.lastChild){}
+if (idx==parente.lastElementChild.id){}
 else
 {
 mbreak=obj.parentElement.nextElementSibling;
