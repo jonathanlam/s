@@ -291,7 +291,7 @@ object.innerHTML=searchbar;
       $(selector).chosen(config[selector]);
     }
 }
-catch (err){}
+catch (err){alert(err)}
 try
 {
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
