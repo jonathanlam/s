@@ -241,7 +241,7 @@ if (idx==parente.lastElementChild.id){}
 else
 {
 mbreak=obj.nextElementSibling;
-parente.removeChild(mbreak)
+//parente.removeChild(mbreak)
 }
 parente.removeChild(obj);
 
