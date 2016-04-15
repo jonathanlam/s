@@ -4157,6 +4157,7 @@ color:#555555 !important;;
 }
 @media screen and (max-width:780px){
    .reduciblex {display:none;}
+.reduciblexoverride{display:none !important;}
       .smallscreen {display:inherit !important;}
       body #sites-page-title-header {font-size:22px !important;}
       body #sites-chrome-everything h4 {font-size:15px !important;}
