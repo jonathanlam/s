@@ -235,13 +235,14 @@ else
 {
 idx=thislink.id;
 obj=document.getElementById(idx);
+console.log(idx);
 parente=thislink.parentElement;
 console.log(parente.className);
-if (idx==parente.lastElementChild.id){console.log(valuex + "last of group")}
+if (idx==parente.lastElementChild.id){console.log(valuex + " last of group")}
 else
 {
 mbreak=thislink.nextElementSibling;
-//parente.removeChild(mbreak)
+parente.removeChild(mbreak)
 }
 parente.removeChild(obj);
 
@@ -255,8 +256,6 @@ console.log(obj.tagName);
 }
 else
 {
-
-console.log(valuex)
 searchbar+="<option value='"+hrefx+"'>"+valuex+"<\/option>"
 oput+="<a href='"+hrefx+"'>"+valuex+"<\/a><br>";
 }
