@@ -224,10 +224,31 @@ else {
     searchf=valuex.search(unescape(queryz))
 if (searchf==-1) 
 {
+if (queryz=="w.%20sol")
+{
 thislink.href="#"+thislink.id
 thislink.onClick="return false;"
 
 thislink.className="inactive"
+}
+else
+{
+idx=thisLink.id
+obj=document.getElementById(idx);
+parente=obj.parentElement
+if (obj==parente.lastChild){}
+else
+{
+mbreak=obj.parentElement.nextElementSibling;
+mbreak.parentNode.removeChild(mbreak);
+}
+obj.parentNode.removeChild(mbreak);
+
+
+
+}
+
+
 }
 else
 {
