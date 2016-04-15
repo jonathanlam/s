@@ -237,7 +237,7 @@ idx=thislink.id;
 obj=document.getElementById(idx);
 parente=obj.parentElement;
 console.log(parente.className);
-mbreak=parente.nextElementSibling;
+mbreak=obj.nextElementSibling;
 h=mbreak.tagName || "ABR"
 if (h=="BR"){mbreak.id="break-"+idx;
 n=document.getElementById(mbreak.id);
