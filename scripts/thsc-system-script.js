@@ -293,7 +293,7 @@ break;
 
 }
 
-function popupx(id)
+function popupx(idx)
 {
 var slides = document.getElementsByClassName("popups");
 for(var i = 0; i < slides.length; i++)
@@ -301,10 +301,11 @@ for(var i = 0; i < slides.length; i++)
 if (slides[i].id!=id)
 {
  slides[i].style.display="none";
+alert(slides[i].id)
 }
 }
 
-x=document.getElementById(id).style.display; if(x=='none'){y='inline'} else {y='none'} document.getElementById(id).style.display=y;
+x=document.getElementById(idx).style.display; if(x=='none'){y='inline'} else {y='none'} document.getElementById(idx).style.display=y;
 
 
 }
