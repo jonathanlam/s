@@ -243,7 +243,6 @@ mw=thislink.nextElementSibling;
 mw.style.display="none";
 mw.innerHTML="";
 }
-document.write(parente.c
 for (i = 0; i < parente.length; i++) {
         txt = txt + parente[i].nodeName + "<br>";
     }
