@@ -250,10 +250,10 @@ for (i = 0; i < parente.length; i++) {
     }
 
 document.write(txt);
-thislink.innerHTML="";
-thislink.style.display="none";
+//thislink.innerHTML="";
+//thislink.style.display="none";
 
-console.log(valuex+" removed");
+//console.log(valuex+" removed");
 searchfx="#";
 }
 
