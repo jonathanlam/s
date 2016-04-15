@@ -221,8 +221,8 @@ else {
 {
 
     
-    searchf=valuex.search(unescape(queryz))
-if (searchf==-1) 
+    searchfx=valuex.search(unescape(queryz))
+if (searchfx==-1) 
 {
 if (queryz=="w.%20sol")
 {
@@ -249,7 +249,7 @@ parente.removeChild(obja);
 console.log(valuex+" removed");
 console.log(obja.tagName);
 
-searchf="#";
+searchfx="#";
 }
 
 
