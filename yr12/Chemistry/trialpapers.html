@@ -91,9 +91,10 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
 <a href="index.html">Up One Folder</a></span><br>
 <br>
 </div>
-<div class="folder-path-container goog-container">
+<div class="folder-path-container goog-container" class="reduciblex">
 <span class="goog-inline-block folder-path-folder folder-path-element">
-Show results by year:&nbsp;&nbsp;<br>
+<a class="nofill" href="#ui-blank" onClick="x=document.getElementById('yearlist').style.display; if(x=='none'){x=='inline-block'} else {x=='none'} document.getElementById('yearlist').style.display=x;">Search by Year</a>&nbsp;&nbsp;
+<span id="yearlist" style="display:none;">
 <a class="nofill" href="trialpapers.html">Show All</a>&nbsp;&nbsp;
 <a class="nofill" href="trialpapers.html?search=2001">2001</a>&nbsp;&nbsp;
 <a class="nofill" href="trialpapers.html?search=2002">2002</a>&nbsp;&nbsp;
@@ -112,6 +113,7 @@ Show results by year:&nbsp;&nbsp;<br>
 <a class="nofill" href="trialpapers.html?search=2013">2013</a>&nbsp;&nbsp;
 <a class="nofill inactive" href="trialpapers.html?search=2014" onClick="return false">2014</a>&nbsp;&nbsp;
 <a class="nofill inactive" href="trialpapers.html?search=2015" onClick="return false">2015</a>&nbsp;&nbsp;
+</span>
 </span>
 </div>
 <table style="width:100%"><tbody>
