@@ -303,11 +303,14 @@ alert(slides[i].id)
 if (slides[i].id!=idx)
 {
  slides[i].style.display="none";
-
+alert(*)
 }
 }
 
-x=document.getElementById(idx).style.display; if(x=='none'){y='inline'} else {y='none'} document.getElementById(idx).style.display=y;
+x=document.getElementById(idx).style.display; 
+if(x=='none'){y='inline'} 
+else {y='none'} 
+document.getElementById(idx).style.display=y;
 alert(x)
 
 }
