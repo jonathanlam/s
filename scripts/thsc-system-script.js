@@ -308,7 +308,7 @@ alert(*)
 }
 
 x=document.getElementById(idx).style.display; 
-if(x=='none'){y='inline'} 
+if(x=='none' || typeof x == "undefined"){y='inline'} 
 else {y='none'} 
 document.getElementById(idx).style.display=y;
 alert(x)
