@@ -238,8 +238,8 @@ obj=document.getElementById(idx);
 parente=obj.parentElement;
 console.log(parente.className);
 mbreak=parente.nextElementSibling;
-
-if (mbreak.tagName=="BR"){mbreak.id="break-"+idx;
+h=mbreak.tagName || "ABR"
+if (h=="BR"){mbreak.id="break-"+idx;
 n=document.getElementById(mbreak.id);
 
 parente.removeChild(n)};
