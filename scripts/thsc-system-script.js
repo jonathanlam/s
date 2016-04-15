@@ -197,8 +197,8 @@ searchbar+="<option value=\"#ui-blank\" class=\"inactive\" selected><\/option>"
 
     document.getElementById("contentall").getElementsByTagName("table")[0].getElementsByTagName("tbody")[0].id="results"
     oput="<tr class=\"source\" id=\""+unescape(queryz)+"\"><td>"
-// oput+="<span class=\"title\"><img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_folder.png\">&nbsp;&nbsp;<b>Search: "+unescape(queryz)+"</b></span>"
-// oput+="<span class=\"indent\">"
+oput+="<span class=\"title\"><img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_folder.png\">&nbsp;&nbsp;<b>Search: "+unescape(queryz)+"</b></span>"
+oput+="<span class=\"indent\">"
 }
   for (i = 0; i<linklength;i++)
 {
@@ -273,8 +273,8 @@ searchbar+="</select><div class=\"goog-inline-block\" id=\"sites-searchbox-butto
 
   if (queryx=="?search")
 {
-x=document.getElementById("results").innerHTML
-    document.getElementById("results").innerHTML=x+oput+"<\/span><\/td><\/tr>"
+ax=document.getElementById("results").innerHTML;
+    document.getElementById("results").innerHTML=ax+oput+"<\/span><\/td><\/tr>"
 }
 
 object=document.getElementsByClassName("sites-layout-searchbox")[0]
