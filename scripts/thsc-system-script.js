@@ -293,6 +293,7 @@ break;
 
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 function popupx(idx)
 {
@@ -315,5 +316,7 @@ document.getElementById(idx).style.display=y;
 alert(y)
 
 }
+=======
+>>>>>>> parent of 794a949... Update script
 =======
 >>>>>>> parent of 794a949... Update script
