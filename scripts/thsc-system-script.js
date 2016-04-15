@@ -235,14 +235,14 @@ else
 {
 idx=thislink.id;
 obj=document.getElementById(idx);
-parente=obj.parentElement
+parente=obj.parentElement;
 if (idx==parente.lastElementChild.id){}
 else
 {
 mbreak=obj.parentElement.nextElementSibling;
-mbreak.parentNode.removeChild(mbreak);
+//mbreak.parentNode.removeChild(mbreak);
 }
-obj.parentNode.removeChild(mbreak);
+//obj.parentNode.removeChild(mbreak);
 
 console.log(obj.innerHTML);
 console.log(obj.tagName);
