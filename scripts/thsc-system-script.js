@@ -295,6 +295,7 @@ break;
 
 function popupx(idx)
 {
+alert(idx)
 var slides = document.getElementsByClassName("popups");
 for(var i = 0; i < slides.length; i++)
 {
@@ -307,6 +308,6 @@ if (slides[i].id!=idx)
 }
 
 x=document.getElementById(idx).style.display; if(x=='none'){y='inline'} else {y='none'} document.getElementById(idx).style.display=y;
-
+alert(x)
 
 }
