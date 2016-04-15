@@ -298,10 +298,11 @@ function popupx(idx)
 var slides = document.getElementsByClassName("popups");
 for(var i = 0; i < slides.length; i++)
 {
-if (slides[i].id!=id)
+alert(slides[i].id)
+if (slides[i].id!=idx)
 {
  slides[i].style.display="none";
-alert(slides[i].id)
+
 }
 }
 
