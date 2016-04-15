@@ -243,7 +243,7 @@ else
 mbreak=thislink.nextElementSibling;
 //parente.removeChild(mbreak)
 }
-parente.removeChild(thislink);
+parente.removeChild(obj);
 
 console.log(valuex+" removed");
 console.log(obj.tagName);
