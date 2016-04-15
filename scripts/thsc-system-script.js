@@ -224,7 +224,7 @@ else {
     searchf=valuex.search(unescape(queryz))
 if (searchf==-1) 
 {
-if (queryz=="w.%20sol")
+if (queryz=="w. sol")
 {
 thislink.href="#"+thislink.id
 thislink.onClick="return false;"
@@ -233,7 +233,7 @@ thislink.className="inactive"
 }
 else
 {
-idx=thislink.id
+idx=thislink.id;
 obj=document.getElementById(idx);
 parente=obj.parentElement
 if (idx==parente.lastElementChild.id){}
