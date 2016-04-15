@@ -242,7 +242,7 @@ mbreak=obj.parentElement.nextElementSibling;
 
 // obj.parentNode.removeChild(mbreak);
 
-console.log(valuex+" not"
+console.log(valuex+" not");
 console.log(obj.tagName);
 // console.log(mbreak.tagName);
 
