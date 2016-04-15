@@ -234,17 +234,15 @@ thislink.className="inactive"
 else
 {
 idx=thislink.id;
-obja=document.getElementById(idx);
-console.log(idx);
 parente=thislink.parentElement;
 console.log(parente.className);
-if (idx==parente.lastElementChild.id){console.log(valuex + " last of group")}
+ if (idx==parente.lastElementChild.id){console.log(valuex + " last of group")}
 else
 {
 mw=thislink.nextElementSibling;
 mw.style.display="none";
 }
-obja.style.display="none";
+thislink.style.display="none";
 
 console.log(valuex+" removed");
 console.log(obja.tagName);
