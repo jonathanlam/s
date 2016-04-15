@@ -244,12 +244,6 @@ mw.style.display="none";
 mw.innerHTML="";
 }
  var txt = "";
-
-for (i = 0; i < parente.length; i++) {
-        txt = txt + parente[i].nodeName + "<br>";
-    }
-
-console.log(txt);
 //thislink.innerHTML="";
 //thislink.style.display="none";
 
