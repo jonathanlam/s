@@ -242,9 +242,9 @@ if (idx==parente.lastElementChild.id){console.log(valuex + " last of group")}
 else
 {
 mw=thislink.nextElementSibling;
-parente.removeChild(mw);
+mw.style.display="none";
 }
-parente.removeChild(obja);
+obja.style.display="none";
 
 console.log(valuex+" removed");
 console.log(obja.tagName);
