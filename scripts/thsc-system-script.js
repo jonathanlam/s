@@ -237,13 +237,12 @@ idx=thislink.id;
 obj=document.getElementById(idx);
 parente=obj.parentElement;
 console.log(parente.className);
+if (obj==parente.lastChild){}
+else
+{
 mbreak=obj.nextElementSibling;
-h=mbreak.tagName || "ABR"
-if (h=="BR"){mbreak.id="break-"+idx;
-n=document.getElementById(mbreak.id);
-
-parente.removeChild(n)};
-parente.removeChild(mbreak);
+parente.removeChild(mbreak)}
+parente.removeChild(obj);
 
 console.log(valuex+" removed");
 console.log(obj.tagName);
