@@ -249,7 +249,7 @@ parente.removeChild(obja);
 console.log(valuex+" removed");
 console.log(obja.tagName);
 
-
+searchf="#";
 }
 
 
