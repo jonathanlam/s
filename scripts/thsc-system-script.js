@@ -292,3 +292,16 @@ break;
 }
 
 }
+
+function popup(id)
+{
+var slides = document.getElementsByClassName("popup");
+for(var i = 0; i < slides.length; i++)
+{
+ slides[i].style.display="none";
+}
+
+x=document.getElementById(id).style.display; if(x=='none'){y='inline'} else {y='none'} document.getElementById(id).style.display=y;
+
+
+}
