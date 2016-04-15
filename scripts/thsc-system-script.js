@@ -234,6 +234,7 @@ thislink.className="inactive"
 else
 {
 idx=thislink.id;
+obj=document.getElementById(idx);
 parente=thislink.parentElement;
 console.log(parente.className);
 if (idx==parente.lastElementChild.id){console.log(valuex + "last of group")}
@@ -242,7 +243,7 @@ else
 mbreak=thislink.nextElementSibling;
 //parente.removeChild(mbreak)
 }
-document.removeChild(thislink);
+parente.removeChild(thislink);
 
 console.log(valuex+" removed");
 console.log(obj.tagName);
