@@ -244,7 +244,10 @@ mbreak.parentNode.removeChild(mbreak);
 }
 obj.parentNode.removeChild(mbreak);
 
-
+console.log(obj.innerHTML);
+console.log(obj.tagName);
+console.log("&");
+console.log(mbreak.tagName);
 
 }
 
