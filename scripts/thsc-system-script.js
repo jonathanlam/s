@@ -293,12 +293,15 @@ break;
 
 }
 
-function popup(id)
+function popupx(id)
 {
-var slides = document.getElementsByClassName("popup");
+var slides = document.getElementsByClassName("popups");
 for(var i = 0; i < slides.length; i++)
 {
+if (slides[i].id!=id)
+{
  slides[i].style.display="none";
+}
 }
 
 x=document.getElementById(id).style.display; if(x=='none'){y='inline'} else {y='none'} document.getElementById(id).style.display=y;
