@@ -236,7 +236,8 @@ else
 idx=thislink.id;
 obj=document.getElementById(idx);
 parente=obj.parentElement;
-mbreak=obj.parentElement.nextElementSibling;
+console.log(parente.className);
+mbreak=parente.nextElementSibling;
 
 if (mbreak.tagName=="BR"){mbreak.id="break-"+idx;
 n=document.getElementById(mbreak.id);
