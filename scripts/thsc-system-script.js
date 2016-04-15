@@ -234,17 +234,17 @@ thislink.className="inactive"
 else
 {
 idx=thislink.id;
-obj=document.getElementById(idx);
+obja=document.getElementById(idx);
 console.log(idx);
 parente=thislink.parentElement;
 console.log(parente.className);
 if (idx==parente.lastElementChild.id){console.log(valuex + " last of group")}
 else
 {
-mbreak=thislink.nextElementSibling;
-parente.removeChild(mbreak)
+mw=thislink.nextElementSibling;
+parente.removeChild(mw);
 }
-parente.removeChild(obj);
+parente.removeChild(obja);
 
 console.log(valuex+" removed");
 console.log(obj.tagName);
@@ -273,7 +273,7 @@ searchbar+="</select><div class=\"goog-inline-block\" id=\"sites-searchbox-butto
 
   if (queryx=="?search")
 {
-    // document.getElementById("results").innerHTML=oput+"<\/span><\/td><\/tr>"
+    document.getElementById("results").innerHTML=oput+"<\/span><\/td><\/tr>"
 }
 
 object=document.getElementsByClassName("sites-layout-searchbox")[0]
