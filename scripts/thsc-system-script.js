@@ -303,7 +303,7 @@ alert(slides[i].id)
 if (slides[i].id!=idx)
 {
  slides[i].style.display="none";
-alert(*)
+alert("X")
 }
 }
 
