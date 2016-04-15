@@ -224,6 +224,7 @@ else {
     searchf=valuex.search(unescape(queryz))
 if (searchf==-1) 
 {
+thislink.parentElement.removeChild(thislink);
 }
 else
 {
@@ -246,7 +247,7 @@ searchbar+="</select><div class=\"goog-inline-block\" id=\"sites-searchbox-butto
 
   if (queryx=="?search")
 {
-    document.getElementById("results").innerHTML=oput+"<\/span><\/td><\/tr>"
+    // document.getElementById("results").innerHTML=oput+"<\/span><\/td><\/tr>"
 }
 
 object=document.getElementsByClassName("sites-layout-searchbox")[0]
