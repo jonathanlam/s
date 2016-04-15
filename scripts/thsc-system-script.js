@@ -254,7 +254,6 @@ document.write(txt);
 //thislink.style.display="none";
 
 //console.log(valuex+" removed");
-searchfx="#";
 }
 
 
