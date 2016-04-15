@@ -260,7 +260,6 @@ console.log(txt);
 }
 else
 {
-console.log("VALUE ADDED: "+valuex)
 searchbar+="<option value='"+hrefx+"'>"+valuex+"<\/option>"
 oput+="<a href='"+hrefx+"'>"+valuex+"<\/a><br>";
 }
