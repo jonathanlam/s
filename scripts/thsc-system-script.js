@@ -234,17 +234,14 @@ thislink.className="inactive"
 else
 {
 idx=thislink.id;
-console.log(idx);
 obj=document.getElementById(idx);
 parente=obj.parentElement;
 mbreak=obj.parentElement.nextElementSibling;
-// mbreak.parentNode.removeChild(mbreak);
-
-// obj.parentNode.removeChild(mbreak);
-
-console.log(valuex+" not");
+if (mbreak.tagName=="BR"){mbreak.parentNode.removeChild(mbreak)};
+obj.parentNode.removeChild(mbreak);
+console.log(valuex+" removed");
 console.log(obj.tagName);
-// console.log(mbreak.tagName);
+
 
 }
 
