@@ -234,6 +234,7 @@ thislink.className="inactive"
 else
 {
 idx=thislink.id;
+console.log(idx);
 obj=document.getElementById(idx);
 parente=obj.parentElement;
 if (idx==parente.lastElementChild.id){}
