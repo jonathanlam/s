@@ -241,9 +241,10 @@ else
 {
 mw=thislink.nextElementSibling;
 mw.style.display="none";
-mw.parentElement.removeChild(thislink);
+mw.innerHTML="";
 }
-thislink.parentElement.removeChild(thislink);
+thislink.innerHTML="";
+thislink.style.display="none";
 
 console.log(valuex+" removed");
 searchfx="#";
