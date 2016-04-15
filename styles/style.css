@@ -3600,6 +3600,13 @@ a.nofill:hover, a.nofill:active {
 cursor: pointer; 
 }
 
+ 
+
+a.nofill.inactive:hover, a.nofill.inactive:active {
+	background: none !important; 
+color: rgb(153, 153, 153)  !important; 
+cursor: pointer; 
+}
 
 
 a:hover, a:active, .chosen-container .chosen-results li.highlighted, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover  
