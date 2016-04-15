@@ -242,7 +242,8 @@ else
 {
 mbreak=obj.nextElementSibling;
 console.log(mbreak.innerHTML)
-//parente.removeChild(mbreak)}
+//parente.removeChild(mbreak)
+}
 // parente.removeChild(obj);
 
 console.log(valuex+" removed");
@@ -292,7 +293,7 @@ object.innerHTML=searchbar;
       $(selector).chosen(config[selector]);
     }
 }
-catch (err){alert(err)}
+catch (err){}
 try
 {
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
