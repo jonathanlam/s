@@ -292,31 +292,3 @@ break;
 }
 
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-function popupx(idx)
-{
-alert(idx)
-var slides = document.getElementsByClassName("popups");
-for(var i = 0; i < slides.length; i++)
-{
-alert(slides[i].id)
-if (slides[i].id!=idx)
-{
- slides[i].style.display="none";
-
-}
-}
-
-x=document.getElementById(idx).style.display; 
-if(x=='none' || typeof x == "undefined"){y='inline-block';} 
-else {y='none'} 
-document.getElementById(idx).style.display=y;
-alert(y)
-
-}
-=======
->>>>>>> parent of 794a949... Update script
-=======
->>>>>>> parent of 794a949... Update script
