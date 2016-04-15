@@ -241,9 +241,9 @@ else
 {
 mw=thislink.nextElementSibling;
 mw.style.display="none";
-console.log(mw.tagName)
+mw.parentElement.removeChild(thislink);
 }
-thislink.style.display="none";
+thislink.parentElement.removeChild(thislink);
 
 console.log(valuex+" removed");
 searchfx="#";
