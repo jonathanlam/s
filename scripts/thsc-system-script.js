@@ -224,7 +224,8 @@ else {
     searchf=valuex.search(unescape(queryz))
 if (searchf==-1) 
 {
-thislink.style.display="none";
+thislink.href="return false;"
+thislink.class="inactive"
 }
 else
 {
