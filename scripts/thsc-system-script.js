@@ -241,10 +241,9 @@ if (idx==parente.lastElementChild.id){}
 else
 {
 mbreak=obj.nextElementSibling;
-console.log(mbreak.innerHTML)
-//parente.removeChild(mbreak)
+parente.removeChild(mbreak)
 }
-// parente.removeChild(obj);
+parente.removeChild(obj);
 
 console.log(valuex+" removed");
 console.log(obj.tagName);
