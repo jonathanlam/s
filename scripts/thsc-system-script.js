@@ -308,7 +308,7 @@ if (slides[i].id!=idx)
 }
 
 x=document.getElementById(idx).style.display; 
-if(x=='none' || typeof x == "undefined"){y='inline'} 
+if(x=='none' || typeof x == "undefined"){y='inline-block';} 
 else {y='none'} 
 document.getElementById(idx).style.display=y;
 alert(y)
