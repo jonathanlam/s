@@ -60,10 +60,10 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
 <span style="float:left;" class="folder-path-folder folder-current-element">
 <a class="nofill" href="https://thsconline.github.io/s/yr12/Chemistry/trialpapers.html">Past Trials</a></span>
 <span style="float:right;" class="reduciblex folder-path-folder folder-path-element">
-<a class="nofill" href="index.html" onClick="var x=document.getElementById('tree').style.display; if(x=='none'){y='inline'} else {y='none'} document.getElementById('tree').style.display=y;return false;">[<i>Up One Folder</i>]</a></span>
+<a class="nofill" href="index.html" onClick="bar('tree');returnfalse">[<i>Up One Folder</i>]</a></span>
 <span style="float:right;" class="reduciblex folder-reverse-separator-icon"></span> 
 <span style="float:right;" class="reduciblexoverride folder-path-folder folder-path-element">
-<a class="nofill" href="#ui-blank" onClick="var x=document.getElementById('searchbarx').style.display; if(x=='none'){y='inline'} else {y='none'} document.getElementById('searchbarx').style.display=y;">[<i>Search</i>]</a></span>
+<a class="nofill" href="#ui-blank" onClick="bar('searchbarx');returnfalse">[<i>Search</i>]</a></span>
 <span style="float:right;" class="reduciblexoverride folder-reverse-separator-icon"></span> 
 </div>
 </div>
@@ -71,9 +71,9 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
 </tr>
 </tbody></table> 
 </div>
-<div id="searchbarx" class="folder-path-container goog-container" style="display:none;z-index:1000;float:right;border-radius:5px;background-color:#D8D8D8;x-overflow:scroll;">
+<span id="searchbarx" class="overlaybar folder-path-container goog-container" style="display:none;z-index:1000;float:right;border-radius:5px;background-color:#D8D8D8;x-overflow:scroll;">
 <span class="folder-path-folder folder-path-element">
-<span style="float:right;">&nbsp;&nbsp;<a class="nofill" href="#ui-blank" onClick="x=document.getElementById('searchbarx').style.display; if(x=='none'){y='inline'} else {y='none'} document.getElementById('searchbar').style.display=y;">[&#215;]</a>&nbsp;&nbsp;</span>
+<span style="float:right;">&nbsp;&nbsp;<a class="nofill" href="#ui-blank" onClick="document.getElementById('searchbar').style.display='none';">[&#215;]</a>&nbsp;&nbsp;</span>
 <b>Search by year:</b><br>
 <a class="nofill" href="trialpapers.html">Show All</a>&nbsp;&nbsp;
 <a class="nofill" href="trialpapers.html?search=2001">2001</a>&nbsp;&nbsp;
@@ -92,9 +92,9 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
 <a class="nofill inactive" href="trialpapers.html?search=2014" onClick="return false">2014</a>&nbsp;&nbsp;
 <a class="nofill inactive" href="trialpapers.html?search=2015" onClick="return false">2015</a>&nbsp;&nbsp;
 </span></span>
-<span id="tree" class="folder-path-container goog-container" style="display:none;z-index:1000;float:right;border-radius:5px;background-color:#D8D8D8;x-overflow:scroll;">
+<span id="tree" class="overlaybar folder-path-container goog-container" style="display:none;z-index:1000;float:right;border-radius:5px;background-color:#D8D8D8;x-overflow:scroll;">
 <span class="folder-path-folder folder-path-element">
-<span style="float:right;">&nbsp;&nbsp;<a class="nofill" href="#ui-blank" onClick="x=document.getElementById('tree').style.display; if(x=='none'){y='inline'} else {y='none'} document.getElementById('searchbar').style.display=y;">[&#215;]</a>&nbsp;&nbsp;</span>
+<span style="float:right;">&nbsp;&nbsp;<a class="nofill" href="#ui-blank" onClick="document.getElementById('tree').style.display='none'">[&#215;]</a>&nbsp;&nbsp;</span>
 <b>Folder Tree:</b><br>
 <img src="https://thsconline.github.io/s/images/icon_home.png">&nbsp;&nbsp;<a class="nofill" href="https://thsconline.github.io/s/">Home Page</a><br>
 <img src="https://thsconline.github.io/s/images/icon_back.png">&nbsp;&nbsp;<a class="nofill" href="../">Back to Year 12 - HSC</a><br>

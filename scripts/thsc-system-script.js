@@ -292,3 +292,14 @@ break;
 }
 
 }
+
+function bar(z)
+{
+var slides = document.getElementsByClassName("overlaybar");
+for(var i = 0; i < slides.length; i++)
+{
+ if(slides[i].id!=z){slides[i].style.display='none'}
+}
+
+x=document.getElementById(z).style.display; if(x=='none'){y='inline-block'} else {y='none'} document.getElementById(z).style.display=y;
+}
