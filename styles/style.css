@@ -3651,7 +3651,7 @@ background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #000
 background: linear-gradient(rgb(0, 0, 255) 5%, rgb(0, 170, 255) 100%) rgb(0, 0, 255) !important; 
 	border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;
 }
-div#heading, div.popupbar {
+div#heading, .popupbar {
 	background: white !important; padding: 0px 50px !important;
 }
 .nav:hover {
