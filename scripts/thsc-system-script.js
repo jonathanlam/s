@@ -247,7 +247,7 @@ parente.removeChild(mw);
 parente.removeChild(obja);
 
 console.log(valuex+" removed");
-console.log(obj.tagName);
+console.log(obja.tagName);
 
 
 }
