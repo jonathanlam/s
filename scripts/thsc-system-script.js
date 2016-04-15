@@ -241,12 +241,11 @@ else
 {
 mw=thislink.nextElementSibling;
 mw.style.display="none";
+console.log(mw.tagName)
 }
 thislink.style.display="none";
 
 console.log(valuex+" removed");
-console.log(obja.tagName);
-
 searchfx="#";
 }
 
