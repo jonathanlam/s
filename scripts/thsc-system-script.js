@@ -234,7 +234,7 @@ thislink.className="inactive"
 else
 {
 idx=thislink.id;
-parente=thisLink.parentElement;
+parente=thislink.parentElement;
 console.log(parente.className);
 if (idx==parente.lastElementChild.id){console.log(valuex + "last of group")}
 else
