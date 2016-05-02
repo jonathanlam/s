@@ -55,11 +55,11 @@ document.write("<div id=\"sites-chrome-everything\">");
 document.write("<span class=\"overlaybar folder-path-container goog-container\">");
 document.write("<span class=\"overlayinsert folder-path-folder folder-path-element\" style=\"width:100%;border-radius:5px;background-color:#D8D8D8;\">");
 document.write("<span class=\"nmob\"><b>"+tix.split(" - ")[1]+" </b> - <\/span>"+titlex);
-document.write("<span style=\"float:right;\">&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">[&#215;]<\/a>&nbsp;&nbsp;");
+document.write("<span style=\"float:right;\">");
 document.write("<span class=\"uvs\"><img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_zip.png\">&nbsp;&nbsp;");
 document.write("<a class=\"nofill uvs\" href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download<span class=\"nmob\"> File<\/span><\/a>&nbsp;&nbsp;<wbr>");
 document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_home.png\">&nbsp;&nbsp;");
-document.write("<a class=\"nofill uvs\" href=\"https:\/\/thsconline.github.io\/s\/\">Home<\/a>&nbsp;&nbsp;</span></span></span></span><br>");
+document.write("<a class=\"nofill uvs\" href=\"https:\/\/thsconline.github.io\/s\/\">Home<\/a>&nbsp;&nbsp;</span></span></span></span>&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">[&#215;]<\/a>&nbsp;&nbsp;<br>");
 document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:100%; height:92%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("</div></body></html>"); 
 }
