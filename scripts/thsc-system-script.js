@@ -14,7 +14,7 @@ var idx=input.id;
 var tags=unescape(location.pathname.substring(location.pathname.lastIndexOf('/')+1));
 var tix=document.title;
 var myurl = document.location;
-document.location=myurl+"?view-pdf="+idx;
+document.location="#view-pdf"+idx;
 document.write("<html><head>");
 document.write("<title>"+tix+" - "+titlex.replace("<i>", "").replace("</i>", "") +"<\/title>");
 document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
