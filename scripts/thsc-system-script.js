@@ -51,15 +51,14 @@ document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/secondar
 document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script>");
 document.write("<\/head>");
 document.write("<body>");
-document.write("<div id=\"sites-chrome-everything\">");
-document.write("<span class=\"overlaybar folder-path-container goog-container\">");
-document.write("<span class=\"overlayinsert folder-path-folder folder-path-element\" style=\"width:100%;border-radius:5px;background-color:#D8D8D8;\">");
+document.write("<span class=\"overlaybar folder-path-container goog-container\" style=\"width:100%;border-radius:5px;background-color:#D8D8D8;z-index:1000px;position:absolute;top:2px;\">");
+document.write("<span class=\"overlayinsert folder-path-folder folder-path-element\">");
 document.write("<span class=\"nmob\"><b>"+tix.split(" - ")[1]+" </b> - <\/span>"+titlex);
 document.write("<span style=\"float:right;\">");
 document.write("<span class=\"uvs\"><a class=\"nofill uvs\" href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download<\/a>&nbsp;&nbsp;<wbr>");
 document.write("<a class=\"nofill uvs\" href=\"https:\/\/thsconline.github.io\/s\/\">Home<\/a>&nbsp;&nbsp;</span>&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">[&#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
 document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:100%; height:92%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
-document.write("</div></body></html>"); 
+document.write("</body></html>"); 
 }
 function openLink(a)
 {
