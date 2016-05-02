@@ -52,7 +52,10 @@ document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\
 document.write("<\/head>");
 document.write("<body>");
 document.write("<div id=\"sites-chrome-everything\">");
-document.write("<span style=\"background-color:rgb(248, 248, 248);width:100%;display:inline-block;\" class=\"goog-tree-item-label\">");
+document.write("<span class=\"overlaybar folder-path-container goog-container\">")
+document.write("<span class=\"overlayinsert folder-path-folder folder-path-element\" style=\"border-radius:5px;background-color:#D8D8D8;\">
+document.write("<span style=\"float:right;\">&nbsp;&nbsp;<a class=\"nofill\" href=\"#ui-blank\">[&#215;]<\/a>&nbsp;&nbsp;</span>");
+document.write("</span></span><span style=\"background-color:rgb(248, 248, 248);width:100%;display:inline-block;\" class=\"goog-tree-item-label\">");
 document.write("<small><span class=\"nmob\"><b>"+tix.split(" - ")[1]+" </b> - <\/span>"+titlex+"</small>");
 document.write("<span style=\"float:right\">");
 document.write("<img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_back.png\">&nbsp;&nbsp;");
