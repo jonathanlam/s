@@ -10,7 +10,7 @@ var tix=document.title;
 
 var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
 if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
-if(version>9){} else {input.onclick="return true"; input.click(); return;}}
+if(version>9){} else {input.onclick=function(){return true}; input.click(); return;}}
 
 
 var myurl = document.location;
@@ -40,7 +40,7 @@ var tix=document.title;
 
 var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
 if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
-if(version>9){} else {input.onclick="return true"; input.click(); return;}}
+if(version>9){} else {input.onclick=function(){return true}; input.click(); return;}}
 
 document.write("<html><head>");
 document.write("<title>"+tix+" - "+titlex.replace("<i>", "").replace("</i>", "") +"<\/title>");
