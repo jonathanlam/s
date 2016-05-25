@@ -5,7 +5,7 @@ String.prototype.capitalize = function(){
 function pdf(input){
 var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
 if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
-if(version>9){} else {return input.href}
+if(version>9){} else {return true}
 }
 
 
@@ -35,7 +35,7 @@ document.write("</body></html>");
 function zip(input){
 var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
 if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
-if(version>9){} else {return input.href}
+if(version>9){} else {return true}
 }
 
 var titlex=input.innerHTML;
