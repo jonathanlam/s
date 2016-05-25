@@ -2,13 +2,14 @@ String.prototype.capitalize = function(){
        return this.replace( /(^|\s)([a-z])/g , function(m,p1,p2){ return p1+p2.toUpperCase(); } );
       }
 
-function launchuploader(a)
-{
-a.innerHTML="Loading Resources. Please wait..."
-link="https://script.google.com/macros/s/AKfycbwsgd6ioZJ_X9usR5f80vH-GjOkqk8NTNMJONDsEM42KAycKD0/exec#sites-chrome-everything-caja-guest-0___"
-setTimeout(function(){window.location=link}, 3000);
-}
 function pdf(input){
+var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
+if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
+if(version>9){}
+else {return true}
+
+
+
 var titlex=input.innerHTML;
 var idx=input.id;
 var tags=unescape(location.pathname.substring(location.pathname.lastIndexOf('/')+1));
@@ -33,6 +34,10 @@ document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe
 document.write("</body></html>"); 
 }
 function zip(input){
+var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
+if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
+if(version>9){}
+else {return true}
 
 var titlex=input.innerHTML;
 var idx=input.id;
