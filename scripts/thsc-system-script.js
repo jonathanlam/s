@@ -1,6 +1,7 @@
 String.prototype.capitalize = function(){
        return this.replace( /(^|\s)([a-z])/g , function(m,p1,p2){ return p1+p2.toUpperCase(); } );
       }
+Object.prototype.insertAfter = function (newNode) { this.parentNode.insertBefore(newNode, this.nextSibling); } 
 
 function pdf(input){
 var titlex=input.innerHTML;
@@ -10,8 +11,8 @@ var tix=document.title;
 
 var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
 if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
-if(version>9){} else {input.onclick=function(){return true}; document.getElementById(idx).click();return true;
-input.parentNode.insertBefore("<span class=\"new\">File Loaded<\/span>", input.nextSibling);
+if(version>9){} else {input.onclick=function(){return true}; document.getElementById(idx).click();
+input.insertAfter("<span class=\"new\">File Loaded<\/span>");return true;
 
 }}
 
@@ -43,8 +44,10 @@ var tix=document.title;
 
 var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
 if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
-if(version>9){} else {input.onclick=function(){return true}; document.getElementById(idx).click();return true;}}
+if(version>9){} else {input.onclick=function(){return true}; document.getElementById(idx).click();
+input.insertAfter("<span class=\"new\">File Loaded<\/span>");return true;
 
+}}
 document.write("<html><head>");
 document.write("<title>"+tix+" - "+titlex.replace("<i>", "").replace("</i>", "") +"<\/title>");
 document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
