@@ -3,16 +3,16 @@ String.prototype.capitalize = function(){
       }
 
 function pdf(input){
-var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
-if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
-if(version>9){} else {return false}
-}
-
-
 var titlex=input.innerHTML;
 var idx=input.id;
 var tags=unescape(location.pathname.substring(location.pathname.lastIndexOf('/')+1));
 var tix=document.title;
+
+var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
+if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
+if(version>9){} else {input.onclick="return true"; input.click(); return;}}
+
+
 var myurl = document.location;
 document.write("<html><head>");
 document.write("<title>"+tix+" - "+titlex.replace("<i>", "").replace("</i>", "") +"<\/title>");
@@ -33,15 +33,15 @@ document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe
 document.write("</body></html>"); 
 }
 function zip(input){
-var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
-if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
-if(version>9){} else {return false}
-}
-
 var titlex=input.innerHTML;
 var idx=input.id;
 var tags=unescape(location.pathname.substring(location.pathname.lastIndexOf('/')+1));
-    var tix=document.title;
+var tix=document.title;
+
+var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
+if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
+if(version>9){} else {input.onclick="return true"; input.click(); return;}}
+
 document.write("<html><head>");
 document.write("<title>"+tix+" - "+titlex.replace("<i>", "").replace("</i>", "") +"<\/title>");
 document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
