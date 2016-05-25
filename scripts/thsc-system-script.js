@@ -11,7 +11,9 @@ var tix=document.title;
 var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
 if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
 if(version>9){} else {input.onclick=function(){return true}; document.getElementById(idx).click();
-input.insertAdjacentHTML("afterend", "<span class=\"new\">File Loaded<\/span>");return true;
+input.insertAdjacentHTML("afterend", "<span class=\"new\">File Loaded<\/span>");
+input.insertAdjacentHTML("afterend", "<span class=\"new\">File Loaded<\/span>");
+return true;
 
 
 }}
