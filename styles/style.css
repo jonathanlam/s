@@ -3609,8 +3609,7 @@ cursor: pointer;
 }
 
 
-.c-ItemTile:hover .folder.nofill {
-background: none !important;
+.c-ItemTile:hover .nofill {
 background-color:#555555 important;
 color:white !important;
 cursor: pointer; 
