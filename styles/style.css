@@ -3602,9 +3602,16 @@ cursor: pointer;
 
  
 
-a.nofill.inactive:hover, a.nofill.inactive:active, .c-ItemTile:hover .folder.nofill {
+a.nofill.inactive:hover, a.nofill.inactive:active, {
 	background: none !important; 
 color: rgb(153, 153, 153)  !important; 
+cursor: pointer; 
+}
+
+
+.c-ItemTile:hover .folder.nofill {
+background-color:#55555 important;
+color:white !important;
 cursor: pointer; 
 }
 
