@@ -3609,11 +3609,7 @@ cursor: pointer;
 }
 
 
-.c-ItemTile:hover .nofill, .c-ItemTile:active .nofill {
-background-color:#555555 important;
-color:white !important;
-cursor: pointer; 
-}
+
 
 
 a:hover, a:active, .chosen-container .chosen-results li.highlighted, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover  
@@ -4050,6 +4046,11 @@ background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #555
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#555555', endColorstr='#AAAAAA',GradientType=0) !important	
 background: linear-gradient(#555555 5%, #AAAAAA 100%) #555555 !important; 
 color:white !important;
+}
+.c-ItemTile:hover .nofillx, .c-ItemTile:active .nofillx {
+background-color:#CCCCFF !important;
+color:white !important;
+cursor: pointer; 
 }
 .c-ItemTile:hover
 {
