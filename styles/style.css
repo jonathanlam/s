@@ -4052,6 +4052,11 @@ background-color:#CCCCFF !important;
 color:white !important;
 cursor: pointer; 
 }
+.c-ItemTile .current.nofillx {
+background-color:#0000FF !important;
+color:white !important;
+cursor: pointer; 
+}
 .c-ItemTile:hover
 {
 background-color:#DDDDDD !important;  
