@@ -4154,6 +4154,7 @@ color:#555555 !important;;
  @media screen and (max-width:1090px){
    .reducible {display: none !important;}
 .reduciblexoverride{display:none !important;}
+      .redx {display:inherit !important;}
 }
  @media screen and (max-width:960px){
   /* Nothing needed at the moment */
