@@ -35,7 +35,7 @@ document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix.split(" - ")[1]+" </b>
 document.write("<span style=\"float:right;\">");
 document.write("<a class=\"nofill\" href=\"https://thsconline.github.io/s/"+idx+".html\" target=\"_blank\">Open in New Window<\/a>&nbsp;&nbsp;");
 document.write("&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">[&#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
-document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:100%; height:92%;\" height=\"92%\" id=\"mediaplayer\" src=\"https://thsconline.github.io/s/"+idx+".html\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
+document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:97%; height:92%;\" height=\"92%\" id=\"mediaplayer\" src=\"https://thsconline.github.io/s/"+idx+".html\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("</body></html>"); 
 }
 function pdf(input){
@@ -72,7 +72,7 @@ document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix.split(" - ")[1]+" </b>
 document.write("<span style=\"float:right;\">");
 document.write("<a class=\"nofill\" href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
 document.write("&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">[&#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
-document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:100%; height:92%;\" height=\"92%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
+document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:97%; height:92%;\" height=\"92%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("</body></html>"); 
 }
 function zip(input){
@@ -106,7 +106,7 @@ document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix.split(" - ")[1]+" </b>
 document.write("<span style=\"float:right;\">");
 document.write("<a class=\"nofill\" href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download Zip<\/a>&nbsp;&nbsp;");
 document.write("&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">[&#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
-document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:100%; height:92%\" height=\"92%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
+document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:97%; height:92%\" height=\"92%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("</body></html>"); 
 }
 function openLink(a)
