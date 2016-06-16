@@ -3558,7 +3558,8 @@ a:link {
 text-decoration: none !important; cursor: pointer; 
 }
 h3{
-	color: #222 !important; text-decoration: none !important;
+	color: #FF5500 !important; text-decoration: none !important;
+font-weight:none !important;
 }
 a:link {
 	color: rgb(41, 140, 202); text-decoration: none !important;
