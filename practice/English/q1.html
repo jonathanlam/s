@@ -5,11 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <script>
+function loadx()
+{
 try
 {
 if(window.self != window.top){document.getElementById("sx").style.display="none";}
 }
 catch (err){document.getElementById("s").style.display="none"};
+}
 </script>
 <!--[if lt IE 9]><style>div a:hover, div a:active {background:none !important; background-color:none !important; color:#FF5500 !important}
 div a.inactive:hover, div a.inactive:active {background:none !important; background-color:none !important; color:#555555 !important} 
@@ -17,7 +20,7 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
 <style>body{margin:10% auto 0;width:78%;max-width:90%;min-height:180px;padding:30px 0 15px}* > body{background:#FAFAFA;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:#FAFAFA;margin-top:0;max-width:none;padding-right:0}}</style>
 
 </head>
-<body style="margin-left:10%;margin-top:10%">
+<body style="margin-left:10%;margin-top:10%" onLoad="loadx()">
 <link href="https://thsconline.github.io/s/styles/style.css" rel="stylesheet" type="text/css">
 <div id="sx">
 <h2>thsconline</h2>
