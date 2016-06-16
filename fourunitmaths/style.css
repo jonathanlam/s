@@ -3614,7 +3614,7 @@ cursor: pointer;
 
 a:hover, a:active, .chosen-container .chosen-results li.highlighted, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover  
 {
-color: #FF5500 !important;text-decoration:underline; cursor: pointer;
+color: #FF5500 !important;text-decoration:underline !important; cursor: pointer;
 }
 .unselected {
 	border-radius: 5px; -webkit-border-radius: 5px;
