@@ -1,4 +1,8 @@
-* p
+h2
+{
+font-size:20px;
+}
+* p, h3, div
 {
 font-size:14px;
 }
@@ -2941,10 +2945,10 @@ body {
 	border-bottom-color: rgb(204, 204, 204);
 }
 #sites-chrome-everything h2 {
-	font: 600 19px/normal "Open Sans", sans-serif; padding: 14px 0px 0px; color: rgb(34, 34, 34); font-size-adjust: none; font-stretch: normal;
+	font: 600 20px/normal "Open Sans", sans-serif; padding: 14px 0px 0px; color: rgb(34, 34, 34); font-size-adjust: none; font-stretch: normal;
 }
 #sites-chrome-everything h3 {
-	font: 600 17px/normal "Open Sans", sans-serif; padding: 12px 0px 0px; color: rgb(34, 34, 34); font-size-adjust: none; font-stretch: normal;
+	font: 600 15px/normal "Open Sans", sans-serif; padding: 12px 0px 0px; color: rgb(34, 34, 34); font-size-adjust: none; font-stretch: normal; font-weight: none;
 }
 #sites-chrome-everything h4 {
 	font: 600 15px/normal "Open Sans", sans-serif; padding: 10px 0px 0px; color: rgb(34, 34, 34); font-size-adjust: none; font-stretch: normal;

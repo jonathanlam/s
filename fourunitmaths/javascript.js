@@ -77,35 +77,7 @@ function openLink(a)
 link="https://script.google.com/macros/s/AKfycbz-COYLMfNV3VGUv4V8zxY_vboQ8UaajJkMynva2lFX-yCla48/exec?"+a+"#sites-chrome-everything-caja-guest-0___"
 window.open(link,"_blank","toolbar=no, titlebar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=400, height=270");
 }
-function getdir()
-{
-var f = window.location+""
-var g = f.split("/")
-var h= "THSC Home // "
-for (i=5; i<g.length;i++)
-{
-if (g[i]=="" || g[i]=="webdir.html"){}
-else{
-h += unescape(g[i])+" // "
-}
-}
-h+="<br>"
-document.getElementById("heading").innerHTML=h;
-k=g[g.length-2]
-document.title="THSC Online - Directory of " + unescape(k);
-}
-function getnode()
-{
-var g=window.location+"";
-g=g.split("\/");
-g=g[g.length-3] + " - "+ g[g.length-2];
-g=unescape(g)
-g=g.capitalize(g)
-g=g.replace("2U", "Maths");
-g=g.replace("3U", "Maths Ext 1");
-g=g.replace("4U", "Maths Ext 2");
-document.title="THSC Online - " + g || "THSC Online";
-}
+
 function spider(a)
 {
 var link=a.innerHTML+"/";
@@ -205,7 +177,11 @@ searchbar+="<option value=\"#ui-blank\" class=\"inactive\" selected><\/option>"
 
     document.getElementById("contentall").getElementsByTagName("table")[0].getElementsByTagName("tbody")[0].id="results"
     oput="<tr class=\"source\" id=\""+unescape(queryz)+"\"><td>"
-oput+="<span class=\"title\"><img src=\"https:\/\/thsconline.github.io\/s\/images\/icon_folder.png\">&nbsp;&nbsp;<b>Search: "+unescape(queryz)+"</b></span>"
+if(unescape(queryz)=="w. sol"){oput+="<span class=\"title\"><img src=\"images\/icon_folder.png\">&nbsp;&nbsp;<b>Files with Solutions</b></span>"}
+else
+{
+oput+="<span class=\"title\"><img src=\"images\/icon_folder.png\">&nbsp;&nbsp;<b>"+unescape(queryz)+"</b></span>"
+}
 oput+="<span class=\"indent\">"
 }
   for (i = 0; i<linklength;i++)
@@ -214,7 +190,7 @@ thislink= anchors[i]
 valuex=thislink.innerHTML;
 hrefx=thislink.href;
 classx=thislink.className;
-if(classx!="" || classx=="x" || valuex=="View Sitemap" || valuex=="Back to Year 12 - HSC" || valuex=="Back to Year 11 - Preliminary" || valuex=="Back to Year 10"  || valuex=="Up One Folder" || valuex=="Home Page" || valuex=="Access Point for Shared Resources" || valuex=="Back")
+if(classx!="" || classx=="x" || valuex=="View Sitemap" || valuex=="Back"  || valuex=="Up One Folder" || valuex=="Home Page" || valuex=="Access Point for Shared Resources" || valuex=="Back")
 {
 if (classx=="inactive"){ searchbar+="<option value=\"#ui-blank\" disabled>"+valuex+"<\/option>" }
 if (classx=="nav x"){ searchbar+="<option value=\"#ui-blank\" disabled>"+valuex+"<\/option>" }
@@ -303,7 +279,7 @@ catch (err){var je=""}
 try
 {
     
-h=je+g+"<img src="http://www4.tpgi.com.au/cgi-bin/Count.cgi?df=nanahcub_1.dat&dd=E" complete="true" /><br><br><br><br><br><br><br><br><br><br><script type=\"text\/javascript\" src=\"https://dbinbox.com\/embed.js\"><\/script>"
+h=je+g+"<img src=\"http://www4.tpgi.com.au/cgi-bin/Count.cgi?df=nanahcub_1.dat&dd=E\" complete=\"true\" />"
 
 
 
