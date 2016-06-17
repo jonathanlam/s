@@ -3617,14 +3617,14 @@ cursor: pointer;
 }
 
 
-a:hover, a:active, .chosen-container .chosen-results li.highlighted, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover  
+a:hover, a:active, a.unselected:hover, a.unselected:active, .chosen-container .chosen-results li.highlighted, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover  
 {
-color: #FF5500 !important;text-decoration:underline !important; cursor: pointer;
+color: #FF5500 !important;text-decoration:underline !important; cursor: pointer; background-color:none !important;
 }
 .unselected {
 	border-radius: 5px; -webkit-border-radius: 5px;
 }
-.unselected:hover, .unselected:active
+li.unselected:hover, li.unselected:active
 {
 background-color:#FF5500 !important;  
 background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #FF5500), color-stop(1, #FFAA00)) !important;
@@ -3636,7 +3636,12 @@ background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #FF5
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF5500 ', endColorstr='#FFAA00 ',GradientType=0) !important	
 background: linear-gradient(rgb(0, 0, 255) 5%, rgb(0, 170, 255) 100%) rgb(0, 0, 255) !important; 
 }
-.current 
+
+a:hover, a:active, a.unselected:hover, a.unselected:active, .chosen-container .chosen-results li.highlighted, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover  
+{
+color: #FF5500 !important;text-decoration:underline !important; cursor: pointer; background-color:none !important;
+}
+li.current 
 {
 background-color:#FF5500 !important;  
 background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #FF5500), color-stop(1, #FFAA00)) !important;
@@ -3660,7 +3665,7 @@ div#heading, .popupbar {
 {
 cursor: pointer;
 }
-.unselected:hover {
+li.unselected:hover {
 background-color:#FF5500 !important;  
 
 background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #FF5500), color-stop(1, #FFAA00)) !important;
