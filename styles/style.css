@@ -3669,7 +3669,7 @@ div#heading, .popupbar {
 {
 cursor: pointer;
 }
-.unselected:hover {
+li.unselected:hover {
 background-color:#0000FF !important;  
 
 background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0000FF), color-stop(1, #00AAFF)) !important;
