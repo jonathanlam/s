@@ -3453,7 +3453,7 @@ body .goog-ws-list-oobe-box .goog-ws-list-oobe-box-inside {
 	padding: 10px 0px 8px 5px;
 }
 #sites-chrome-header .sites-header-nav {
-	margin: 0px 45px; padding: 0px; font-size: 12px; border-bottom-color: rgba(0, 0, 0, 0.08); border-bottom-width: 1px; border-bottom-style: solid;
+	margin: 0px 45px; padding: 0px; font-size: 12px; /* border-bottom-color: rgba(0, 0, 0, 0.08); border-bottom-width: 1px; border-bottom-style: solid; */
 }
 .sites-mobile #sites-chrome-header .sites-header-nav {
 	margin: 0px 0.6em;
