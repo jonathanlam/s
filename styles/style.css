@@ -3664,7 +3664,7 @@ background: linear-gradient(rgb(0, 0, 255) 5%, rgb(0, 170, 255) 100%) rgb(0, 0, 
 }
 .unselected a:hover, .current a, .current a:hover
 {
-background-color:none !important;
+background:none !important;
 }
 
 div#heading, .popupbar {
