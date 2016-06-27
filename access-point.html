@@ -7,6 +7,33 @@
 function loadx()
 {
 var lib = getParameterByName('serve') || "def0";
+if (lib=="folder-by-name")
+{
+var libx = getParameterByName('n') || "def0";
+switch(libx)
+{
+case "Agriculture":
+lib="0B7qqLL1dQjASejB4Mlc3WFFBZ2M";
+break;
+case "Ancient%20History"
+lib="0B7qqLL1dQjASUkk0N3pCXzdOQjA";
+break;
+case "Biology":
+lib="0ByEFYhkkDQBKSzJVUC1KeVRsX3c";
+break;
+case "Business%20Services":
+lib="0B7qqLL1dQjASV0t5M0tOdnNDSkE";
+break;
+
+
+
+default:
+lib="def0";
+break;
+}
+
+
+
 setTimeout(function(){    document.title="Access Point for Shared Resources - Loading..."}, 1000)
     try {
 var home=document.getElementById("homepage").href+"?serve="+lib;
