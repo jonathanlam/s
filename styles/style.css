@@ -3637,7 +3637,7 @@ color: white !important; text-decoration: none !important; cursor: pointer;
 .unselected {
 	border-radius: 5px; -webkit-border-radius: 5px;
 }
-.unselected:hover, .unselected:active
+li.unselected:hover, .unselected:active
 {
 background-color:#0000FF !important;  
 background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0000FF), color-stop(1, #00AAFF)) !important;
@@ -3649,7 +3649,7 @@ background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #000
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0000FF ', endColorstr='#00AAFF ',GradientType=0) !important	
 background: linear-gradient(rgb(0, 0, 255) 5%, rgb(0, 170, 255) 100%) rgb(0, 0, 255) !important; 
 }
-.current 
+li.current 
 {
 background-color:#0000FF !important;  
 background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0000FF), color-stop(1, #00AAFF)) !important;
@@ -3662,6 +3662,11 @@ background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #000
 background: linear-gradient(rgb(0, 0, 255) 5%, rgb(0, 170, 255) 100%) rgb(0, 0, 255) !important; 
 	border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;
 }
+.unselected a:hover, .current a
+{
+background-color:none !important;
+}
+
 div#heading, .popupbar {
 	background: white !important; padding: 0px 50px !important;
 }
