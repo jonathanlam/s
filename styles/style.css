@@ -3532,6 +3532,10 @@ code {
 * {
 	font-family: "Segoe UI", "Arial", "sans-serif" !important;
 }
+body
+{
+background-color:white !important;
+}
 a {
 	
 }
