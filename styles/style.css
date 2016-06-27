@@ -2939,6 +2939,10 @@ body {
 #sites-chrome-everything h2 {
 	font: 600 19px/normal "Open Sans", sans-serif; padding: 14px 0px 0px; color: rgb(34, 34, 34); font-size-adjust: none; font-stretch: normal;
 }
+#sites-chrome-everything .sites-header-cell-buffer-wrapper h2 {
+	font: 600 19px/normal "Open Sans", sans-serif; padding: 14px 5px 0px; color: rgb(34, 34, 34); font-size-adjust: none; font-stretch: normal;
+}
+
 #sites-chrome-everything h3 {
 	font: 600 17px/normal "Open Sans", sans-serif; padding: 12px 0px 0px; color: rgb(34, 34, 34); font-size-adjust: none; font-stretch: normal;
 }
@@ -3534,7 +3538,7 @@ code {
 }
 body
 {
-background-color:white !important;
+background-color:#CCCCFF !important;
 }
 a {
 	
