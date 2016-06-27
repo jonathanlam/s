@@ -3463,22 +3463,22 @@ body .goog-ws-list-oobe-box .goog-ws-list-oobe-box-inside {
 	margin: 0px 0.6em;
 }
 #sites-chrome-header .sites-header-nav li > a, #sites-chrome-header .sites-header-nav li > a:visited {
-	text-transform: uppercase !important; font-weight: 600; text-decoration: none;
+/*	text-transform: uppercase !important*/; font-weight: 600; text-decoration: none;
 }
 #sites-chrome-header .sites-header-nav li > a:hover, #sites-chrome-header .sites-header-nav li > a:active{
-	text-transform: uppercase !important; font-weight: 600; text-decoration: none;
+/*	text-transform: uppercase !important*/; font-weight: 600; text-decoration: none;
 }
 #sites-chrome-header .sites-header-nav li {
-	text-transform: uppercase !important; font-weight: 600; text-decoration: none;
+/*	text-transform: uppercase !important*/; font-weight: 600; text-decoration: none;
 }
 #sites-chrome-header .sites-header-nav li:hover {
-	text-transform: uppercase !important; font-weight: 600; text-decoration: none;
+/*	text-transform: uppercase !important*/; font-weight: 600; text-decoration: none;
 }
 #sites-chrome-header .sites-header-nav li.current {
-	text-transform: uppercase !important; font-weight: 600; text-decoration: none;
+/*	text-transform: uppercase !important*/; font-weight: 600; text-decoration: none;
 }
 #sites-chrome-header .sites-header-nav li.current:hover {
-	text-transform: uppercase !important; font-weight: 600; text-decoration: none;
+/*	text-transform: uppercase !important*/; font-weight: 600; text-decoration: none;
 }
 #sites-chrome-header .sites-header-nav li {
 	transition:border-color 0.13s; padding-top: 23px; padding-bottom: 16px; border-bottom-color: transparent; border-bottom-width: 2px; border-bottom-style: solid; background-color: transparent; -webkit-transition: border-color .13s; -moz-transition: border-color .13s;
