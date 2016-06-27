@@ -2989,9 +2989,8 @@ text-decoration: none;
 }
 #sites-chrome-page-wrapper {
 /*	margin: auto; */
-margin-left:10%;
-
-width: 77%;
+margin-left:5%;
+margin-right:5%
 max-width:1032px !important;
 min-width:440px !important;
 
