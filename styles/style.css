@@ -2989,7 +2989,9 @@ text-decoration: none;
 }
 #sites-chrome-page-wrapper {
 /*	margin: auto; */
-margin-left:40px;
+margin-left:100px;
+margin-right:100px;
+
 max-width:1032px !important;
 min-width:440px !important;
 
