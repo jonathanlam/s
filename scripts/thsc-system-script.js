@@ -340,7 +340,7 @@ catch (err){var je=""}
 try
 {
     
-h=je+g+"<img height=\"10px;\" src=\"http://counter.digits.net\/?counter={57da36d7-daf0-7014-c14b-9dbd7488e13c}&template=simple&background=F8F8F8&foreground=298CCA\" alt=\"Counter\" border=\"0\"\/><br><br><br><br><br><br><br><br><br><br><script type=\"text\/javascript\" src=\"https://dbinbox.com\/embed.js\"><\/script>"
+h=je+g+"<img height=\"10px;\" src=\"http://counter.digits.net\/?counter={57da36d7-daf0-7014-c14b-9dbd7488e13c}&template=simple&background=EEEEFF&foreground=298CCA\" alt=\"Counter\" border=\"0\"\/>"
 
 
 
