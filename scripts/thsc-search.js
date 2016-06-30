@@ -161,6 +161,8 @@
       } else if (this.is_multiple) {
         this.default_text = this.options.placeholder_text_multiple || this.options.placeholder_text || AbstractChosen.default_multiple_text;
       } else {
+s=document.title.split(" - ")[1]
+if (typeof s == "undefined"){s == "this folder"}
         this.default_text = this.options.placeholder_text_single || this.options.placeholder_text || "Search " +document.title.split(" - ")[1] || "Search"
       }
       return this.results_none_found = AbstractChosen.default_no_result_text;
