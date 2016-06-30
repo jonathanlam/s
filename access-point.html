@@ -11,8 +11,34 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
 <script src="https://thsconline.github.io/s/scripts/thsc-system-script.js" type="text/javascript"></script>
 <script src="https://thsconline.github.io/s/scripts/thsc-search.js" type="text/javascript"></script>
 <link rel="shortcut icon" type="image/x-icon" href="https://thsconline.github.io/s/images/icon_def.png">
+<script>
+function loadx()
+{
+var lib = getParameterByName('serve') || "def0";
+
+
+
+setTimeout(function(){    document.title="Access Point for Shared Resources - Loading..."}, 1000)
+    try {
+var home=document.getElementById("homepage").href+"?serve="+lib;
+setTimeout(function(){window.location=home}, 5000)
+
+}
+catch (err){window.location="index.html"}
+}
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return "additional-resources";
+    if (!results[2]) return "additional-resources";
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+</script>
+
 </head>
-<body onLoad="configure();">
+<body onLoad="configure();loadx();">
 <div id="sites-chrome-everything">
 <div id="sites-chrome-page-wrapper" style="direction: ltr;">
 <div id="sites-chrome-page-wrapper-inside">
@@ -62,9 +88,10 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
 <div dir="ltr" id="contentall" style="color:#555555;font-size:small;min-height:222px;">
 <h1>Access Point</h1>
 <p>Loading... Checking access permissions and logging in.</p>
-<p>Error <a href="redir.html">Click to Continue</a></p>
+<p>
 <noscript><br>Error: Enable Javascript to Continue</noscript>&nbsp;</p>
 <br>
+<span style="display:none;" id="redirection-link"><a id="homepage" href="https://script.google.com/macros/s/AKfycbx1Kjw1qniJW7HXsNSMeyJeQ45BzdCFlcEXouvlvb6he15FPHg/exec">Continue</a></span>
 <div class="smallscreen" style="display:none">
 <a href="https://thsconline.github.io/s/">Home Page</a><br>
 <a href="yr10/">Year 10</a><br>
