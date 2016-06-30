@@ -105,10 +105,10 @@ document.write("<\/head>");
 document.write("<body>");
 document.write("<span class=\"overlaybar folder-path-container goog-container\" style=\"width:100%;background-color:#D8D8D8;z-index:1000px;position:absolute;top:0px;\">");
 document.write("<span class=\"overlayinsert folder-path-folder folder-path-element\">");
-document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+File+" </b> - <\/span>"+titlex);
+document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>File</b> - <\/span>"+titlex);
 document.write("<span style=\"float:right;\">");
 document.write("<a class=\"nofill\" href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
-document.write("&nbsp;&nbsp;<a class=\"nofill\" onClick="location.reload()" href=\""+tags+"\">[&#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
+document.write("&nbsp;&nbsp;<a class=\"nofill\" onClick=\"location.reload()\" href=\""+tags+"\">[&#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
 document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:97%; height:92%;\" height=\"92%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("</body></html>"); 
 }
