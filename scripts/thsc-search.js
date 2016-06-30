@@ -161,9 +161,10 @@
       } else if (this.is_multiple) {
         this.default_text = this.options.placeholder_text_multiple || this.options.placeholder_text || AbstractChosen.default_multiple_text;
       } else {
-sx=document.title.split(" - ")[1];
+sx=document.title.split(" - ")[1] || "this folder"
 if (typeof sx == "undefined"){sx == "this folder"}
-        this.default_text = this.options.placeholder_text_single || this.options.placeholder_text || "Search " +sx || "Search"
+        this.default_text = this.options.placeholder_text_single || this.options.placeholder_text || "Search " +sx || "Search";
+this.default_text=this.default_text.replace(" undefined",""); 
       }
       return this.results_none_found = AbstractChosen.default_no_result_text;
     };
