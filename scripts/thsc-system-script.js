@@ -7,7 +7,7 @@ if(searchq=="?quick"){throw("Downloading File Instead");}
 var titlex=input.innerHTML;
 var idx=input.id;
 var tags=unescape(location.pathname.substring(location.pathname.lastIndexOf('/')+1));
-var tix=document.title;
+var tix=document.title || "Additional Resources" ;
 
 var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
 if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
