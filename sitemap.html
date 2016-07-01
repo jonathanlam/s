@@ -15,14 +15,10 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
 function loadx()
 {
 var lib = getParameterByName('serve') || "sitemap";
-
-
-
 setTimeout(function(){    document.title="Loading..."}, 1000)
     try {
 var home=document.getElementById("homepage").href+"?serve="+lib;
 setTimeout(function(){window.location=home}, 5000)
-
 }
 catch (err){window.location="index.html"}
 }
@@ -36,7 +32,6 @@ function getParameterByName(name, url) {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 </script>
-
 </head>
 <body onLoad="configure();loadx();">
 <div id="sites-chrome-everything">
@@ -74,7 +69,6 @@ function getParameterByName(name, url) {
 <a class="nofill" href="https://thsconline.github.io/s/landing.html">[<i>Back</i>]</a></span>
 <span style="float:right;" class="reduciblex folder-reverse-separator-icon"></span> 
 </div>
-
 </div>
 </td>
 </tr>
@@ -98,29 +92,16 @@ function getParameterByName(name, url) {
 <a href="yr11/">Year 11 - Preliminary</a><br>
 <a href="yr12/">Year 12 - HSC</a><br>
 <a href="upload/">Upload Files</a><br>
-
 </div>
-
 </div>
 </td>
 </tr></tbody></table>
 </div> &nbsp;
 </div> 
-<div id="sites-canvas-bottom-panel">
-<div id="sites-attachments-container" style="text-transform:none;">
-</div>
-</div>
-</div> 
-<div id="sites-chrome-footer-wrapper">
-<div id="sites-chrome-footer-wrapper-inside">
-<div id="sites-chrome-footer">
-
-</div>
-</div>
-</div>
 </div> 
 </div> 
-<div id="sites-chrome-adminfooter-container">
+</div> 
+<div id="sites-chrome-adminfooter-container"><br>
 <div class="sites-adminfooter" role="navigation" xmlns="http://www.w3.org/1999/xhtml"><p><a onclick="return false;" href="#https://thsconline.github.io/s/sitemap.html">View Sitemap</a><br>
 <p><span class="sites-system-link">Hosted on <b class="powered-by">Github</b> HTML Template created from <b class="powered-by">Google Sites</b></span></p></div>
 </div>
