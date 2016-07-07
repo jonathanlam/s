@@ -1,10 +1,11 @@
-
-
 <html><head>
 <title>THSC Online</title>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+<script src="https://thsconline.github.io/s/scripts/thsc-system-script.js" type="text/javascript"></script>
+<script src="https://thsconline.github.io/s/scripts/thsc-search.js" type="text/javascript"></script>
 <link rel="shortcut icon" type="image/x-icon" href="https://thsconline.github.io/s/images/icon_def.png">
 <style>
 body {
@@ -17,7 +18,7 @@ a.button
 ol, ul {
 	list-style: none;
 }
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -33,7 +34,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {
 	line-height: 1;
 }
-body, input, textarea, select {
+body,  textarea {
 	font-family: "Source Sans Pro", sans-serif;
 	font-weight: 300;
 	line-height: 1.75em;
@@ -42,13 +43,8 @@ body, input, textarea, select {
 body {
 	position: relative;
 	background-size: 600% 620%;
-    background:-moz-linear-gradient(top, #EEEEFF 5%, #CCCCFF  100%) !important;
-	background:-webkit-linear-gradient(top, #EEEEFF 5%, #CCCCFF  100%) !important;
-	background:-o-linear-gradient(top, #EEEEFF 5%, #CCCCFF  100%) !important;
-	background:-ms-linear-gradient(top, #EEEEFF 5%, #CCCCFF  100%) !important;
-	background:linear-gradient(to bottom, #EEEEFF 5%, #CCCCFF 100%) !important;
-    background-size: 440px 440px,				100% 620%,					auto;
-	background-repeat: repeat,						no-repeat,					no-repeat;
+    background:#CCCCFF;
+
 }
 .homepage #header-wrapper {
 	padding: 10em 0 0 0;
@@ -126,26 +122,25 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
 </style><![endif]--><!--[if IE 9]><style>body{background-color:#DDDDFF !important;}</style><![endif]-->
 
 </head>
-<body class="homepage" style="height:100%;style:inline-block;"><div id="skel-layers-wrapper" style="transition:transform 0.5s, opacity 0.5s; left: 0px; top: -100px; right: 0px; position: relative; backface-visibility: hidden;">
-
-					<div id="header-wrapper">
-
-									<section class="container" id="hero">
-									<!--[if lt IE 9]></section><div class="container" id="hero"><![endif]-->
-						<header>
+<body onload="configure()" class="homepage" style="height:100%;style:inline-block;"><div id="skel-layers-wrapper" style="transition:transform 0.5s, opacity 0.5s; left: 0px; top: 100px; right: 0px; position: relative; backface-visibility: hidden;">
+<span style="float:left !important;padding-left:100px;">
 							<h2>thsconline
 							<br>
 							</h2>
-						</header>
 <!--						<p style="color:#FF5500">New and improved website</p>-->
 
-						<img src="https://thsconline.github.io/s/images/icon_link.png">&nbsp;&nbsp;<a href="landing.html">Continue</a><br>
+<!--						<img src="https://thsconline.github.io/s/images/icon_link.png">&nbsp;&nbsp;<br>-->
 	
-</ul>
-													<!--[if lt IE 9]></div><section><![endif]-->	</section>
 
+</span><br><br>
+<span style="float:left !important;padding-left:100px;font-size:large !important;" >Select an option <span class="smallscreen sites-layout-searchbox"><a class="no x" href="landing.html">Continue</a></span></span>
 			</div>
 
-		
+<span style="display:none;">
+<a href="yr10/">Year 10</a><br>
+<a href="yr11/">Year 11 - Preliminary</a>
+<a href="yr12/">Year 12 - HSC</a><br>
+<a href="upload/">Upload Files</a><br>
+</span>		
 </div></body>
 </html>
