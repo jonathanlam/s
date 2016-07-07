@@ -15,10 +15,7 @@ a.button
 {
     color:white !important;
 }
-ol, ul {
-	list-style: none;
-}
- div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+applet, object, iframe, h1, h2, blockquote, pre, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, center, dl, dt, dd, ol, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -35,10 +32,8 @@ body {
 	line-height: 1;
 }
 body,  textarea {
-	font-family: "Source Sans Pro", sans-serif;
-	font-weight: 300;
 	line-height: 1.75em;
-	font-size: 15pt;
+
 }
 body {
 	position: relative;
@@ -48,7 +43,7 @@ body {
 }
 .homepage #header-wrapper {
 	padding: 10em 0 0 0;
-	background-size: 440px 440px,				100% 100%,					auto;
+	
 }
 section, article {
 	margin-bottom: 3em;
@@ -70,9 +65,7 @@ section:last-child, article:last-child {
 header {
 	margin-bottom: 1.5em;
 }
-p, ul, ol, dl, table, .features {
-	margin-bottom: 1.5em;
-}
+
 #hero p {
 	font-size: 1.5em;
 	line-height: 1.5em;
@@ -92,7 +85,7 @@ ul.actions li:first-child {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 300;
+font-weight:300;
 	}
 h2 {
 	font-size: 2em;
@@ -101,17 +94,6 @@ h2 {
 #hero h2 {
 	color: #fff;
 	font-size: 3em;
-}
-#logo {
-	position: absolute;
-	z-index: 1;
-	top: 0px;
-	text-align:center;
-	width: 15em;
-}
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-	color: inherit;
-	text-decoration: none;
 }
 
 </style>
@@ -122,19 +104,53 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
 </style><![endif]--><!--[if IE 9]><style>body{background-color:#DDDDFF !important;}</style><![endif]-->
 
 </head>
-<body onload="configure()" class="homepage" style="height:100%;style:inline-block;"><div id="skel-layers-wrapper" style="transition:transform 0.5s, opacity 0.5s; left: 0px; top: 100px; right: 0px; position: relative; backface-visibility: hidden;">
-<span style="float:left !important;padding-left:100px;">
+<body onload="configure()" class="homepage" style="height:100%;style:inline-block;"><div id="skel-layers-wrapper" style="transition:transform 0.5s, opacity 0.5s; left: 0px; top: 20px; right: 0px; position: relative; backface-visibility: hidden;">
+<div style="float:left !important;padding-left:100px;">
 							<h2>thsconline
-							<br>
 							</h2>
-<!--						<p style="color:#FF5500">New and improved website</p>-->
+						<p style="color:#FF5500">Active since 2014</p>
 
-<!--						<img src="https://thsconline.github.io/s/images/icon_link.png">&nbsp;&nbsp;<br>-->
-	
 
-</span><br><br>
-<span style="float:left !important;padding-left:100px;font-size:large !important;" >Select an option <span class="smallscreen sites-layout-searchbox"><a class="no x" href="landing.html">Continue</a></span></span>
-			</div>
+<div>
+<span style="float:left !important;" >Select an option <span class="smallscreen sites-layout-searchbox"><a class="no x" href="landing.html">Continue</a></span></span></div>	
+<br><br><div>
+<div class="sites-canvas-main" id="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<div dir="ltr" id="contentall" style="color:#555555;font-size:small;min-height:222px;">
+
+<b>About this website</b>
+<ul>
+<li>Launched in late 2014, this site is a non-profit site, for educational purposes only. All items are up are in good faith.</li>
+<li>This site is used by many students and teachers to assist learning, and to prepare well for Year 11 & Year 12 studies</li>
+<li>Anyone can contribute some practice papers for future years to use. Email the files to thsconline@gmail.com or use the inbuilt Upload File option.
+</ul>
+<b>Additional Resources</b>
+<ul>
+<li>There are additional resources, available upon a significant contribution to this website.</li>
+<li>For complete information about what subjects are available refer to this <a class="no x" href="info.html">list of subjects</a>
+<li>Notes are not stored on this website, there however is this dropbox link: <a class="no x" href="https://www.dropbox.com/sh/l2pwt5usefmbg6e/AAA0oAjvDSpsgcafBtJaGOJOa?dl=0">HSC Notes Dropbox Link</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+<script>
+a=document.getElementById('jot-ui-searchInput').value
+switch (a)
+{
+case "Year 10":
+break;
+case "Year 11 - Preliminary":
+break;
+case "Year 12 - HSC":
+break;
+case "Upload Files":
+break;
+default:
+break;
+}
+</script>
 
 <span style="display:none;">
 <a href="yr10/">Year 10</a><br>
