@@ -61,10 +61,13 @@ tx=tix.split(" - ")[1]
 switch (tx)
 {
 case "HSC General Maths Trial Papers":
-root="General Maths/Year 12 Trial Papers"
+root="General Maths"
 break;
+case "HSC Maths Trial Papers":
+root="Maths"
+
 default:
-root="";
+root=tx.replace("HSC ", "").replace(" Trial Papers", "")
 break;
 
 }
