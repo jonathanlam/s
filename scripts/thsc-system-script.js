@@ -38,7 +38,7 @@ document.write("&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">[&#215;]<\/a>&
 document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:97%; height:92%;\" height=\"92%\" id=\"mediaplayer\" src=\"https://thsconline.github.io/s/"+idx+".html\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("</body></html>"); 
 }
-function pdf2(input){
+function pdf2(input, root){
 var searchq=window.location.search+""
 if(searchq=="?quick"){throw("Downloading File Instead");}
 var titlex=input.innerHTML;
@@ -56,21 +56,6 @@ return true;
 }}
 try
 {
-
-tx=tix.split(" - ")[1]
-switch (tx)
-{
-case "HSC General Maths Trial Papers":
-root="General Maths"
-break;
-case "HSC Maths Trial Papers":
-root="Maths"
-
-default:
-root=tx.replace("HSC ", "").replace(" Trial Papers", "")
-break;
-
-}
 window.location="https://thsconline.github.io/frenzy/files/"+root+"/file-"+idx+"-"+titlex.replace(/ /g, "-")+".html"
 }
 catch (err)
