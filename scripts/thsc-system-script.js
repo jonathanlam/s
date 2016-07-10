@@ -56,7 +56,9 @@ return true;
 }}
 try
 {
-switch (tix)
+
+tx=tix.split(" - ")[1]
+switch (tx)
 {
 case "HSC General Maths Trial Papers":
 root="General Maths/Year 12 Trial Papers"
