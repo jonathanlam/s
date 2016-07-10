@@ -11,8 +11,8 @@ var tix=document.title || "Additional Resources" ;
 
 var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
 if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
-if(version>9){} else {input.onclick=function(){return true}; document.getElementById(idx).click();
-throw("Less than IE10 - Open file in new window")
+if(version>8){} else {input.onclick=function(){return true}; document.getElementById(idx).click();
+throw("Less than IE9 - Open file in new window")
 return true;
 
 
@@ -25,7 +25,7 @@ document.write("<title>"+tix+" - "+titlex.replace("<i>", "").replace("</i>", "")
 document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
 document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\"><link rel=\"shortcut icon\" type=\"image\/x-icon\" href=\"https:\/\/thsconline.github.io\/s\/images\/icon_def.png\">");
 document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"text\/css\">");
-document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/secondary.css\" rel=\"stylesheet\" type=\"text\/css\">");
+document.write("<style>html, body {height:100% !important;}</style><!--[if lt IE 9]><style> #mediaplayer{display:none;}</style><![endif]-->");
 document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script>");
 document.write("<\/head>");
 document.write("<body>");
@@ -38,7 +38,7 @@ document.write("&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">[&#215;]<\/a>&
 document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:97%; height:92%;\" height=\"92%\" id=\"mediaplayer\" src=\"https://thsconline.github.io/s/"+idx+".html\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("</body></html>"); 
 }
-function pdf(input){
+function pdf2(input){
 var searchq=window.location.search+""
 if(searchq=="?quick"){throw("Downloading File Instead");}
 var titlex=input.innerHTML;
@@ -49,7 +49,7 @@ var tix=document.title;
 var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
 if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
 if(version>8){} else {input.onclick=function(){return true}; document.getElementById(idx).click();
-throw("Less than IE10 - Attempt to Download File directly")
+throw("Less than IE9 - Attempt to Download File directly")
 return true;
 
 
@@ -81,7 +81,7 @@ document.write("<title>"+tix+" - "+titlex.replace("<i>", "").replace("</i>", "")
 document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
 document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\"><link rel=\"shortcut icon\" type=\"image\/x-icon\" href=\"https:\/\/thsconline.github.io\/s\/images\/icon_def.png\">");
 document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"text\/css\">");
-document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/secondary.css\" rel=\"stylesheet\" type=\"text\/css\">");
+document.write("<style>html, body {height:100% !important;}</style><!--[if lt IE 9]><style> #mediaplayer{display:none;}</style><![endif]-->");
 document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script><style>");
 document.write("<\/head>");
 document.write("<body>");
@@ -91,12 +91,12 @@ document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix.split(" - ")[1]+" </b>
 document.write("<span style=\"float:right;\">");
 document.write("<!--<a class=\"nofill\" href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;-->");
 document.write("&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">[&#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
-document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:97%; height:92%;\" height=\"92%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
+document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("</body></html>"); 
 }
 
 }
-function pdf2(input){
+function pdf(input){
 var searchq=window.location.search+""
 if(searchq=="?quick"){throw("Downloading File Instead");}
 var titlex=input.innerHTML;
@@ -106,8 +106,8 @@ var tix=document.title;
 
 var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
 if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
-if(version>9){} else {input.onclick=function(){return true}; document.getElementById(idx).click();
-throw("Less than IE10 - Attempt to Download File directly")
+if(version>8){} else {input.onclick=function(){return true}; document.getElementById(idx).click();
+throw("Less than IE9 - Attempt to Download File directly")
 return true;
 
 
@@ -120,7 +120,7 @@ document.write("<title>"+tix+" - "+titlex.replace("<i>", "").replace("</i>", "")
 document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
 document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\"><link rel=\"shortcut icon\" type=\"image\/x-icon\" href=\"https:\/\/thsconline.github.io\/s\/images\/icon_def.png\">");
 document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"text\/css\">");
-document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/secondary.css\" rel=\"stylesheet\" type=\"text\/css\">");
+document.write("<style>html, body {height:100% !important;}</style><!--[if lt IE 9]><style> #mediaplayer{display:none;}</style><![endif]-->");
 document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script>");
 document.write("<\/head>");
 document.write("<body>");
@@ -130,7 +130,7 @@ document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>File</b> - <\/span>"+titlex)
 document.write("<span style=\"float:right;\">");
 document.write("<a class=\"nofill\" href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
 document.write("&nbsp;&nbsp;<a class=\"nofill\" onClick=\"location.reload()\" href=\""+tags+"\">[&#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
-document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:97%; height:92%;\" height=\"92%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
+document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("</body></html>"); 
 }
 
@@ -145,7 +145,7 @@ var tix=document.title;
 
 var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
 if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
-if(version>9){} else {input.onclick=function(){return true}; document.getElementById(idx).click();
+if(version>8){} else {input.onclick=function(){return true}; document.getElementById(idx).click();
 throw("Less than IE10 - Attempt to Download File directly")
 }}
 
@@ -156,7 +156,7 @@ document.write("<title>"+tix+" - "+titlex.replace("<i>", "").replace("</i>", "")
 document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
 document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\"><link rel=\"shortcut icon\" type=\"image\/x-icon\" href=\"https:\/\/thsconline.github.io\/s\/images\/icon_def.png\">");
 document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"text\/css\">");
-document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/secondary.css\" rel=\"stylesheet\" type=\"text\/css\">");
+document.write("<style>html, body {height:100% !important;}</style><!--[if lt IE 9]><style> #mediaplayer{display:none;}</style><![endif]-->");
 document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script>");
 document.write("<\/head>");
 document.write("<body>");
