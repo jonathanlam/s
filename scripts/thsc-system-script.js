@@ -56,7 +56,7 @@ return true;
 }}
 try
 {
-window.location="https://thsconline.github.io/frenzy/files/"+root+"/file-"+idx+"-"+titlex.replace(/ /g, "-")+".html"
+window.location="https://thsconline.github.io/frenzy/files/"+root+"/file-"+idx+"-"+titlex.replace(/ /g, "-").replace("-w.-sol", "")+".html"
 }
 catch (err)
 {
