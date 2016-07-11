@@ -58,11 +58,12 @@ try
 {
 
 
-var titlea=titlex.replace(/ /g, "-");
-var titleb=titlea.indexOf('-w.-sol');
-if (titleb>0){titlea=titlea.replace('-w.-sol');
-}
-window.location="https://thsconline.github.io/frenzy/files/"+root+"/file-"+idx+"-"+titlea+".html";
+var titlea=titlex.replace(/ /g, "-").replace("-w.-sol", "");
+var titleb=titlea.indexOf("-w.-sol");
+if (titleb>0){titlea=titlea.replace("-w.-sol", "");}
+
+alert("View")
+window.location="https://thsconline.github.io/frenzy/files/"+root+"/file-"+idx+"-"+titlea+".html"
 }
 catch (err)
 {
