@@ -4026,7 +4026,7 @@ border:solid 1px #E7E7E7;
 
 
 
-.c-ItemTile:hover .folder
+.c-ItemTile:hover .folder, input.selected
 {
 
 border-radius:5px;
