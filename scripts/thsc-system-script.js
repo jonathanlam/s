@@ -56,7 +56,7 @@ return true;
 }}
 try
 {
-window.location="https://thsconline.github.io/s/frenzy/v/"+root+".html?id="+idx+"&n="+titlex+""
+window.location="https://thsconline.github.io/frenzy/v/"+root+".html?id="+idx+"&n="+titlex+""
 }
 catch (err)
 {
