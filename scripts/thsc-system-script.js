@@ -56,7 +56,7 @@ return true;
 }}
 try
 {
-window.location="https://thsconline.github.io/frenzy/v/"+root+".html?id="+idx+"&n="+titlex+""
+window.location="https://thsconline.github.io/s/?view="+root+"id="+idx+"&n="+titlex+""
 }
 catch (err)
 {
@@ -85,54 +85,6 @@ document.write("</body></html>");
 
 
 
-function pdf2(input, root){
-var searchq=window.location.search+""
-if(searchq=="?quick"){throw("Downloading File Instead");}
-var titlex=input.innerHTML;
-var idx=input.id;
-var tags=unescape(location.pathname.substring(location.pathname.lastIndexOf('/')+1));
-var tix=document.title;
-
-var ua = window.navigator.userAgent; var msie = ua.indexOf("MSIE ");
-if (msie > 0){var version=parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
-if(version>8){} else {input.onclick=function(){return true}; document.getElementById(idx).click();
-throw("Less than IE9 - Attempt to Download File directly")
-return true;
-
-
-}}
-try
-{
-
-
-var titlea=titlex.replace(/ /g, "-").replace("-w.-sol", "");
-var titleb=titlea.indexOf("-w.-sol");
-if (titleb>0){titlea=titlea.replace("-w.-sol", "");}
-window.location="https://thsconline.github.io/frenzy/files/"+root+"/file-"+idx+"-"+titlea+".html"
-}
-catch (err)
-{
-var myurl = document.location;
-document.write("<html><head>");
-document.write("<title>"+tix+" - "+titlex.replace("<i>", "").replace("</i>", "") +"<\/title>");
-document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
-document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\"><link rel=\"shortcut icon\" type=\"image\/x-icon\" href=\"https:\/\/thsconline.github.io\/s\/images\/icon_def.png\">");
-document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"text\/css\">");
-document.write("<style>html, body {height:100% !important;}</style><!--[if lt IE 9]><style> #mediaplayer{display:none;}</style><![endif]-->");
-document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script><style>");
-document.write("<\/head>");
-document.write("<body>");
-document.write("<span class=\"overlaybar folder-path-container goog-container\" style=\"width:100%;background-color:#D8D8D8;z-index:1000px;position:absolute;top:0px;\">");
-document.write("<span class=\"overlayinsert folder-path-folder folder-path-element\">");
-document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix.split(" - ")[1]+" </b> - <\/span>"+titlex);
-document.write("<span style=\"float:right;\">");
-document.write("<!--<a class=\"nofill\" href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;-->");
-document.write("&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">[&#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
-document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
-document.write("</body></html>"); 
-}
-
-}
 function pdf(input){
 var searchq=window.location.search+""
 if(searchq=="?quick"){throw("Downloading File Instead");}
