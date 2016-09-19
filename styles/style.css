@@ -2551,13 +2551,15 @@ input[type=text] {
 textarea {
 	padding: 8px;
 }
-input[type=text] {
+input[type=text], input[type=password] {
+	border-width: 1px; border-style: solid; border-color: rgb(192, 192, 192) rgb(217, 217, 217) rgb(217, 217, 217); border-image: none; color: rgb(51, 51, 51); vertical-align: top; display: inline-block; box-sizing: border-box; background-color: rgb(255, 255, 255); -webkit-border-radius: 1px; -moz-border-radius: 1px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}{
 	border-width: 1px; border-style: solid; border-color: rgb(192, 192, 192) rgb(217, 217, 217) rgb(217, 217, 217); border-image: none; color: rgb(51, 51, 51); vertical-align: top; display: inline-block; box-sizing: border-box; background-color: rgb(255, 255, 255); -webkit-border-radius: 1px; -moz-border-radius: 1px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
 }
 textarea {
 	border-width: 1px; border-style: solid; border-color: rgb(192, 192, 192) rgb(217, 217, 217) rgb(217, 217, 217); border-image: none; color: rgb(51, 51, 51); vertical-align: top; display: inline-block; box-sizing: border-box; background-color: rgb(255, 255, 255); -webkit-border-radius: 1px; -moz-border-radius: 1px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
 }
-input[type=text]:hover {
+input[type=text]:hover, input[type=password]:hover {
 	border-width: 1px; border-style: solid; border-color: rgb(160, 160, 160) rgb(185, 185, 185) rgb(185, 185, 185); border-image: none; box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1); -webkit-box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
 }
 textarea:hover {
