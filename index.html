@@ -33,9 +33,9 @@ document.getElementById('sites-chrome-everything2').style.display='block';
 var titlex=getParameterByName('n');
 var idx=getParameterByName('id');
 document.getElementById("download-link").innerHTML="Download File: "+ titlex;
-document.getElementById("titlex").value=titlex;
-document.getElementById("idx").innerHTML=idx;
-document.getElementById("searchqx").innerHTML=searchq;
+document.getElementById("qtitle").value=titlex;
+document.getElementById("qid").value=idx;
+document.getElementById("qsearch").value=searchq;
 break;
 case "?view":
 var searchq=window.location.search+""
@@ -439,12 +439,12 @@ header {
 
        
  <label for="resname" >Email</label><br>
- <input width="500" type="text" id="qemail" name="resname"><br><br>
+ <input width="500" type="text" id="qemail" name="zname"><br><br>
  <label for="resname" >Access-Key</label><br>
- <input width="500" type="password" id="qkey" size="40" name="reskey"><br><br>
- <input width="500" id="qtitle" name="restitle">
- <input width="500" id="qid" name="resfile">
- <input width="500" type="hidden" id="qsearch" name="resq">
+ <input width="500" type="password" id="qkey" size="40" name="zkey"><br><br>
+ <input width="500" id="qtitle" name="ztitle">
+ <input width="500" id="qid" name="zfile">
+ <input width="500" type="hidden" id="qsearch" name="zq">
                           <br><br></span>
 <input type="submit" value="Download File" onclick="this.value='Submitting..'">   <input id="myd" type="reset" value="Clear">
        <!--[ife lt IE 9]></span><![endif]-->        
