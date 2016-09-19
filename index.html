@@ -37,6 +37,9 @@ document.getElementById("qtitle").value=titlex;
 document.getElementById("qid").value=idx;
 document.getElementById("qsearch").value=searchq;
 break;
+case "?login:"
+window.location="https://script.google.com/macros/s/AKfycbxUmQQmSMo9QJmDrTmLOdGyKJ3y5SDpJZeC6PKGwDExP3aD7o3T/exec"
+break;
 case "?view":
 var searchq=window.location.search+""
 var viewno=getParameterByName('view')
@@ -217,6 +220,8 @@ document.write("<span class=\"overlayinsert folder-path-folder folder-path-eleme
 document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix+"</b> - <\/span>"+titlex);
 document.write("<span style=\"float:right;\">");
 document.write("<a class=\"nofill\" href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
+document.write("<a class=\"nofill\" href=\"/s/?login" target=\"_blank\">Login/Register<\/a>&nbsp;&nbsp;");
+
 document.write("<a class=\"nofill\" href=\"/s/?download"+searchq.substr(5)+"\" target=\"_blank\">Test Download PDF<\/a>&nbsp;&nbsp;");
 
 document.write("&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">[&#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
