@@ -433,29 +433,34 @@ header {
 <div dir="ltr" id="contentall" style="color:#555555;font-size:small;min-height:222px;">
 <h2>thsconline</h2><span class="sites-layout-searchbox"></span>
 <table>
-			<tbody><tr>
-				<td>
-				<label class="jsd_user_label">User:</label>
-				</td>
-				<td>
-				<input type="text" name="user" class="jsd_subjtext" placeholder="User">
-				</td>
-			</tr>
-				<tr><td>
-				<label class="jsd_password_label">Password:</label>
-				</td>
-				<td>
-				<input type="password" name="passwrd" class="jsd_subjtext" placeholder="Password">
-				</td>
-			</tr><tr>
-				<td></td>						
-				<td>				
-				<button type="submit" class="jsd_login">Login</button>
-				</td>
-			</tr>
-			</tbody></table>
-<a href="#" id="download-link"></a>
-
+<tbody><tr>
+<td>
+Email Address (of Registered Account):
+</td>
+<td>
+<input type="text" name="dld-user">
+</td>
+</tr>
+<tr>
+<td>
+User Access Key:
+</td>
+<td>
+<input type="text" name="dld-user-id">
+</td>
+</tr>
+</tbody></table>
+<a href="#" onclick="form(); return false;" id="download-link"></a>
+<script>
+	function form()
+	{
+		username=document.getElementById('dld-user').value
+		userid=document.getElementById('dld-user-id').value
+		document.getElementById("download-link").href=document.getElementById("download-link").href+"&dn="+udername+"&u="+userid;
+		return true;
+	}
+	
+</script>
 
 
 
