@@ -30,6 +30,10 @@ break;
 case "?download":
 document.getElementById('homepage').style.display='none';
 document.getElementById('sites-chrome-everything2').style.display='block';
+var titlex=getParameterByName('n');
+var idx=getParameterByName('id');
+document.getElementById("download-link").href="/"+id;
+document.getElementById("download-link").innerHTML="Download: "+ titlex";
 break;
 case "?view":
 var searchq=window.location.search+""
@@ -428,10 +432,9 @@ header {
 <td class="sites-layout-tile sites-tile-name-content-1" id="CONTENT LEFT">
 <div dir="ltr" id="contentall" style="color:#555555;font-size:small;min-height:222px;">
 <h2>thsconline</h2><span class="sites-layout-searchbox"></span>
+<a href="#" id="download-link"></a>
 
 
 
 
-
-A user account for dpfourtwo@gmail.com already exists.<br><br><b>Access Key for Downloads</b> Your thsc-access key is<br><input type="text" value="0Bxul35h96V_POXptTG5nbWpyWms" disabled="" size="30"><br></div></td></tr></tbody></table></div></div></div></div></div></div></html>
 </body></html>
