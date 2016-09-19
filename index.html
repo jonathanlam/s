@@ -32,8 +32,10 @@ document.getElementById('homepage').style.display='none';
 document.getElementById('sites-chrome-everything2').style.display='block';
 var titlex=getParameterByName('n');
 var idx=getParameterByName('id');
-document.getElementById("download-link").href="https://script.google.com/macros/s/AKfycbwUXCcA2QEFScWXieHjV_jrYAr9vihC1WZVspguo-0pI_1jkRoL/exec"+searchq
-document.getElementById("download-link").innerHTML="Continue: "+ titlex;
+document.getElementById("download-link").innerHTML="Download File: "+ titlex;
+document.getElementById("titlex").value=titlex;
+document.getElementById("idx").innerHTML=idx;
+document.getElementById("searchqx").innerHTML=searchq;
 break;
 case "?view":
 var searchq=window.location.search+""
@@ -450,17 +452,26 @@ User Access Key:
 </td>
 </tr>
 </tbody></table>
-<a href="#" onclick="form(); return false;" id="download-link"></a>
-<script>
-	function form()
-	{
-		username=document.getElementById('dld-user').value
-		userid=document.getElementById('dld-user-id').value
-		document.getElementById("download-link").href+="&dn="+udername+"&u="+userid;
-		return true;
-	}
-	
-</script>
+<h5 id="download-link"></h5>
+<form action="https://script.google.com/macros/s/AKfycbwUXCcA2QEFScWXieHjV_jrYAr9vihC1WZVspguo-0pI_1jkRoL/exec" method="POST" id="myForm">
+    <label for="restitle">Filename</label><br>
+       
+ <label for="resname" >Email</label><br>
+ <input width="500" type="text" id="email" name="dn">
+ <label for="resname" >Access-Key</label><br>
+ <input width="500" type="text" id="key" name="u">
+ <input width="500" type="hidden" id="titlex" name="n">
+ <input width="500" type="hidden" id="idx" name="id">
+ <input width="500" type="hidden" id="searchqx" name="searchq">
+ 
+       <br><br>   
+                          <br><br></span>
+<span id="myb" style="display:none;">
+<input type="submit" value="Download File" onclick="this.value='Submitting..'">   <input id="myd" type="reset" value="Clear">
+</span>
+       <!--[ife lt IE 9]></span><![endif]-->        
+
+</form>
 
 
 
