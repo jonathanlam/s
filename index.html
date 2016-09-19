@@ -32,13 +32,12 @@ document.getElementById('homepage').style.display='none';
 document.getElementById('sites-chrome-everything2').style.display='block';
 var titlex=getParameterByName('n');
 var idx=getParameterByName('id');
-document.getElementById("download-link").href="/s/?"+idx;
-document.getElementById("download-link").innerHTML="Download: "+ titlex;
+document.getElementById("download-link").href="https://script.google.com/macros/s/AKfycbwUXCcA2QEFScWXieHjV_jrYAr9vihC1WZVspguo-0pI_1jkRoL/exec"+searchq
+document.getElementById("download-link").innerHTML="Continue: "+ titlex;
 break;
 case "?view":
 var searchq=window.location.search+""
 var viewno=getParameterByName('view')
-
 var titlex=getParameterByName('n')
 var idx=getParameterByName('id')
 
@@ -216,7 +215,7 @@ document.write("<span class=\"overlayinsert folder-path-folder folder-path-eleme
 document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix+"</b> - <\/span>"+titlex);
 document.write("<span style=\"float:right;\">");
 document.write("<a class=\"nofill\" href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
-document.write("<a class=\"nofill\" href=\"https:\/\/script.google.com\/macros\/s\/AKfycbwUXCcA2QEFScWXieHjV_jrYAr9vihC1WZVspguo-0pI_1jkRoL\/exec?"+searchq+"&dn=dpfourtwo@gmail.com&u=0Bxul35h96V_POXptTG5nbWpyWms\" target=\"_blank\">Test Download PDF<\/a>&nbsp;&nbsp;");
+document.write("<a class=\"nofill\" href=\"/s/?download&"+searchq+"\" target=\"_blank\">Test Download PDF<\/a>&nbsp;&nbsp;");
 
 document.write("&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">[&#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
 document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
@@ -233,8 +232,8 @@ function getParameterByName(name, url) {
     name = name.replace(/[\[\]]/g, "\\$&");
     var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
         results = regex.exec(url);
-    if (!results) return "";
-    if (!results[2]) return "";
+    if (!results) return "NE";
+    if (!results[2]) return "NE";
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
