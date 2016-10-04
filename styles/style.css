@@ -4265,6 +4265,7 @@ a.border, a.border:link, a.border:link
 -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px !important; 
 border:solid 1px rgb(231, 231, 231) !important;
 background-color:none !important;
+background:none !important;
 } 
 
 
@@ -4273,6 +4274,7 @@ a.border:hover, a.border:active
 -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px !important; 
 border:solid 1px rgb(41, 140, 202) !important;
 background-color:none !important;
+background:none !important;
 color: rgb(41, 140, 202) !important;
 } 
 
