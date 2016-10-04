@@ -3598,7 +3598,7 @@ display:inline-block;
 a.nofill:link, a.nofill:visited {
 background: none !important; 
 }
-a.border:link, a.border:visited {
+a.nofill.border:link, a.nofill.border:visited {
 -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; 
 border:solid 1px #E7E7E7;
 }
