@@ -3598,10 +3598,7 @@ display:inline-block;
 a.nofill:link, a.nofill:visited {
 background: none !important; 
 }
-a.nofill.border:link, a.nofill.border:visited {
--webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; 
-border:solid 1px #E7E7E7;
-}
+
 
  a.nofill.colour:link, a.nofill.colour:visited {
 background: none !important; 
@@ -3614,7 +3611,10 @@ a.nofill:hover, a.nofill:active {
 cursor: pointer; 
 }
 
- 
+a.nofill.border:link, a.nofill.border:visited {
+-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; 
+border:solid 1px #E7E7E7 !important;
+} 
 
 a.nofill.inactive:hover, a.nofill.inactive:active, {
 	background: none !important; 
