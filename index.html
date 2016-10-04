@@ -387,13 +387,13 @@ break;
 
 }
 }
-function getParameterByName(name, url, default) {
+function getParameterByName(name, url, defaultx) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
     var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
         results = regex.exec(url);
-    if (!results) return default;
-    if (!results[2]) return default;
+    if (!results) return defaultx;
+    if (!results[2]) return defaultx;
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
