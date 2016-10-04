@@ -317,9 +317,10 @@ case "?study":
 var searchq=window.location.search+""
 var viewno=getParameterByName('study')
 var titlex=getParameterByName('n')
-var topic=getParameterByName('topic') || ''
-var idx=getParameterByName('id') || "index"
-
+var topic=getParameterByName('topic');
+if (typeof topic=="undefined"){topic=""}
+var idx=getParameterByName('id');
+if (typeof idx=="undefined"){idx="index"}
 
 switch(viewno)
 {
