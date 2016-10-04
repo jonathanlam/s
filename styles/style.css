@@ -3611,10 +3611,16 @@ a.nofill:hover, a.nofill:active {
 cursor: pointer; 
 }
 
-a.nofill.border:link, a.nofill.border:visited {
+a.nofill.border:link, a.nofill.border:visited, .folder-path-folder a.border:link, .folder-path-folder a.border:visited {
 -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; 
 border:solid 1px #E7E7E7 !important;
 } 
+
+a.nofill.border:hover, a.nofill.border:active, .folder-path-folder a.border:hover, .folder-path-folder a.border:active {
+-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; 
+border:solid 1px rgb(41, 140, 202) !important;
+} 
+
 
 a.nofill.inactive:hover, a.nofill.inactive:active, {
 	background: none !important; 
