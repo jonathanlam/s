@@ -3613,7 +3613,7 @@ cursor: pointer;
 
 a.nofill.border:link, a.nofill.border:visited, .folder-path-folder a.border:link, .folder-path-folder a.border:visited {
 -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; 
-border:solid 1px #E7E7E7 !important;
+border:solid 1px rgb(231,231,231) !important;
 } 
 
 a.nofill.border:hover, a.nofill.border:active, .folder-path-folder a.border:hover, .folder-path-folder a.border:active {
