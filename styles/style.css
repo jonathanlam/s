@@ -3605,7 +3605,7 @@ a.nofill:hover, a.nofill:active {
 cursor: pointer; 
 }
 
-a.nofill.border:link, a.nofill.border:visited, .folder-path-folder a.border:link, .folder-path-folder a.border:visited {
+a.nofill.border:link, a.nofill.border:visited, .folder-path-folder a.border:link, .folder-path-folder a.border:visited, table .folder-path-folder a.border:link, table .folder-path-folder a.border:visited{
 -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; 
 border:solid 1px rgb(231,231,231) !important;
 } 
