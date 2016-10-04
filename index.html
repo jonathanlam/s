@@ -316,54 +316,57 @@ break;
 case "?study":
 var searchq=window.location.search+""
 var viewno=getParameterByName('study')
-var titlex=getParameterByName('n', "Not Found")
-var topic=getParameterByName('topic', "");
-var idx=getParameterByName('id', "index");
 
 
 switch(viewno)
 {
-case "107":
-var tix="HSC Agriculture";
+case "105":
+var tix="Agriculture";
 break;
-case "137":
-var tix="HSC Biology";
+case "135":
+var tix="Biology";
 break;
-case "157":
-var tix="HSC Business Studies";
+case "155":
+var tix="Business Studies";
 break;
-case "181":
-var tix="Year 11 Chemistry";
+case "180":
+var tix="Chemistry";
 break;
-case "182":
-var tix="HSC Chemistry";
-break;
-case "246":
-var tix="Year 11 Economics";
+case "245":
+var tix="Economics";
 var tags="https://thsconline.github.io/s/yr11/Economics/#"+idx;
 break;
-case "247":
-var tix="HSC Economics"
-var tags="https://thsconline.github.io/s/yr12/Economics/#"+idx
-break;
 case "532":
-var tix="HSC Maths";
+var tix="Maths";
 var tags="https://thsconline.github.io/s/yr12/Maths/#"+idx;
 break;
 case "533":
-var tix="HSC Maths Ext 1";
+var tix="Maths Ext 1";
 var tags="https://thsconline.github.io/s/yr12/Maths/#"+idx;
 break;
 case "534":
-var tix="HSC Maths Ext 2";
+var tix="Maths Ext 2";
 var tags="https://thsconline.github.io/s/yr12/Maths/#"+idx;
 break;
 default:
 break;
 }
+var titlex=getParameterByName('n', "Not Found")
+var topic=getParameterByName('topic', "Question #");
+
+if (topic=="Question #"){
+var idx=getParameterByName('id', "index");
+var tagsx="question-bank/"+tix+"\/"+idx+".html"
+}
+else
+{
+var idx="";
+var tagsx="topics\/"+tix+"\/"+topic;
+}
+
 var myurl = document.location;
 document.write("<html><head>");
-document.write("<title>THSC Online - "+tix+" - "+titlex.replace("<i>", "").replace("</i>", "") +"<\/title>");
+document.write("<title>THSC Online - "+tix+" - "+ topic + idx");
 document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
 document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\"><link rel=\"shortcut icon\" type=\"image\/x-icon\" href=\"https:\/\/thsconline.github.io\/s\/images\/icon_def.png\">");
 document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"text\/css\">");
@@ -376,7 +379,7 @@ document.write("<span class=\"overlayinsert folder-path-folder folder-path-eleme
 document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix+"</b> - <\/span>"+titlex);
 document.write("<span style=\"float:right;\">");
 document.write("&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">[&#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
-document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\"https:\/\/thsconline.github.io\/s\/test\/"+topic+"\/"+idx+".html\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
+document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\"https:\/\/thsconline.github.io\/frenzy\/"+tagsx+"\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("</body></html>"); 
 break;
 
