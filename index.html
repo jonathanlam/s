@@ -42,9 +42,9 @@ window.location="https://script.google.com/macros/s/AKfycbxUmQQmSMo9QJmDrTmLOdGy
 break;
 case "?view":
 var searchq=window.location.search+""
-var viewno=getParameterByName('view')
-var titlex=getParameterByName('n')
-var idx=getParameterByName('id')
+var viewno=getParameterByName('view', "0000")
+var titlex=getParameterByName('n', "NE")
+var idx=getParameterByName('id', "NE")
 
 switch(viewno)
 {
@@ -316,10 +316,10 @@ break;
 case "?study":
 var searchq=window.location.search+""
 var viewno=getParameterByName('study')
-var titlex=getParameterByName('n')
-var topic=getParameterByName('topic');
+var titlex=getParameterByName('n', "Not Found")
+var topic=getParameterByName('topic', "");
 if (typeof topic=="undefined"){topic=""}
-var idx=getParameterByName('id');
+var idx=getParameterByName('id', "topic");
 if (typeof idx=="undefined"){idx="index"}
 
 switch(viewno)
@@ -387,13 +387,13 @@ break;
 
 }
 }
-function getParameterByName(name, url) {
+function getParameterByName(name, url, default) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
     var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
         results = regex.exec(url);
-    if (!results) return "NE";
-    if (!results[2]) return "NE";
+    if (!results) return default;
+    if (!results[2]) return default;
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
