@@ -365,11 +365,12 @@ else
 if (idx.slice(-2)=="_s")
 {
 var tagsx="questions/"+tix+"\/"+viewno+"_"+idx+".html?s"
+var idx=idx.replace("_s", " w. sol");
 }
 else
 {
 var tagsx="questions/"+tix+"\/"+viewno+"_"+idx+".html"
-var linkx="/s/?study="+viewno+"&id="+id+"_s";
+var linkx="/s/?study="+viewno+"&id="+idx+"_s";
 }
 
 
