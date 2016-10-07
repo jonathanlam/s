@@ -364,8 +364,9 @@ else
 {
 if (idx.slice(-2)=="_s" || idx.substr(idx.length - 2)=="_s")
 {
+var newid=idx.replace("_s", "")
 var idx=idx.replace("_s", " w. sol");
-var tagsx="questions/"+tix+"\/"+viewno+"_"+idx.replace(" w. sol", "")+".html?s"
+var tagsx="questions/"+tix+"\/"+viewno+"_"+newid+".html?s"
 }
 else
 {
