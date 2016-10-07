@@ -400,11 +400,14 @@ document.write("<span style=\"float:right;\">");
 if (topic=="Question #"){
 if (idx.slice(-6)=="w. sol"  || idx.substr(idx.length - 6)=="w. sol" || idx=="index" || idx=="! temp")
 {
-if (idx.slice(-6)=="w. sol"  || idx.substr(idx.length - 6)=="w. sol"){document.write("<a class=\"nofill\" href=\""+linkx+"\">Hide Worked Solutions<\/a>&nbsp;&nbsp;");
+if (idx.slice(-6)=="w. sol"  || idx.substr(idx.length - 6)=="w. sol")
+{
+document.write("<a class=\"nofill\" href=\""+linkx+"\">Hide Worked Solutions<\/a>&nbsp;&nbsp;");
 }
 else
 {
 document.write("<a class=\"nofill\" href=\""+linkx+"\">Show Worked Solutions<\/a>&nbsp;&nbsp;");
+}
 }
 }
 document.write("&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">[&#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
