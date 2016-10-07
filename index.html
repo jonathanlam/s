@@ -365,7 +365,7 @@ else
 if (idx.slice(-2)=="_s" || idx.substr(idx.length - 2)=="_s")
 {
 var idx=idx.replace("_s", " w. sol");
-var tagsx="questions/"+tix+"\/"+viewno+"_"+idx.replace("w. sol", "")+".html?s"
+var tagsx="questions/"+tix+"\/"+viewno+"_"+idx.replace(" w. sol", "")+".html?s"
 }
 else
 {
@@ -397,7 +397,7 @@ document.write("<span class=\"overlayinsert folder-path-folder folder-path-eleme
 document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix+"</b> - <\/span>"+topic+idx);
 document.write("<span style=\"float:right;\">");
 if (topic=="Question #"){
-if (idx.slice(-2)!="_s"  || idx.substr(idx.length - 2)=="_s"|| idx=="index" || idx=="! temp")
+if (idx.slice(-6)=="w. sol"  || idx.substr(idx.length - 6)=="w. sol" || idx=="index" || idx=="! temp")
 {
 }
 else
