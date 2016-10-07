@@ -365,7 +365,7 @@ else
 if (idx.slice(-2)=="_s")
 {
 var tagsx="questions/"+tix+"\/"+viewno+"_"+idx+".html?s"
-var link="/s/?study="+viewno+"&id="id+"_s";
+var linkx="/s/?study="+viewno+"&id="+id+"_s";
 }
 else
 {
@@ -398,7 +398,7 @@ document.write("<span style=\"float:right;\">");
 if (topic=="Question #"){
 if (idx.slice(-2)!="_s" || idx=="index" || idx=="! temp")
 {
-document.write("<a class=\"nofill\" href=\""+link+"\">Show Worked Solutions<\/a>&nbsp;&nbsp;");
+document.write("<a class=\"nofill\" href=\""+linkx+"\">Show Worked Solutions<\/a>&nbsp;&nbsp;");
 }
 }
 document.write("&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">[&#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
