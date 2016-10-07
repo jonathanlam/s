@@ -316,7 +316,7 @@ break;
 
 case "?study":
 var searchq=window.location.search+""
-var viewno=getParameterByName('study')
+var viewno=getParameterByName('study', "000")
 
 
 switch(viewno)
@@ -356,7 +356,14 @@ var topic=getParameterByName('topic', "Question #");
 
 if (topic=="Question #"){
 var idx=getParameterByName('id', "index");
+if(idx=="index" || idx=="! temp")
+{
 var tagsx="questions/"+tix+"\/"+idx+".html"
+}
+else
+{
+var tagsx="questions/"+tix+"\/"+viewno+"_"+idx+".html"
+}
 }
 else
 {
