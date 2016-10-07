@@ -4030,6 +4030,37 @@ border:solid 1px #E7E7E7;
 
 }
 
+@font-face {
+    font-family: XITS;
+    src: url('../fonts/xits-regular.woff');
+}
+@font-face {
+    font-family: XITS;
+    src: url('../fonts/xits-bold.woff'),
+    font-weight: bold;
+}
+@font-face {
+    font-family: XITS;
+    src: url('../fonts/xits-italic.woff')
+    font-style: italic;
+}
+@font-face {
+    font-family: XITS;
+    src: url('../fonts/xits-bolditalic.woff');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "XITS Math";
+    src: url('../fonts/xits-math.woff');
+}
+@font-face {
+    font-family: "XITS Math";
+    src: url('../fonts/xits-mathbold.woff');
+    font-weight: bold;
+}
+
+
 
 
 
