@@ -367,6 +367,7 @@ if (idx.slice(-2)=="_s" || idx.substr(idx.length - 2)=="_s")
 var newid=idx.replace("_s", "")
 var idx=idx.replace("_s", " w. sol");
 var tagsx="questions/"+tix+"\/"+viewno+"_"+newid+".html?s"
+var linkx="/s/?study="+viewno+"&id="+newid";
 }
 else
 {
@@ -400,6 +401,7 @@ document.write("<span style=\"float:right;\">");
 if (topic=="Question #"){
 if (idx.slice(-6)=="w. sol"  || idx.substr(idx.length - 6)=="w. sol" || idx=="index" || idx=="! temp")
 {
+if (idx.slice(-6)=="w. sol"  || idx.substr(idx.length - 6)=="w. sol"){document.write("<a class=\"nofill\" href=\""+linkx+"\">Hide Worked Solutions<\/a>&nbsp;&nbsp;");
 }
 else
 {
