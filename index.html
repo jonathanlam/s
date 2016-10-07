@@ -362,7 +362,7 @@ var tagsx="questions/"+tix+"\/"+idx+".html"
 }
 else
 {
-if (idx.slice(-2)=="_s")
+if (idx.slice(-2)=="_s" || idx.substr(idx.length - 2)=="_s")
 {
 var tagsx="questions/"+tix+"\/"+viewno+"_"+idx+".html?s"
 var idx=idx.replace("_s", " w. sol");
