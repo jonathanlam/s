@@ -3007,8 +3007,8 @@ text-decoration: none;
 }
 #sites-chrome-page-wrapper {
 /*	margin: auto; */
-margin-left:50px;
-margin-right:50px;
+margin-left:100px;
+margin-right:100px;
 
 max-width:1032px !important;
 min-width:440px !important;
@@ -3021,7 +3021,7 @@ min-width:440px !important;
 	padding: 2px 0px 0px;
 }
 #sites-chrome-main-wrapper {
-	background: rgb(255, 255, 255); padding: 0px 25px;
+	background: rgb(255, 255, 255); padding: 0px 50px;
 }
 .sites-mobile #sites-chrome-main-wrapper {
 	padding: 0px 0.6em;
@@ -3057,7 +3057,7 @@ body #sites-header-title h2 {
 	vertical-align: middle;
 }
 .sites-header-primary-row .sites-header-cell-buffer-wrapper {
-	padding: 0px 25px;
+	padding: 0px 50px;
 }
 .sites-mobile .sites-header-primary-row .sites-header-cell-buffer-wrapper {
 	padding: 0px 0.6em;
@@ -4260,7 +4260,15 @@ display:inline-block;
 
    }
 #sites-chrome-adminfooter-container {display:none !important;}
-#sites-chrome-main-wrapper {padding: 0px 10px !important;}
+#sites-chrome-main-wrapper {padding: 0px 25px !important;}
+#sites-chrome-page-wrapper {
+/*	margin: auto; */
+margin-left:50px !important;
+margin-right:50px !important;
+	      }
+.sites-header-primary-row .sites-header-cell-buffer-wrapper {
+	padding: 0px 25px !important;
+}
 }
        @media screen and (max-width:445px){
       #sites-chrome-adminfooter-container, .nmob {display:none !important;}
