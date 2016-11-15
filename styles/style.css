@@ -4247,8 +4247,8 @@ color:#555555 !important;;
       #web-list .goog-container {display:none !important;}
 .nmob {display:none !important;}
       a {width:inherit !important; overflow:ellipsis !important;}
-         }
-      @media screen and (max-width:595px){
+   /*      }
+      @media screen and (max-width:595px){*/
       .new {
 color:#FF5500 !important;
 font-size:11px !important;
