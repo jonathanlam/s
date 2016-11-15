@@ -4202,26 +4202,27 @@ color:#555555 !important;;
     display:table-cell;
 }
 
- @media screen and (max-width:1090px){
+ @media screen and (max-width:1095px){
    .reducible {display: none !important;}
 .reduciblexoverride{display:none !important;}
       .redx {display:inherit !important;}
 }
- @media screen and (max-width:960px){
+ @media screen and (max-width:945px){
   /* Nothing needed at the moment */
+	       .sites-layout-searchbox {display:none !important;}
    
 }
- @media screen and (max-width:830px){
+ @media screen and (max-width:820px){
  	    div#web-list {display:inherit !important;}
    div#web-grid, #web-list .goog-container {display:none !important;}
    #web-list a > small {display:none !important;}
    .sites-header-nav-container-boxes li:not(.lev) {display: none !important;}
    #navie :not(.lev) {display: none !important;}
-      .sites-layout-searchbox {display:none !important;}
+
 
 #sites-attachments-container{display:none !important;}   
 }
-@media screen and (max-width:780px){
+@media screen and (max-width:795px){
    .reduciblex {display:none;}
 
       .smallscreen {display:inherit !important;}
@@ -4230,7 +4231,7 @@ color:#555555 !important;;
 
    }
 
- @media screen and (max-width:720px){
+ @media screen and (max-width:745px){
    .td {display:table-row;}
          body #sites-page-title-header {font-size:21px !important;}
    }
@@ -4240,14 +4241,14 @@ color:#555555 !important;;
       body #sites-chrome-everything h4 {font-size:15px !important;}
       .sites-header-nav {display:none !important;}
    }
- @media screen and (max-width:660px){
+ @media screen and (max-width:670px){
    .td {display:table-row;}
       body #sites-chrome-everything h4 {font-size:15px !important;}
       #web-list .goog-container {display:none !important;}
 .nmob {display:none !important;}
       a {width:inherit !important; overflow:ellipsis !important;}
          }
-      @media screen and (max-width:580px){
+      @media screen and (max-width:595px){
       .new {
 color:#FF5500 !important;
 font-size:11px !important;
@@ -4258,7 +4259,7 @@ overflow:ellipsis;
 display:inline-block;
    }
 }
-       @media screen and (max-width:440px){
+       @media screen and (max-width:445px){
       #sites-chrome-adminfooter-container, .nmob {display:none !important;}
       #contentall {overflow:ellipsis};
       #sites-chrome-everything{min-width:440px !important;}
