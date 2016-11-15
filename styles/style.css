@@ -3021,7 +3021,7 @@ min-width:440px !important;
 	padding: 2px 0px 0px;
 }
 #sites-chrome-main-wrapper {
-	background: rgb(255, 255, 255); padding: 0px 50px;
+	background: rgb(255, 255, 255); padding: 0px 10px;
 }
 .sites-mobile #sites-chrome-main-wrapper {
 	padding: 0px 0.6em;
