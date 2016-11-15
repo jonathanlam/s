@@ -4244,9 +4244,9 @@ color:#555555 !important;;
 /*	margin: auto; */
 margin-left:50px !important;
 margin-right:50px !important;
-/*	      }
-   }*/
- @media screen and (max-width:670px){
+	      }
+/*   }
+ @media screen and (max-width:670px){*/
    .td {display:table-row;}
       body #sites-chrome-everything h4 {font-size:15px !important;}
       #web-list .goog-container {display:none !important;}
