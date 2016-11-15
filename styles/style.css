@@ -4234,7 +4234,7 @@ color:#555555 !important;;
    .td {display:table-row;}
          body #sites-page-title-header {font-size:21px !important;}
    }
-    @media screen and (max-width:680px){
+    @media screen and (max-width:695px){
    .td {display:table-row;}
       body #sites-page-title-header {font-size:20px !important;}
       body #sites-chrome-everything h4 {font-size:15px !important;}
