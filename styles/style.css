@@ -4207,12 +4207,12 @@ color:#555555 !important;;
 .reduciblexoverride{display:none !important;}
       .redx {display:inherit !important;}
 }
- @media screen and (max-width:945px){
+ @media screen and (max-width:995px){
   /* Nothing needed at the moment */
 	       .sites-layout-searchbox {display:none !important;}
    
 }
- @media screen and (max-width:820px){
+ @media screen and (max-width:824px){
  	    div#web-list {display:inherit !important;}
    div#web-grid, #web-list .goog-container {display:none !important;}
    #web-list a > small {display:none !important;}
@@ -4257,7 +4257,9 @@ top:auto;
 left:420px;
 overflow:ellipsis;
 display:inline-block;
+	      
    }
+	      #sites-chrome-adminfooter-container {display:none !important;}
 }
        @media screen and (max-width:445px){
       #sites-chrome-adminfooter-container, .nmob {display:none !important;}
