@@ -4257,9 +4257,10 @@ top:auto;
 left:420px;
 overflow:ellipsis;
 display:inline-block;
-	      
+
    }
-	      #sites-chrome-adminfooter-container {display:none !important;}
+#sites-chrome-adminfooter-container {display:none !important;}
+#sites-chrome-main-wrapper {padding: 0px 10px !important;}
 }
        @media screen and (max-width:445px){
       #sites-chrome-adminfooter-container, .nmob {display:none !important;}
