@@ -4240,6 +4240,11 @@ color:#555555 !important;;
       body #sites-page-title-header {font-size:20px !important;}
       body #sites-chrome-everything h4 {font-size:15px !important;}
       .sites-header-nav {display:none !important;}
+#sites-chrome-page-wrapper {
+/*	margin: auto; */
+margin-left:50px !important;
+margin-right:50px !important;
+	      }
    }
  @media screen and (max-width:670px){
    .td {display:table-row;}
@@ -4261,11 +4266,7 @@ display:inline-block;
    }
 #sites-chrome-adminfooter-container {display:none !important;}
 #sites-chrome-main-wrapper {padding: 0px 25px !important;}
-#sites-chrome-page-wrapper {
-/*	margin: auto; */
-margin-left:50px !important;
-margin-right:50px !important;
-	      }
+
 .sites-header-primary-row .sites-header-cell-buffer-wrapper {
 	padding: 0px 25px !important;
 }
