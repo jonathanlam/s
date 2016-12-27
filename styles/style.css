@@ -4212,7 +4212,7 @@ color:#555555 !important;;
 	       .sites-layout-searchbox {display:none !important;}
    
 }
- @media screen and (max-width:824px){
+ @media screen and (max-width:840px){
  	    div#web-list {display:inherit !important;}
    div#web-grid, #web-list .goog-container {display:none !important;}
    #web-list a > small {display:none !important;}
