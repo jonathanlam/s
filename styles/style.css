@@ -4214,12 +4214,13 @@ color:#555555 !important;;
 }
  @media screen and (max-width:840px){
  	    div#web-list {display:inherit !important;}
+      .smallscreen {display:inline-block !important;}
    div#web-grid, #web-list .goog-container {display:none !important;}
    #web-list a > small {display:none !important;}
    .sites-header-nav-container-boxes li:not(.lev) {display: none !important;}
    #navie :not(.lev) {display: none !important;}
 
-      .smallscreen {display:inherit !important;}
+
 
 #sites-attachments-container{display:none !important;}   
 }
