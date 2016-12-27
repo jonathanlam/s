@@ -4219,13 +4219,13 @@ color:#555555 !important;;
    .sites-header-nav-container-boxes li:not(.lev) {display: none !important;}
    #navie :not(.lev) {display: none !important;}
 
+      .smallscreen {display:inherit !important;}
 
 #sites-attachments-container{display:none !important;}   
 }
 @media screen and (max-width:795px){
    .reduciblex {display:none;}
 
-      .smallscreen {display:inherit !important;}
       body #sites-page-title-header {font-size:22px !important;}
       body #sites-chrome-everything h4 {font-size:15px !important;}
 
