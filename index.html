@@ -45,7 +45,8 @@ var searchq=window.location.search+""
 var viewno=getParameterByName('view', "0000")
 var titlex=getParameterByName('n', "NE")
 var idx=getParameterByName('id', "NE")
-
+if (viewno.charAt(0)=="f"){viewno=viewno.substr(0); var switch="yes"; }
+else {var switch="no"}
 switch(viewno)
 {
 case "1070":
@@ -533,6 +534,13 @@ window.location="https://thsconline.github.io/frenzy/v/"+viewno+".html?id="+idx+
 return;
 break;
 }
+if (switch=="yes")
+{
+var tags=treelink;
+}
+
+
+
 var myurl = document.location;
 document.write("<html><head>");
 document.write("<title>THSC Online - "+tix+" - "+titlex.replace("<i>", "").replace("</i>", "") +"<\/title>");
@@ -545,7 +553,7 @@ document.write("<\/head>");
 document.write("<body>");
 document.write("<span class=\"overlaybar folder-path-container goog-container\" style=\"width:100%;background-color:#D8D8D8;z-index:1000px;position:absolute;top:0px;\">");
 document.write("<span class=\"overlayinsert folder-path-folder folder-path-element\">");
-document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix+"</b> -<\/span> "+titlex);
+document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix+"</b> - <\/span>"+titlex);
 document.write("<span style=\"float:right;\">");
 document.write("<a class=\"nofill\" href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
 /*document.write("<a class=\"nofill\" href=\"/s/?login\" target=\"_blank\">Login/Register<\/a>&nbsp;&nbsp;");
@@ -639,7 +647,7 @@ document.write("<\/head>");
 document.write("<body>");
 document.write("<span class=\"overlaybar folder-path-container goog-container\" style=\"width:100%;background-color:#D8D8D8;z-index:1000px;position:absolute;top:0px;\">");
 document.write("<span class=\"overlayinsert folder-path-folder folder-path-element\">");
-document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix+"</b> -<\/span> "+topic+idx);
+document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix+"</b> - <\/span>"+topic+idx);
 document.write("<span style=\"float:right;\">");
 if (topic=="Question #"){
 if (idx.slice(-6)=="w. sol"  || idx.substr(idx.length - 6)=="w. sol" || idx=="index" || idx=="! temp")
