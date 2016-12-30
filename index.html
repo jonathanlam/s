@@ -228,13 +228,19 @@ case "4128":
 var tix="HSC IPT Trial Papers";
 var tags="https://thsconline.github.io/s/yr12/IPT/trialpapers.html#"+idx;
 break;
+case "4500":
+var tix="HSC Languages";
+var tags="https://thsconline.github.io/s/yr12/LOTE/index.html#"+idx;
+break; 
 case "4619":
 var tix="HSC Japanese Beginners";
 var tags="https://thsconline.github.io/s/yr12/LOTE/Japanese/hscpapers_beginners.html#"+idx;
 break; 
 case "4620":
+var root=titlex.substr(11).toLowerCase();
+if (root=="solutions" || root=="solution"){root="hsc"}
 var tix="HSC Japanese Continuers";
-var tags="https://thsconline.github.io/s/yr12/LOTE/Japanese/hscpapers_continuers.html#"+idx;
+var tags="https://thsconline.github.io/s/yr12/LOTE/Japanese/"+root+"papers_continuers.html#"+idx;
 break; 
 case "4626":
 var tix="HSC Japanese Continuers HY Papers";
