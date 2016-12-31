@@ -382,6 +382,12 @@ document.getElementsByClassName("sites-layout-searchbox")[0].style.display="none
 
 }
 catch (err){}
+try
+{
+document.getElementById("sites-attachments-container").innerHTML="Contribute any past papers here at this link:<a target=\"_blank\" class=\"x\" href=\"https:\/\/thsconline.github.io\/s\/upload\/uploader2.html">Add a Resource<\/a>&nbsp;&nbsp;"
+}
+catch (err){}
+
 g=document.getElementById("sites-chrome-adminfooter-container").getElementsByTagName('div')[0].innerHTML;
 
 try{var test=document.getElementsByClassName("source")[0].id; var je="<br><a href=\"#sites-chrome-everything\">Go to Top of Page<\/a>&nbsp;|&nbsp;"}
