@@ -45,8 +45,8 @@ var searchq=window.location.search+""
 var viewno=getParameterByName('view', "0000")
 var titlex=getParameterByName('n', "NE")
 var idx=getParameterByName('id', "NE")
-if (viewno.charAt(0)=="f"){viewno=viewno.substr(0); var switch="yes"; }
-else {var switch="no"}
+if (viewno.charAt(0)=="f"){viewno=viewno.substr(0); var switchx="yes"; }
+else {var switchx="no"}
 switch(viewno)
 {
 case "1070":
@@ -534,7 +534,7 @@ window.location="https://thsconline.github.io/frenzy/v/"+viewno+".html?id="+idx+
 return;
 break;
 }
-if (switch=="yes")
+if (switchx=="yes")
 {
 var tags=treelink;
 }
