@@ -386,7 +386,7 @@ try
 {
 document.getElementById("sites-attachments-container").innerHTML="Contribute any past papers here at this link: <a target=\"_blank\" class=\"x\" href=\"https:\/\/thsconline.github.io\/s\/upload\/uploader2.html\">Add a Resource<\/a>&nbsp;&nbsp;"
 }
-catch (err){}
+catch (err){console.log(err)}
 
 g=document.getElementById("sites-chrome-adminfooter-container").getElementsByTagName('div')[0].innerHTML;
 
