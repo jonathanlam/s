@@ -384,7 +384,7 @@ document.getElementsByClassName("sites-layout-searchbox")[0].style.display="none
 catch (err){}
 try
 {
-document.getElementById("sites-attachments-container").innerHTML="Contribute any past papers here at this link:<a target=\"_blank\" class=\"x\" href=\"https:\/\/thsconline.github.io\/s\/upload\/uploader2.html">Add a Resource<\/a>&nbsp;&nbsp;"
+document.getElementById("sites-attachments-container").innerHTML="Contribute any past papers here at this link: <a target=\"_blank\" class=\"x\" href=\"https:\/\/thsconline.github.io\/s\/upload\/uploader2.html\">Add a Resource<\/a>&nbsp;&nbsp;"
 }
 catch (err){}
 
