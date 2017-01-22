@@ -22,6 +22,9 @@ var qt=q.split("&")[0]
 var queryx=qt.split("=")[0];
 switch(queryx)
 {
+case "?close":
+window.close();
+break;
 case "?landing":
 document.getElementById('homepage').style.display='none';
 document.getElementById('sites-chrome-everything').style.display='block';
@@ -602,7 +605,7 @@ document.write("<a class=\"nofill\" href=\"/s/?download"+searchq.substr(5)+"\" t
 */
 if (switchx=="bos")
 {
-document.write("<a class=\"nofill\" href=\""+tags+"\">Go to THSC<\/a>&nbsp;&nbsp;<a class=\"nofill\" href=\"#ui-blank\" onClick=\"window.close()\">[Close &#215;]<\/a></span></span></span><br>");
+document.write("<a class=\"nofill\" href=\""+tags+"\">Go to THSC<\/a>&nbsp;&nbsp;<a class=\"nofill\" href=\"/s/?close">[Close &#215;]<\/a></span></span></span><br>");
 }
 else
 {
