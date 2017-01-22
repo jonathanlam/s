@@ -52,7 +52,7 @@ var idx=getParameterByName('id', "NE")
 if (viewno.charAt(0)=="f"){viewnox=viewno.substr(1); var switchx="yes"; }
 else
 {
-if (viewno.charAt(0)=="B"){viewnox=viewno.substr(1); var switchx="bos"; } else {var switchx="no"; var viewnox=viewno;}
+if (viewno.charAt(0)=="B"){viewnox=viewno.substr(1); var switchx="sdf"; } else {var switchx="no"; var viewnox=viewno;}
 }
 switch(viewnox)
 {
@@ -547,8 +547,8 @@ case "8570":
 var tix="HSC Visual Arts"; /* VA */
 var tags="https://thsconline.github.io/s/yr12/Visual Arts/index.html#"+idx;
 break;
-case "bos":
-var switchx="bos";
+case "sdf":
+var switchx="sdf";
 break;
 default:
 window.location="https://thsconline.github.io/frenzy/v/"+viewno+".html?id="+idx+"&n="+titlex+""
@@ -559,16 +559,16 @@ if (switchx=="yes")
 {
 var tags=treelink;
 }
-if (switchx=="bos")
+if (switchx=="sdf")
 {
-var bosforumlk="http://community.boredofstudies.org/"+getParameterByName('linkref', "459/secondary-education/")
+var sdfforumlk="http://community.boredofstudies.org/"+getParameterByName('linkref', "459/secondary-education/")
 }
 
 
 
 var myurl = document.location;
 document.write("<html><head>");
-if (switchx=="bos")
+if (switchx=="sdf")
 {
 document.write("<title>File Viewer<\/title>");
 }
@@ -585,7 +585,7 @@ document.write("<\/head>");
 document.write("<body>");
 document.write("<span class=\"overlaybar folder-path-container goog-container\" style=\"width:100%;background-color:#D8D8D8;z-index:1000px;position:absolute;top:0px;\">");
 document.write("<span class=\"overlayinsert folder-path-folder folder-path-element\">");
-if (switchx=="bos")
+if (switchx=="sdf")
 {
 document.write("<span class=\"nmob\">&nbsp;<\/span>");}
 else
@@ -593,7 +593,7 @@ else
 document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix+"</b> - <\/span>"+titlex);
 }
 document.write("<span style=\"float:right;\">");
-if (switchx=="bos")
+if (switchx=="sdf")
 {
 }
 else
@@ -603,7 +603,7 @@ document.write("<a class=\"nofill\" href=\"https:\/\/drive.google.com\/uc?export
 /*document.write("<a class=\"nofill\" href=\"/s/?login\" target=\"_blank\">Login/Register<\/a>&nbsp;&nbsp;");
 document.write("<a class=\"nofill\" href=\"/s/?download"+searchq.substr(5)+"\" target=\"_blank\">Test Download PDF<\/a>&nbsp;&nbsp;");
 */
-if (switchx=="bos")
+if (switchx=="sdf")
 {
 document.write("<a class=\"nofill\" href=\""+tags+"\">Go to THSC<\/a>&nbsp;&nbsp;<a class=\"nofill\" href=\"\/s\/?close\">[Close &#215;]<\/a></span></span></span><br>");
 }
