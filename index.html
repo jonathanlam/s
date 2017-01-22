@@ -544,6 +544,9 @@ case "8570":
 var tix="HSC Visual Arts"; /* VA */
 var tags="https://thsconline.github.io/s/yr12/Visual Arts/index.html#"+idx;
 break;
+case "bos":
+var switchx="bos";
+break;
 default:
 window.location="https://thsconline.github.io/frenzy/v/"+viewno+".html?id="+idx+"&n="+titlex+""
 return;
@@ -581,7 +584,7 @@ document.write("<span class=\"overlaybar folder-path-container goog-container\" 
 document.write("<span class=\"overlayinsert folder-path-folder folder-path-element\">");
 if (switchx=="bos")
 {
-document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix+"</b> - <\/span>");}
+document.write("<span class=\"nmob\">&nbsp;<\/span>");}
 else
 {
 document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix+"</b> - <\/span>"+titlex);
@@ -590,14 +593,14 @@ document.write("<span style=\"float:right;\">");
 document.write("<a class=\"nofill\" href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
 /*document.write("<a class=\"nofill\" href=\"/s/?login\" target=\"_blank\">Login/Register<\/a>&nbsp;&nbsp;");
 
-document.write("<a class=\"nofill\" href=\"/s/?download"+searchq.substr(5)+"\" target=\"_blank\">Test Download PDF<\/a>&nbsp;&nbsp;");
 */
 if (switchx=="bos")
 {
-document.write("&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">View on THSC<\/a>&nbsp;&nbsp;<a class=\"nofill\" href=\""+bosforumlk+"\">[Back to BoS]<\/a></span></span></span><br>");
+document.write("<a class=\"nofill\" href=\""+tags+"\">Go to THSC<\/a>&nbsp;&nbsp;<a class=\"nofill\" href=\"#ui-blank\" onClick=\"window.close()\">[Close &#215;]<\/a></span></span></span><br>");
 }
 else
 {
+document.write("<a class=\"nofill\" href=\"/s/?download"+searchq.substr(5)+"\" target=\"_blank\">Test Download PDF<\/a>&nbsp;&nbsp;");
 document.write("&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">[Close &#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
 }
 document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
