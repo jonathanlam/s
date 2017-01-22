@@ -46,12 +46,12 @@ var viewno=getParameterByName('view', "0000")
 var titlex=getParameterByName('n', "NE")
 var idx=getParameterByName('id', "NE")
 
-if (viewno.charAt(0)=="f"){viewno=viewno.substr(0); var switchx="yes"; }
+if (viewno.charAt(0)=="f"){viewnox=viewno.substr(0); var switchx="yes"; }
 else
 {
-if (viewno.charAt(0)=="B"){viewno=viewno.substr(0); var switchx="bos"; } else {var switchx="no"}
+if (viewno.charAt(0)=="B"){viewnox=viewno.substr(0); var switchx="bos"; } else {var switchx="no"; var viewnox=viewno;}
 }
-switch(viewno)
+switch(viewnox)
 {
 case "1070":
 var tix="HSC Agriculture";
