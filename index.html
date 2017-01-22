@@ -45,8 +45,12 @@ var searchq=window.location.search+""
 var viewno=getParameterByName('view', "0000")
 var titlex=getParameterByName('n', "NE")
 var idx=getParameterByName('id', "NE")
+
 if (viewno.charAt(0)=="f"){viewno=viewno.substr(0); var switchx="yes"; }
-else {var switchx="no"}
+else
+{
+if (viewno.charAt(0)=="B"){viewno=viewno.substr(0); var switchx="bos"; } else {var switchx="no"}
+}
 switch(viewno)
 {
 case "1070":
@@ -549,12 +553,24 @@ if (switchx=="yes")
 {
 var tags=treelink;
 }
+if (switchx=="bos")
+{
+var bosforumlk=getParameterByName('linkref', "/459/secondary-education/")
+}
 
 
 
 var myurl = document.location;
 document.write("<html><head>");
+if (switchx=="bos")
+{
+document.write("<title>"File: "+tix+" - "+titlex.replace("<i>", "").replace("</i>", "") +"<\/title>");
+
+}
+else
+{
 document.write("<title>THSC Online - "+tix+" - "+titlex.replace("<i>", "").replace("</i>", "") +"<\/title>");
+}
 document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
 document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\"><link rel=\"shortcut icon\" type=\"image\/x-icon\" href=\"https:\/\/thsconline.github.io\/s\/images\/icon_def.png\">");
 document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"text\/css\">");
@@ -571,7 +587,14 @@ document.write("<a class=\"nofill\" href=\"https:\/\/drive.google.com\/uc?export
 
 document.write("<a class=\"nofill\" href=\"/s/?download"+searchq.substr(5)+"\" target=\"_blank\">Test Download PDF<\/a>&nbsp;&nbsp;");
 */
+if (switchx=="bos")
+{
+document.write("&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">View on THSC<\/a>&nbsp;&nbsp;<a class=\"nofill\" href=\""+bosforumlk+"\">Back to BoS<\/a>/span></span></span><br>");
+}
+else
+{
 document.write("&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">[Close &#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
+}
 document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("</body></html>"); 
 break;
