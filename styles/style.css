@@ -3705,7 +3705,7 @@ color: white !important;
 .current a {
 	color: white !important;
 }
-li span {
+li.current span, li.unselected span, li.listing span {
 	left: 900px; position: absolute;
 }
 input {
