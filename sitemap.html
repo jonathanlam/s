@@ -1297,7 +1297,7 @@ dirs[i++] = [
 				var source_parent = source_root.substring( 0, source_root.lastIndexOf("/") +1 );
 				var hide_root = ( link_root != "" &&  link_root.substring(0,source_root.length) != source_root );
 			
-				var path_info = dirs[FolderID][0].split("*")[0].pathinfox.replace(/\:\\/g,"<span class='path_divider'></span>").replace(/\\/g,"<span class='path_divider'></span>");
+				var path_info = dirs[FolderID][0].split("*")[0].replace(/\:\\/g,"<span class='path_divider'></span>").replace(/\\/g,"<span class='path_divider'></span>");
 				
 
 				if( hide_root )
