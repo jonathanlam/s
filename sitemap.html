@@ -1115,7 +1115,7 @@ dirs[i++] = [
 								//var located_in = SearchLocations[c];
 								//if( located_in === "" ) located_in = "[.]"
 								var subdir_id = parent_folders[ SearchLocationsID[c] ];
-								table_html += "<tr><td><span class='file_folder'><a href=\"#\" class=\"folder_link\" id=\"" + SearchLocationsID[c] + "\"> " + SearchFilenames[c][3] + "</a></span></td><td><span class='file_folder'><a href=\"#\" class=\"folder_link\" id=\"" + subdir_id + "\"> " + getDirNameAndPath(subdir_id) + "</a></span></td><td>" + bytesToSize( SearchFilenames[c][1] ) + "</td><td>" + SearchFilenames[c][2] + "</td></tr>\n";
+								table_html += "<tr><td><span class='file_folder'><a href=\"#\" class=\"nofill folder_link\" id=\"" + SearchLocationsID[c] + "\"> " + SearchFilenames[c][3] + "</a></span></td><td><span class='file_folder'><a href=\"#\" class=\"nofill folder_link\" id=\"" + subdir_id + "\"> " + getDirNameAndPath(subdir_id) + "</a></span></td><td>" + bytesToSize( SearchFilenames[c][1] ) + "</td><td>" + SearchFilenames[c][2] + "</td></tr>\n";
 							}
 							else	// files
 							{
