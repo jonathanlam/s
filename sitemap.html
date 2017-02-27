@@ -1158,7 +1158,7 @@ dirs[i++] = [
 
 								var located_in = SearchLocations[c];
 								if( located_in === "" ) located_in = "[.]"
-								table_html += "<tr><td><span class='file'>" + file_tmp + "</span></td><td><span class='file_folder'><a href=\"#\" class=\"folder_link\" id=\"" + SearchLocationsID[c] + "\"> " + located_in + "</a></span></td><td>" + bytesToSize( SearchFilenames[c][1] ) + "</td><td>" + SearchFilenames[c][2] + "</td></tr>\n";
+								table_html += "<tr><td><span class='file'>" + file_tmp + "</span></td><td><span class='file_folder'><a href=\"#\" class=\"nofill folder_link\" id=\"" + SearchLocationsID[c] + "\"> " + located_in + "</a></span></td><td>" + bytesToSize( SearchFilenames[c][1] ) + "</td><td>" + SearchFilenames[c][2] + "</td></tr>\n";
 							}
 
 						}
@@ -1210,7 +1210,7 @@ dirs[i++] = [
 				var c;
 
 				// folders
-				if( FolderID != 0 ) table_html += "<tr><td><span class='file_folder'><a href=\"#\" class=\"folder_link\" id=\"" + parent_folders[FolderID] + "\"> [..]</a></span></td><td></td><td></td></tr>\n";
+				if( FolderID != 0 ) table_html += "<tr><td><span class='file_folder'><a href=\"#\" class=\"nofill folder_link\" id=\"" + parent_folders[FolderID] + "\"> [..]</a></span></td><td></td><td></td></tr>\n";
 				var subdirs = getSubdirs( SelectedFolderID );
 				if( subdirs != "" )
 				{
@@ -1221,7 +1221,7 @@ dirs[i++] = [
 						var name = sTmp[0].substring( sTmp[0].lastIndexOf("\\") +1 );
 						var dirSize = getDirTreeSize( subdirs[c] );
 						subdirTotSizes += dirSize;
-						table_html += "<tr><td><span class='file_folder'><a href=\"#\" class=\"folder_link\" id=\"" + subdirs[c] + "\"> " + name + "</a></span></td><td>" + bytesToSize( dirSize ) + "</td><td>" + sTmp[2] + "</td></tr>\n";
+						table_html += "<tr><td><span class='file_folder'><a href=\"#\" class=\"nofill folder_link\" id=\"" + subdirs[c] + "\"> " + name + "</a></span></td><td>" + bytesToSize( dirSize ) + "</td><td>" + sTmp[2] + "</td></tr>\n";
 					}
 				}
 
@@ -1253,7 +1253,7 @@ dirs[i++] = [
 							file_tmp = file_tmp.replace(/\/\//g,"/");
 						}
 
-						file_tmp = "<a href=\"" + file_tmp;
+						file_tmp = "<a class=\"nofill\" style=\"color:black;\" href=\"" + file_tmp;
 					}
 					table_html += "<tr><td><span class='file'>" + file_tmp + "</span></td><td>" + bytesToSize( sTmp[1] ) + "</td><td>" + sTmp[2] + "</td></tr>\n";
 				}
