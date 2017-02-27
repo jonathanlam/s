@@ -1145,7 +1145,7 @@ dirs[i++] = [
 										file_tmp = file_tmp.replace(/\/\//g,"/");
 									}
 
-									file_tmp = "<a class=\"nofill\" style=\"color:black;\" href=\"" + file_tmp.replace("s/s/", "s/");
+									file_tmp = "<a class=\"nofill\" style=\"color:black;\" href=\"" + file_tmp.replace("s\/s\/", "s\/");
 								}
 
 								var located_in = SearchLocations[c];
@@ -1245,7 +1245,7 @@ dirs[i++] = [
 							file_tmp = file_tmp.replace(/\/\//g,"/");
 						}
 
-						file_tmp = "<a class=\"nofill\" style=\"color:black;\" href=\"" + file_tmp.replace("s/s/", "s/");
+						file_tmp = "<a class=\"nofill\" style=\"color:black;\" href=\"" + file_tmp.replace("s\/s\/", "s\/");
 					}
 					table_html += "<tr><td><span class='file'>" + file_tmp + "</span></td><td>" + bytesToSize( sTmp[1] ) + "</td><td>" + sTmp[2] + "</td></tr>\n";
 				}
