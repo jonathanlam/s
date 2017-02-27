@@ -48,7 +48,7 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
 		#connex .tree_div {
 			position:relative;
 			height:100%;
-min-height:840px;
+min-height:280px;
 			width:29%;
 			float:left;
 			overflow:auto;
@@ -58,7 +58,7 @@ min-height:840px;
 		#connex .files_div {
 			position:relative;
 			height: 100%;
-min-height:840px;
+min-height:280px;
 
 			overflow: auto;
 			border-top: 1px solid #aaa;
@@ -83,13 +83,16 @@ min-height:840px;
 			background-color: #555555
 color:white;
 			font-size: 8pt;
-			width: 100%;
-			text-align: left;
+width:100%
+			min-width:870px;
+	
+		text-align: left;
 			border-spacing: 0px;
-			border-bottom: 1px solid #CCC;
+			border: 0px;
 		}
 		#connex table.tablesorter thead tr th, table.tablesorter tfoot tr th {
-			background: #FFEFCC;
+			background-color: #555555;
+color:white;
 			border-left: 1px solid #CCC;
 			border-right: 1px solid #CCC;
 			padding: 4px;
@@ -108,8 +111,8 @@ color:white;
 			border-bottom: none;
 			border-left: none;
 			border-right: 1px solid #CCC;
-			border-top: 1px solid #DDD;
 			padding: 3px 3px 3px 4px;
+min-width:170px;
 		}
 
 		#connex table.tablesorter tbody tr:nth-child(even) td {
@@ -124,7 +127,8 @@ color:white;
 			background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
 		}
 		#connex table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
-			background-color: #FFD283;
+			background-color: #555555;
+color:white;
 		}
 
 		#connex table.tablesorter th:last-of-type,
@@ -133,20 +137,27 @@ color:white;
 		}
 
 		#connex span.file, #connex span.file_folder {
-			background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAOCAYAAAAbvf3sAAAAYUlEQVR4nGNkYGBgqKmp+c+AB7S0tDCiCNTU1PzHBdavX/8f2UAmfCbDgLGxMdwVRGlA1sRCSGFAQACcffbsWeJtgAE6afj+/TtRir9//z5o/UAKYGRgYGAoLi7Gm/iQAQC+qjWGF5ecJwAAAABJRU5ErkJggg==)
-			no-repeat
+			/*	background: url(data:image/gif;base64,R0lGODlhEAAOALMIAOC6eJdaH61zLZ9oJMOHNP/Sg//inv///////wAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAgALAAAAAAQAA4AAAQ9EMlJq72XaIKnOOAhdIRhFgCwaRQRviE3lWZtB5Rg78bo8TafZFAoGo8DSuDILOAmAUHT+JwMrthsZ4uIAAA7) */
+background: url('images/icon_file.png') no-repeat
 			left center;
-			padding-left:16px;
+padding-left:25px;
 			padding-bottom:1px;
 			padding-top:1px;
 		 }
 
 		#connex span.file_folder {
-			background: url(data:image/gif;base64,R0lGODlhEAAOALMIAOC6eJdaH61zLZ9oJMOHNP/Sg//inv///////wAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAgALAAAAAAQAA4AAAQ9EMlJq72XaIKnOOAhdIRhFgCwaRQRviE3lWZtB5Rg78bo8TafZFAoGo8DSuDILOAmAUHT+JwMrthsZ4uIAAA7)
-			no-repeat
+		/*	background: url(data:image/gif;base64,R0lGODlhEAAOALMIAOC6eJdaH61zLZ9oJMOHNP/Sg//inv///////wAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAgALAAAAAAQAA4AAAQ9EMlJq72XaIKnOOAhdIRhFgCwaRQRviE3lWZtB5Rg78bo8TafZFAoGo8DSuDILOAmAUHT+JwMrthsZ4uIAAA7) */
+background: url('images/icon_folder.png') no-repeat
 			left center;
+padding-left:25px;
 		}
 
+#connex span.file_folder.back {
+		/*	background: url(data:image/gif;base64,R0lGODlhEAAOALMIAOC6eJdaH61zLZ9oJMOHNP/Sg//inv///////wAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAgALAAAAAAQAA4AAAQ9EMlJq72XaIKnOOAhdIRhFgCwaRQRviE3lWZtB5Rg78bo8TafZFAoGo8DSuDILOAmAUHT+JwMrthsZ4uIAAA7) */
+background: url('images/icon_back.png') no-repeat
+			left center !important;
+padding-left:25px;
+		}
 		#connexspan.file a, #connex span.file_folder a {
 			text-decoration: none;
 			color: #333;
@@ -161,9 +172,7 @@ color:white;
 			background: #fff;
 			font-family: arial;
 			font-size: 8pt;
-			border: 0px;
-			border-bottom: 1px solid #CCC;
-			padding:3px;
+				padding:3px;
 			padding-left: 6px;
 		}
 		#connex .path_divider {
@@ -187,10 +196,9 @@ color:white;
 			padding: 0px;
 			margin: 0; /* issue 201 */
 			background-color: white;
-			border: 0px dotted gray;
 			overflow: auto;
 			height: 100%; /* issue 263 */
-min-height:840px;
+min-height:280px;
 
 		}
 
@@ -213,7 +221,6 @@ left: 0px !important;
 			background-color: transparent;
 			background-repeat: repeat-y;
 			/* vline.gif */
-			background-image:url(data:image/gif;base64,R0lGODlhEAAQAPcAAAAAAIAAAACAAICAAAAAgIAAgACAgMDAwMDcwKbK8P///6Wlpf/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////78KCgpICAgP8AAAD/AP//AAAA//8A/wD//////yH5BAEAAP4ALAAAAAAQABAAAAgpAP0JFHhvoMGDCBMiLKiwocOBDB9KXDixosGIFidizPhwI8eGHj8KDAgAOw==);
 			background-position: 0 0;
 			margin: 0;
 			padding: 1px 0 0 0 !important;
@@ -253,7 +260,7 @@ left: 0px !important;
 		}
 		#connex ul.dynatree-container img
 		{
-			width: 16px;
+			width: 1px;
 			height: 16px;
 			margin-left: 3px !important;
 			vertical-align: top;
@@ -294,21 +301,6 @@ left: 0px !important;
 		{
 			background-position: 0 0;
 			/*background-image: url("loading.gif");*/
-		}
-		#connex span.dynatree-icon /* Default icon */
-		{
-			margin-left: 3px;
-			background-position: 0px 0px;
-		}
-		#connex .dynatree-ico-cf span.dynatree-icon  /* Collapsed Folder */
-		{
-			/*background-position: 0px -16px;*/
-			background: url(data:image/gif;base64,R0lGODlhEAAOALMIAOC6eJdaH61zLZ9oJMOHNP/Sg//inv///////wAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAgALAAAAAAQAA4AAAQ9EMlJq72XaIKnOOAhdIRhFgCwaRQRviE3lWZtB5Rg78bo8TafZFAoGo8DSuDILOAmAUHT+JwMrthsZ4uIAAA7)
-		}
-		#connex .dynatree-ico-ef span.dynatree-icon  /* Expanded Folder */
-		{
-			/*background-position: -64px -16px;*/
-			background:url(data:image/gif;base64,R0lGODlhEAAOALMIAJdaH+C6eJ9oJMOHNK1zLf/inv/Sg////////wAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAgALAAAAAAQAA4AAARAEMlJq7136IEnOeBBdENhGkGwadQQviE3lWZtAxRhE3zvIzpT0HYaCQwGAnLJHCEASabU+VRKl1SJYMvtdr6ICAA7);
 		}
 		#connex span.dynatree-node
 		{
@@ -454,7 +446,7 @@ left: 0px !important;
 		var i = 0;		// counter for initializing dirs
 
 dirs[i++] = [
-"\\s\\*0*27/02/2017 17:38:26",
+"s\\*0*27/02/2017 17:38:26",
 "index.html*37788*20/02/2017 13:54:50",
 "landing.html*925*23/07/2016 19:43:52",
 "sitemap.html*231919*27/02/2017 17:50:33",
@@ -509,7 +501,7 @@ dirs[i++] = [
 ];
 
 dirs[i++] = [
-"\\s\\images\/colours*0*29/07/2016 20:07:25",
+"\\s\\images\\colours*0*29/07/2016 20:07:25",
 "icon_aqua.png*150*23/07/2016 19:43:52",
 "icon_black.png*163*23/07/2016 19:43:52",
 "icon_blue.png*163*23/07/2016 19:43:52",
@@ -1210,7 +1202,7 @@ dirs[i++] = [
 				var c;
 
 				// folders
-				if( FolderID != 0 ) table_html += "<tr><td><span class='file_folder'><a href=\"#\" class=\"nofill folder_link\" id=\"" + parent_folders[FolderID] + "\"> [..]</a></span></td><td></td><td></td></tr>\n";
+				if( FolderID != 0 ) table_html += "<tr><td><span class='file_folder back'><a href=\"#\" class=\"nofill folder_link\" id=\"" + parent_folders[FolderID] + "\">[<i>Up One Folder</i>]</a></span></td><td></td><td></td></tr>\n";
 				var subdirs = getSubdirs( SelectedFolderID );
 				if( subdirs != "" )
 				{
@@ -1432,23 +1424,15 @@ dirs[i++] = [
 <div id="sites-canvas-main-content">
 <table class="sites-layout-name-one-column sites-layout-hbox" cellspacing="0" xmlns="http://www.w3.org/1999/xhtml"><tbody><tr>
 <td class="sites-layout-tile sites-tile-name-content-1" id="CONTENT LEFT">
-<div dir="ltr" id="contentall" style="color:#555555;font-size:small;min-height:1000px;">
+<div dir="ltr" id="contentall" style="color:#555555;font-size:small;">
 <h1>Sitemap</h1>
 <div id="connex">
 	<div id="wrapper">
 	
-		<div id="top" class="top">
-		
-			<span class="top_icon"></span>
-		
-			<form class="top_search" id="search_form" action="#">
-				search: <input type="text" id="search_text">
-			</form>
-
-			<a href="sitemap2.html">View Sitemap for Actual Indexed Resources</a>
-
-		</div>
-
+		<form class="top_search" id="search_form" action="#">
+				<input type="text" id="search_text">
+<input type="submit" value="Search Sitemap">
+			</form><br><br><br>
 		<div id="loading" class="loading"><b>Loading...</b><p class="loading_info">(if nothing happens, make sure javascript is enabled and allowed to execute)</p></div>
 		
 		<div id="content" class="content">
@@ -1462,7 +1446,8 @@ dirs[i++] = [
 	 
 		</div>
  
-</div>	</div>
+</div>	</div><br><br>
+<a href="sitemap2.html">View Sitemap for Actual Indexed Resources</a>
 <div class="smallscreen" style="display:none">
 <a href="https://thsconline.github.io/s/">Home Page</a><br>
 <a href="yr10/">Year 10</a><br>
