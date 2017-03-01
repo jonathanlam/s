@@ -118,7 +118,7 @@ document.write("<span class=\"overlayinsert folder-path-folder folder-path-eleme
 document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>File</b> - <\/span>"+titlex);
 document.write("<span style=\"float:right;\">");
 document.write("<a class=\"nofill\" href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
-document.write("&nbsp;&nbsp;<a class=\"nofill\" onClick=\"location.reload()\" href=\""+tags+"\">[&#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
+document.write("&nbsp;&nbsp;<a class=\"nofill\" onClick=\"location.reload()\" href=\""+tags+"\">[Close &#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
 document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("</body></html>"); 
 }
