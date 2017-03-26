@@ -282,6 +282,7 @@ break;
            
 default:
 if(queryx=="?list2"){document.getElementById('web-list1').style.display='none'; document.getElementById('web-list2').style.display='inline';}
+if(queryx=="?rf"){document.getElementById('web-list1').style.display='none'; document.getElementById('web-list2').style.display='inline';}
 if(queryx=="?list1"){document.getElementById('web-list2').style.display='none'; document.getElementById('web-list1').style.display='inline';}
               
               try
