@@ -55,6 +55,7 @@ else
 {
 if (viewno.charAt(0)=="B"){viewnox=viewno.substr(1); var switchx="sdf"; } else {var switchx="no"; var viewnox=viewno;}
 }
+
 switch(viewnox)
 {
 case "yr09":
@@ -652,6 +653,10 @@ document.write("<a class=\"nofill\" href=\"/s/?download"+searchq.substr(5)+"\" t
 */
 if (switchx=="sdf")
 {
+	if (viewno.charAt(0)=="B"){
+	linkx="https:\/\/thsconline.github.io/s/?view="+viewnox+"&id="+idx+"&n="+titlex+""
+		document.write("<a class=\"nofill\" href=\""+linkx+"\">Expand<\/a>&nbsp;&nbsp;")
+	}
 document.write("<a class=\"nofill\" href=\"/s/\">Go to THSC<\/a>&nbsp;&nbsp;<a class=\"nofill\" href=\"\/s\/?close\">[Close &#215;]<\/a></span></span></span><br>");
 }
 else
