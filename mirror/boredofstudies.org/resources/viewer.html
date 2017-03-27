@@ -20,40 +20,8 @@ var searchq=window.location.search+""
 var viewno=getParameterByName('view', "0000")
 var titlex=getParameterByName('n', "NE")
 var idx=getParameterByName('id', "NE")
-if (viewno.charAt(0)=="f"){viewnox=viewno.substr(1); var switchx="yes"; }
-else
-{
-if (viewno.charAt(0)=="B"){viewnox=viewno.substr(1); var switchx="sdf"; } else {var switchx="no"; var viewnox=viewno;}
-}
-switch(viewnox)
-{
-case "sdf":
-var switchx="sdf";
-break;
-default:
-var switchx="sdf";
-return;
-break;
-}
-if (switchx=="yes")
-{
-var tags=treelink;
-}
-switchx="sdf" /* IMPORTANT LINE */
-if (switchx=="sdf")
-{
-var sdfforumlk="http://community.boredofstudies.org/"+getParameterByName('linkref', "459/secondary-education/")
-}
-var myurl = document.location;
 document.write("<html><head>");
-if (switchx=="sdf")
-{
-document.write("<title>File Viewer<\/title>");
-}
-else
-{
-document.write("<title>THSC Online - "+tix+" - "+titlex.replace("<i>", "").replace("</i>", "") +"<\/title>");
-}
+document.write("<title>BoredofStudies File Viewer<\/title>");
 document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">");
 document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\"><link rel=\"shortcut icon\" type=\"image\/x-icon\" href=\"https:\/\/thsconline.github.io\/s\/images\/icon_def.png\">");
 document.write("<link href=\"https:\/\/thsconline.github.io\/s\/styles\/style.css\" rel=\"stylesheet\" type=\"text\/css\">");
@@ -63,36 +31,8 @@ document.write("<\/head>");
 document.write("<body>");
 document.write("<span class=\"overlaybar folder-path-container goog-container\" style=\"width:100%;background-color:#D8D8D8;z-index:1000px;position:absolute;top:0px;\">");
 document.write("<span class=\"overlayinsert folder-path-folder folder-path-element\">");
-if (switchx=="sdf")
-{
 document.write("<span class=\"nmob\">&nbsp;<\/span>");}
-else
-{
-document.write("<span class=\"nmob\">&nbsp;&nbsp;<b>"+tix+"</b> - <\/span>"+titlex);
-}
-document.write("<span style=\"float:right;\">");
-if (switchx=="sdf")
-{
-}
-else
-{
-document.write("<a class=\"nofill\" href=\"https:\/\/drive.google.com\/uc?export=download&id="+idx+"\" target=\"_blank\">Download PDF<\/a>&nbsp;&nbsp;");
-}
-/*document.write("<a class=\"nofill\" href=\"/s/?login\" target=\"_blank\">Login/Register<\/a>&nbsp;&nbsp;");
-document.write("<a class=\"nofill\" href=\"/s/?download"+searchq.substr(5)+"\" target=\"_blank\">Test Download PDF<\/a>&nbsp;&nbsp;");
-*/
-if (switchx=="sdf")
-{
-	if (viewno.charAt(0)=="B"){
-	linkx="https:\/\/thsconline.github.io/s/?view="+viewnox+"&id="+idx+"&n="+titlex+""
-	/*	document.write("<a class=\"nofill\" href=\""+linkx+"\">Expand<\/a>&nbsp;&nbsp;")*/
-	}
 document.write("<a class=\"nofill\" href=\"boredofstudies.org/\">BoS Home<\/a>&nbsp;&nbsp;<a class=\"nofill\" href=\"community.boredofstudies.org/\">BoS Forum<\/a>&nbsp;&nbsp;<a class=\"nofill\" href=\"\/s\/?close\">[Close &#215;]<\/a></span></span></span><br>");
-}
-else
-{
-document.write("&nbsp;&nbsp;<a class=\"nofill\" href=\""+tags+"\">[Close &#215;]<\/a>&nbsp;&nbsp;</span></span></span><br>");
-}
 document.write("<style>.drive-viewer-popout-button{display:none;}</style><iframe style=\"width:98%; height:95%;\" height=\"95%\" id=\"mediaplayer\" src=\"https:\/\/drive.google.com\/file\/d\/"+idx+"\/preview\"><noscript>&nbsp;Enable Javascript to Load File<\/noscript><\/iframe>");
 document.write("</body></html>"); 
 }
