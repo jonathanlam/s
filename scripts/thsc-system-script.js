@@ -400,7 +400,7 @@ catch (err){var je="";console.log(err)}
 try
 {
  var urlw=window.location+"?uri"
- var jqw="https://raw.githubusercontent.com/thsconline/s/gh-pages/" +urlw.split("\/s\/")[1]
+ var jgw="https://raw.githubusercontent.com/thsconline/s/gh-pages/" +urlw.split("\/s\/")[1]
  var jeq="&nbsp;|&nbsp;<a href=\""+jgw+"\" target=\"blank\">View Source</a>" 
  }
 catch (err){var jeq="";console.log(err)}
