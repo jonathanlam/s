@@ -305,7 +305,7 @@ thislink= anchors[i]
 valuex=thislink.innerHTML;
 hrefx=thislink.href;
 classx=thislink.className;
-if(classx!="" || classx=="x" || valuex=="View Sitemap" || valuex=="Back to Year 12 - HSC" || valuex=="Back to Year 11 - Preliminary" || valuex=="Additional Resources Home" || valuex=="Back to Year 10"  || valuex=="Up One Folder" || valuex=="Home Page" || valuex=="Access Point for Shared Resources" || valuex=="Back")
+if(classx!="" || classx=="x" || valuex=="View Sitemap" || valuex=="View Source" || valuex=="Back to Year 12 - HSC" || valuex=="Back to Year 11 - Preliminary" || valuex=="Additional Resources Home" || valuex=="Back to Year 10"  || valuex=="Up One Folder" || valuex=="Home Page" || valuex=="Access Point for Shared Resources" || valuex=="Back")
 {
 if (classx=="inactive"){ searchbar+="<option value=\"#ui-blank\" disabled>"+valuex+"<\/option>" }
 if (classx=="nav x"){ searchbar+="<option value=\"#ui-blank\" disabled>"+valuex+"<\/option>" }
@@ -399,8 +399,10 @@ try{var test=document.getElementsByClassName("source")[0].id; var je="<br><a hre
 catch (err){var je=""}
 try
 {
-    
-h=je+g+"<img height=\"10px;\" src=\"http://counter.digits.net\/?counter={57da36d7-daf0-7014-c14b-9dbd7488e13c}&template=simple&background=EEEEFF&foreground=298CCA\" alt=\"Counter\" border=\"0\"\/>"
+ var urlw=window.location+""
+ var jqw=urlw.replace("https://thsconline.github.io/s/", "https://raw.githubusercontent.com/thsconline/s/gh-pages/")
+ var jeq="&nbsp;|&nbsp;<a href=\""+jgw+"\" target=\"blank\">View Source</a>"      
+h=je+g+jeq+"<img height=\"10px;\" src=\"http://counter.digits.net\/?counter={57da36d7-daf0-7014-c14b-9dbd7488e13c}&template=simple&background=EEEEFF&foreground=298CCA\" alt=\"Counter\" border=\"0\"\/>"
 
 
 
