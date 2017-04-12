@@ -386,7 +386,7 @@ document.getElementsByClassName("sites-layout-searchbox")[0].style.display="none
 }
 
 }
-catch (err){}
+catch (err){console.log(err)}
 try
 {
 document.getElementById("sites-attachments-container").innerHTML="Contribute any past papers here at this link: <a target=\"_blank\" class=\"x\" href=\"https:\/\/thsconline.github.io\/s\/upload\/uploader2.html\">Add a Resource<\/a>&nbsp;&nbsp;"
@@ -396,14 +396,14 @@ catch (err){console.log(err)}
 g=document.getElementById("sites-chrome-adminfooter-container").getElementsByTagName('div')[0].innerHTML;
 
 try{var test=document.getElementsByClassName("source")[0].id; var je="<br><a href=\"#sites-chrome-everything\">Go to Top of Page<\/a>&nbsp;|&nbsp;"}
-catch (err){var je=""}
+catch (err){var je="";console.log(err)}
 try
 {
  var urlw=window.location+"?uri"
  var jqw="https://raw.githubusercontent.com/thsconline/s/gh-pages/" +urlw.split("\/s\/")[1]
  var jeq="&nbsp;|&nbsp;<a href=\""+jgw+"\" target=\"blank\">View Source</a>" 
  }
-catch (err){var jeq=""}
+catch (err){var jeq="";console.log(err)}
         try
         {
 h=je+g+jeq+"<img height=\"10px;\" src=\"http://counter.digits.net\/?counter={57da36d7-daf0-7014-c14b-9dbd7488e13c}&template=simple&background=EEEEFF&foreground=298CCA\" alt=\"Counter\" border=\"0\"\/>"
@@ -413,7 +413,7 @@ h=je+g+jeq+"<img height=\"10px;\" src=\"http://counter.digits.net\/?counter={57d
 document.getElementById("sites-chrome-adminfooter-container").getElementsByTagName('div')[0].innerHTML=h;
 
 }
-catch (err){document.getElementById("sites-chrome-adminfooter-container").getElementsByTagName('div')[0].innerHTML=g;}
+catch (err){document.getElementById("sites-chrome-adminfooter-container").getElementsByTagName('div')[0].innerHTML=g;console.log(err)}
 break;
 }
 
