@@ -399,9 +399,13 @@ try{var test=document.getElementsByClassName("source")[0].id; var je="<br><a hre
 catch (err){var je=""}
 try
 {
- var urlw=window.location+""
- var jqw=urlw.replace("https://thsconline.github.io/s/", "https://raw.githubusercontent.com/thsconline/s/gh-pages/")
- var jeq="&nbsp;|&nbsp;<a href=\""+jgw+"\" target=\"blank\">View Source</a>"      
+ var urlw=window.location+"?uri"
+ var jqw="https://raw.githubusercontent.com/thsconline/s/gh-pages/" +urlw.split("\/s\/")[1]
+ var jeq="&nbsp;|&nbsp;<a href=\""+jgw+"\" target=\"blank\">View Source</a>" 
+ }
+catch (err){var jeq=""}
+        try
+        {
 h=je+g+jeq+"<img height=\"10px;\" src=\"http://counter.digits.net\/?counter={57da36d7-daf0-7014-c14b-9dbd7488e13c}&template=simple&background=EEEEFF&foreground=298CCA\" alt=\"Counter\" border=\"0\"\/>"
 
 
