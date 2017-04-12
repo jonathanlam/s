@@ -402,8 +402,11 @@ try
  var urlw=window.location+"?uri"
  var jgq="https://raw.githubusercontent.com/thsconline/s/gh-pages/" +urlw.split("\/s\/")[1]
  var jgw=jgq.replace("\/?uri", "\/index.html?uri");
+       if (queryx=="?landing"){var jeq=""}
+       else {
  var jeq="<a href=\""+jgw+"\" target=\"blank\">View Source</a>&nbsp;|&nbsp;" 
  }
+}
 catch (err){var jeq="";console.log(err)}
         try
         {
