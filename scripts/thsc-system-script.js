@@ -400,13 +400,14 @@ catch (err){var je="";console.log(err)}
 try
 {
  var urlw=window.location+"?uri"
- var jgw="https://raw.githubusercontent.com/thsconline/s/gh-pages/" +urlw.split("\/s\/")[1]
+ var jgq="https://raw.githubusercontent.com/thsconline/s/gh-pages/" +urlw.split("\/s\/")[1]
+ var jgw=jgq.replace("\/?uri", "\/index.html?uri");
  var jeq="&nbsp;|&nbsp;<a href=\""+jgw+"\" target=\"blank\">View Source</a>" 
  }
 catch (err){var jeq="";console.log(err)}
         try
         {
-h=je+g+jeq+"<img height=\"10px;\" src=\"http://counter.digits.net\/?counter={57da36d7-daf0-7014-c14b-9dbd7488e13c}&template=simple&background=EEEEFF&foreground=298CCA\" alt=\"Counter\" border=\"0\"\/>"
+h=je+jeq+g+"<img height=\"10px;\" src=\"http://counter.digits.net\/?counter={57da36d7-daf0-7014-c14b-9dbd7488e13c}&template=simple&background=EEEEFF&foreground=298CCA\" alt=\"Counter\" border=\"0\"\/>"
 
 
 
