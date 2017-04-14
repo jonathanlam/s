@@ -133,8 +133,8 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
         top: event.pageY + "px",
         left: event.pageX + "px"
     });
-    aid=  $(this).attr('id') || "&nbsp;";
-      document.getElementById("event-id").innerHTML=aid
+    axid=  $(this).prop(id) || "&nbsp;";
+      document.getElementById("event-id").innerHTML=axid;
 });
 
 
