@@ -121,7 +121,7 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
     var hoverElem = null;
 $("*").on("mouseenter", function() { hoverElem = this; });
     
-    $(document).bind("contextmenu", function (e) {
+    $(*).bind("contextmenu", function (e) {
     
     // Avoid the real one
     e.preventDefault();
