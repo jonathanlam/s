@@ -131,9 +131,14 @@ $("*").on("mouseenter", function() { hoverElem = this; });
       axid=  hoverElem.className || "&nbsp;";
           axidtag=  hoverElem.tagName || "body";
       axidh=  hoverElem.innerHTML || "";
-      document.getElementById("event-id").innerHTML=axidtag
+      if (axidtag=="A")
+      {
       document.getElementById("event-tag").innerHTML=axidh
-      
+      }
+else
+{
+  document.getElementById("event-tag").innerHTML=""
+}    
     // If the clicked element is not the menu
     
       $(".custom-menu").finish().toggle(100).
