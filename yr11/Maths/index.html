@@ -128,9 +128,11 @@ $("*").on("mouseenter", function() { hoverElem = this; });
     
     // Show contextmenu
    
-      axid=  e.className || "&nbsp;";
-          axidtag=  e.tagName || "body";
-      document.getElementById("event-tag").innerHTML=axidtag
+      axid=  hoverElem.className || "&nbsp;";
+          axidtag=  hoverElem.tagName || "body";
+      axidh=  hoverElem.innerHTML || "";
+      document.getElementById("event-id").innerHTML=axidtag
+      document.getElementById("event-tag").innerHTML=axidh
       
     // If the clicked element is not the menu
     
