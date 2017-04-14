@@ -82,6 +82,12 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
   }
 
 })();
+  function toggleMenuOn() {
+  if ( menuState !== 1 ) {
+    menuState = 1;
+    menu.classList.add(active);
+  }
+}
                                                    </script>
   <style>
     .context-menu {
