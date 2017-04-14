@@ -121,7 +121,7 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
     var hoverElem = null;
 $("*").on("mouseenter", function() { hoverElem = this; });
     
-    $("*").bind("contextmenu", function (e) {
+    $("$document").bind("contextmenu", function (e) {
     
     // Avoid the real one
     e.preventDefault();
@@ -133,14 +133,14 @@ $("*").on("mouseenter", function() { hoverElem = this; });
       document.getElementById("event-tag").innerHTML=axidtag
       
     // If the clicked element is not the menu
-    if (!$(e.target).parents("#sites-layout-searchbox").length > 0) {
+    if (!$(hoverElem.target).parents("#sites-layout-searchbox").length > 0) {
       $(".custom-menu").finish().toggle(100).
        
     
     // In the right position (the mouse)
     css({
-        top: event.pageY + "px",
-        left: event.pageX + "px"
+        top: e.pageY + "px",
+        left: e.pageX + "px"
     });
 
    }  
@@ -173,7 +173,7 @@ $(".custom-menu li").click(function(){
   <style>
     .custom-menu {
     display: none;
-    z-index: 100;
+    z-index: 100000;
     position: absolute;
     overflow: hidden;
     border: 1px solid #CCC;
