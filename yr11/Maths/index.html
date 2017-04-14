@@ -142,7 +142,7 @@ $("*").on("mouseenter", function() { hoverElem = this; });
     });
      if (axidtag=="A")
       {
-document.getElementById("mset1").style.display="inline-block";
+document.getElementById("mset1").style.display="block";
         document.getElementById("mset1-1").href=hoverElem.href;
         
 document.getElementById("mset2").style.display="none";
@@ -151,8 +151,8 @@ document.getElementById("mset2").style.display="none";
       }
 else
 {
-document.getElementById("mset1").style.display="inline-block";
-document.getElementById("mset2").style.display="none";
+document.getElementById("mset2").style.display="block";
+document.getElementById("mset1").style.display="none";
 document.getElementById("event-tag").innerHTML="";
 }   
     
@@ -232,7 +232,7 @@ background-color:#999999;
     }
 </style>
 <ul class='custom-menu'>
-  <small>&nbsp;&nbsp;<b><span id="event-tag"></span></b></small>
+<small>&nbsp;&nbsp;<b><span id="event-tag"></span></b></small>
 <span id="mset1" style="display:none;">
 <li><a id="mset1-1" class="nofill navx" href="#"><img src="https://thsconline.github.io/s/images/icon_link.png">&nbsp;&nbsp;Open Link</a></li>
 </span><span id="mset2"  style="display:none;">
