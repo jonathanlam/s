@@ -135,6 +135,11 @@ $("*").on("mouseenter", function() { hoverElem = this; });
     // If the clicked element is not the menu
     
       $(".custom-menu").finish().toggle(100).
+        // In the right position (the mouse)
+    css({
+        top: e.pageY + "px",
+        left: e.pageX + "px"
+    });
      if (axidtag=="A")
       {
 document.getElementById("set1").style.display="inline-block;"
@@ -143,7 +148,7 @@ document.getElementById("set1").style.display="inline-block;"
         
 document.getElementById("set2").style.display="none;"
         
-      document.getElementById("event-tag").innerHTML=axidh
+      document.getElementById("event-tag").innerHTML=axidh;
       }
 else
 {
@@ -154,11 +159,7 @@ document.getElementById("set2").style.display="none;"
   document.getElementById("event-tag").innerHTML="thsconline"
 }   
     
-    // In the right position (the mouse)
-    css({
-        top: e.pageY + "px",
-        left: e.pageX + "px"
-    });
+  
 
      
 });
