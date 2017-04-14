@@ -121,7 +121,7 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
     var hoverElem = null;
 $("*").on("mouseenter", function() { hoverElem = this; });
     
-    $("$document").bind("contextmenu", function (e) {
+    $(document).bind("contextmenu", function (e) {
     
     // Avoid the real one
     e.preventDefault();
@@ -133,7 +133,7 @@ $("*").on("mouseenter", function() { hoverElem = this; });
       document.getElementById("event-tag").innerHTML=axidtag
       
     // If the clicked element is not the menu
-    if (!$(hoverElem.target).parents("#sites-layout-searchbox").length > 0) {
+    
       $(".custom-menu").finish().toggle(100).
        
     
@@ -143,7 +143,7 @@ $("*").on("mouseenter", function() { hoverElem = this; });
         left: e.pageX + "px"
     });
 
-   }  
+     
 });
 
 
