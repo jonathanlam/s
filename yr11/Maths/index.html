@@ -133,7 +133,7 @@ $("*").on("mouseenter", function() { hoverElem = this; });
       document.getElementById("event-tag").innerHTML=axidtag;
       
     // If the clicked element is not the menu
-    if (!hoverElem.parents("#sites-layout-searchbox").length > 0) {
+    if (!$(hoverElem).parents("#sites-layout-searchbox").length > 0) {
       $(".custom-menu").finish().toggle(100).
        
     
