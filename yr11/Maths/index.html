@@ -157,7 +157,7 @@ $(".custom-menu li").click(function(){
         var locatex=window.location+"?end"
         var locatex2=locatex.split("?")[0]+"#end"
         var locatex3=locatex2.split("#")[0]        
-        var locatex3.replace(".html", "")
+        var myString =locatex3.replace(".html","")
         var lastChar = myString[myString.length -1];
         if(lastChar=="\/" || lastChar=="x")
         {
