@@ -121,10 +121,10 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
     var hoverElem = null;
 $("*").on("mouseenter", function() { hoverElem = this; });
     
-    $(document).bind("contextmenu", function (e) {
+    $(document).bind("contextmenu", function (event) {
     
     // Avoid the real one
-    e.preventDefault();
+    event.preventDefault();
     
     // Show contextmenu
    
@@ -137,8 +137,8 @@ $("*").on("mouseenter", function() { hoverElem = this; });
       $(".custom-menu").finish().toggle(100).
         // In the right position (the mouse)
     css({
-        top: e.pageY + "px",
-        left: e.pageX + "px"
+        top: event.pageY + "px",
+        left: event.pageX + "px"
     });
      if (axidtag=="A")
       {
