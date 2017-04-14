@@ -121,19 +121,19 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
     var hoverElem = null;
 $("*").on("mouseenter", function() { hoverElem = this; });
     
-    $(document).bind("contextmenu", function (event) {
+    $(document).bind("contextmenu", function (e) {
     
     // Avoid the real one
-    event.preventDefault();
+    e.preventDefault();
     
     // Show contextmenu
    
-      axid=  hoverElem.className || "&nbsp;";
-          axidtag=  hoverElem.tagName || "body";
-      document.getElementById("event-tag").innerHTML=axidtag;
+      axid=  e.className || "&nbsp;";
+          axidtag=  e.tagName || "body";
+      document.getElementById("event-tag").innerHTML=&lt+axidtag+&gt;
       
     // If the clicked element is not the menu
-    if (!$(hoverElem).parents("#sites-layout-searchbox").length > 0) {
+    if (!$(e.target).parents("#sites-layout-searchbox").length > 0) {
       $(".custom-menu").finish().toggle(100).
        
     
