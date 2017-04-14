@@ -124,8 +124,8 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
     event.preventDefault();
     
     // Show contextmenu
-     $(".cover").finish().toggle(100)
-      $(".custom-menu").finish().toggle(100)
+
+      $(".custom-menu").finish().toggle(100).
        
     
     // In the right position (the mouse)
@@ -144,7 +144,7 @@ $(document).bind("mousedown", function (e) {
         
         // Hide it
         $(".custom-menu").hide(100);
-        $(".cover").hide(100);
+        
       
     }
 });
@@ -170,11 +170,7 @@ $(".custom-menu li").click(function(){
     background: rgb(248,248,248);
     border-radius: 5px;
     padding: 0;
-
-}
-.custom-menu ul
-    {
-            width:237px !important;
+    width:237px !important;
     }
 /* Each of the items in the list */
 .custom-menu li {
@@ -209,7 +205,6 @@ background-color:#999999;
             width:236px !important;
     }
 </style>
-<div id="cover" style="width:100%;background-color:#555555;height:100%;display:inline-block;z-index: 50 !important;display:none;">&nbsp;</div>
 <ul class='custom-menu'>
 <small>&nbsp;&nbsp;<b>thsconline</b></small>
 <li><a class="nofill navx" href="https://thsconline.github.io/s/"><img src="https://thsconline.github.io/s/images/icon_home.png">&nbsp;&nbsp;Home Page</a></li>
