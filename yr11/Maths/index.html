@@ -136,7 +136,7 @@ $("*").on("mouseenter", function() { hoverElem = this; });
         top: event.pageY + "px",
         left: event.pageX + "px"
     });
-    axid=  hoverElem.id || "&nbsp;";
+    axid=  hoverElem.class || "&nbsp;";
       document.getElementById("event-id").innerHTML=axid;
 });
 
