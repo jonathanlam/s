@@ -156,7 +156,7 @@ $(".custom-menu li").click(function(){
   <style>
     .custom-menu {
     display: none;
-    z-index: 1000;
+    z-index: 100;
     position: absolute;
     overflow: hidden;
     border: 1px solid #CCC;
@@ -168,6 +168,10 @@ $(".custom-menu li").click(function(){
     padding: 0;
       width:237px !important;
 }
+    .custom-menu ul
+{
+z-index: 1000;
+    }
 
 /* Each of the items in the list */
 .custom-menu li {
@@ -203,6 +207,7 @@ background-color:#999999;
     }
 </style>
 <ul class='custom-menu'>
+  <div id="cover" style="width:100%;background-color:#555555;height:100%;display:inline-block;">&nbsp;</div>
   &nbsp;&nbsp;<b>thsconline</b>
 <li><a class="nofill navx" href="https://thsconline.github.io/s/"><img src="https://thsconline.github.io/s/images/icon_home.png">&nbsp;&nbsp;Home Page</a></li>
 <li><a class="nofill navx" href="../"><img src="https://thsconline.github.io/s/images/icon_back.png">&nbsp;&nbsp;Back to Year 11 - Preliminary</a></li>
