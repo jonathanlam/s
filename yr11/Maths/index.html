@@ -118,6 +118,9 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
 </div>
 </div>
   <script>
+    var hoverElem = null;
+$("*").on("mouseenter", function() { hoverElem = this; });
+    
     $(document).bind("contextmenu", function (event) {
     
     // Avoid the real one
@@ -133,7 +136,7 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
         top: event.pageY + "px",
         left: event.pageX + "px"
     });
-    axid=  $(this).prop(id) || "&nbsp;";
+    axid=  hoverElem.id || "&nbsp;";
       document.getElementById("event-id").innerHTML=axid;
 });
 
