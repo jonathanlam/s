@@ -149,30 +149,6 @@ $(document).bind("mousedown", function (e) {
 // If the menu element is clicked
 $(".custom-menu li").click(function(){
     
-    // This is the triggered action name
-    switch($(this).attr("data-action")) {
-        
-        // A case for each action. Your actions here
-        case "up-one-folder":
-        var locatex=window.location+"?end"
-        var locatex2=locatex.split("?")[0]+"#end"
-        var locatex3=locatex2.split("#")[0]        
-        var myString =locatex3.replace(".html","")
-        var lastChar = myString[myString.length -1];
-        if(lastChar=="\/" || lastChar=="x")
-        {
-          window.location="../"
-          console.log("NN")
-        }
-        else
-        {
-          window.location="index.html"
-        }
-        break;
-        case "second": alert("second"); break;
-        case "third": alert("third"); break;
-    }
-  
     // Hide it AFTER the action was triggered
     $(".custom-menu").hide(100);
   });
@@ -190,7 +166,7 @@ $(".custom-menu li").click(function(){
     color: #333;
     border-radius: 5px;
     padding: 0;
-      width:105px !important;
+      width:477px !important;
 }
 
 /* Each of the items in the list */
@@ -199,7 +175,7 @@ $(".custom-menu li").click(function(){
     cursor: pointer;
     list-style-type: none;
     transition: all .3s ease;
-        width:105px !important;
+        width:475px !important;
 }
 .custom-menu li{
 
@@ -210,7 +186,7 @@ background-color:rgb(240,240,240);
     }
     .custom-menu li:hover a {
     color:#FF5500 !important;
-            width:105px !important;
+            width:475px !important;
     }
 </style>
 <ul class='custom-menu'>
