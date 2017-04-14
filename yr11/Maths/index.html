@@ -127,7 +127,13 @@ $("*").on("mouseenter", function() { hoverElem = this; });
     event.preventDefault();
     
     // Show contextmenu
-
+   
+      axid=  hoverElem.className || "&nbsp;";
+          axidtag=  hoverElem.tagName || "body";
+      document.getElementById("event-tag").innerHTML=axidtag;
+      
+   if (hoverElem.Id!="jot_ui_searchInput_chosen")  
+   {
       $(".custom-menu").finish().toggle(100).
        
     
@@ -136,11 +142,8 @@ $("*").on("mouseenter", function() { hoverElem = this; });
         top: event.pageY + "px",
         left: event.pageX + "px"
     });
-    axid=  hoverElem.className || "&nbsp;";
-          axidtag=  hoverElem.tagName || "body";
-      document.getElementById("event-id").innerHTML=axid;
-      document.getElementById("event-tag").innerHTML=axidtag;
-      
+
+   }  
 });
 
 
