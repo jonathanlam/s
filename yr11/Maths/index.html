@@ -63,7 +63,58 @@ div a.inactive:hover, div a.inactive:active {background:none !important; backgro
 </td>
 </tr>
 </tbody></table> 
-</div>
+</div><script>
+(function() {
+
+  "use strict";
+
+  var taskItems = document.querySelectorAll(".task");
+
+  for ( var i = 0, len = taskItems.length; i < len; i++ ) {
+    var taskItem = taskItems[i];
+    contextMenuListener(taskItem);
+  }
+
+  function contextMenuListener(el) {
+    el.addEventListener( "contextmenu", function(e) {
+      console.log(e, el);
+    });
+  }
+
+})();
+                                                   </script>
+  <style>
+    .context-menu {
+  display: none;
+  position: absolute;
+  z-index: 10;
+}
+
+.context-menu--active {
+  display: block;
+}
+  </style>
+  <nav class="context-menu">
+  <ul class="context-menu__items">
+    <li class="context-menu__item">
+      <a href="#" class="context-menu__link">
+        <i class="fa fa-eye"></i> View Task
+      </a>
+    </li>
+    <li class="context-menu__item">
+      <a href="#" class="context-menu__link">
+        <i class="fa fa-edit"></i> Edit Task
+      </a>
+    </li>
+    <li class="context-menu__item">
+      <a href="#" class="context-menu__link">
+        <i class="fa fa-times"></i> Delete Task
+      </a>
+    </li>
+  </ul>
+</nav>
+  
+  
 <div id="sites-chrome-main-wrapper">
 <div class="sites-canvas-main" id="sites-canvas-main">
 <div id="sites-canvas-main-content" style="width:100%">
