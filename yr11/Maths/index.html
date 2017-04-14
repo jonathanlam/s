@@ -132,8 +132,8 @@ $("*").on("mouseenter", function() { hoverElem = this; });
           axidtag=  hoverElem.tagName || "body";
       document.getElementById("event-tag").innerHTML=axidtag;
       
-   if (hoverElem.Id!="jot_ui_searchInput_chosen")  
-   {
+    // If the clicked element is not the menu
+    if (!hoverElem.parents("#sites-layout-searchbox").length > 0) {
       $(".custom-menu").finish().toggle(100).
        
     
