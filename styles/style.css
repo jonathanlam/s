@@ -4323,3 +4323,49 @@ background-color:none !important;
 background:none !important;
 color: rgb(41, 140, 202) !important;
 } 
+
+    .custom-menu {
+    display: none;
+    z-index: 100000;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid #CCC;
+    white-space: nowrap;
+    background: rgb(248,248,248);
+    border-radius: 5px;
+    padding: 0;
+    width:307px !important;
+    }
+/* Each of the items in the list */
+.custom-menu li {
+      padding: 8px 12px;
+    cursor: pointer;
+    list-style-type: none;
+    transition: all .3s ease;
+        width:305px !important;
+}
+.custom-menu li{
+
+  font-size:small;
+    }
+.custom-menu li:hover {
+background-color:#999999;
+    }
+    .custom-menu li a:link,     .custom-menu li a:active, 
+    {
+      display:inline-block;
+      width:236px !important;
+    }
+    .custom-menu li a:hover, .custom-menu li a:active, .custom-menu li:active a:hover, .custom-menu li:active a:active
+    {
+      display:inline-block;
+    color:white !important;
+            width:236px !important;
+    }
+   .custom-menu li:hover a:link, .custom-menu li:hover a:visited, .custom-menu li:hover a:hover, .custom-menu li:hover a:active
+    {
+      display:inline-block;
+    color:white !important;
+            width:307px !important;
+    }
+
