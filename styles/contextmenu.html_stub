@@ -1,0 +1,81 @@
+ <script>
+    var hoverElem = null;
+$("*").on("mouseenter", function() { hoverElem = this; });
+    
+    $(document).bind("contextmenu", function (event) {
+    
+    // Avoid the real one
+    event.preventDefault();
+    
+    // Show contextmenu
+   
+      axid=  hoverElem.className || "&nbsp;";
+          axidtag=  hoverElem.tagName || "body";
+      axidh=  hoverElem.innerHTML || "";
+         
+    // If the clicked element is not the menu
+    
+      $(".custom-menu").finish().toggle(100).
+        // In the right position (the mouse)
+    css({
+        top: event.pageY + "px",
+        left: event.pageX + "px"
+    });
+     if (axidtag=="A")
+      {
+document.getElementById("mset1").style.display="block";
+        document.getElementById("mset1-1").href=hoverElem.href;
+        document.getElementById("mset1-2").href=hoverElem.href;
+        
+document.getElementById("mset2").style.display="none";
+        
+      document.getElementById("event-tag").innerHTML=axidh;
+      }
+else
+{
+document.getElementById("mset2").style.display="block";
+document.getElementById("mset1").style.display="none";
+document.getElementById("event-tag").innerHTML="";
+}   
+    
+  
+
+     
+});
+
+
+// If the document is clicked somewhere
+$(document).bind("mousedown", function (e) {
+    
+    // If the clicked element is not the menu
+    if (!$(e.target).parents(".custom-menu").length > 0) {
+        
+        // Hide it
+        $(".custom-menu").hide(100);
+        
+      
+    }
+});
+
+
+// If the menu element is clicked
+$(".custom-menu li").click(function(){
+    
+    // Hide it AFTER the action was triggered
+    $(".custom-menu").hide(100);
+    
+  
+  });
+  </script>
+  
+<ul class='custom-menu'>
+<small>&nbsp;&nbsp;<b><span id="event-tag"></span></b></small>
+<span id="mset1" style="display:none;">
+<li><a id="mset1-1" class="nofill navx" href="#"><img src="https://thsconline.github.io/s/images/icon_link.png">&nbsp;&nbsp;Open Link</a></li>
+<li><a id="mset1-2" class="nofill navx" href="#" target="_blank"><img src="https://thsconline.github.io/s/images/icon_link.png">&nbsp;&nbsp;Open Link in New Tab/Window</a></li>
+</span><span id="mset2"  style="display:none;">
+<li><a class="nofill navx" href="https://thsconline.github.io/s/"><img src="https://thsconline.github.io/s/images/icon_home.png">&nbsp;&nbsp;Home Page</a></li>
+<li><a class="nofill navx" href="../"><img src="https://thsconline.github.io/s/images/icon_back.png">&nbsp;&nbsp;Back to Year 11 - Preliminary</a></li>
+<li><a class="nofill navx" href="https://thsconline.github.io/s/upload/"><img src="https://thsconline.github.io/s/images/icon_link.png">&nbsp;&nbsp;Upload Files</a></li>
+  </span>
+  </ul>
